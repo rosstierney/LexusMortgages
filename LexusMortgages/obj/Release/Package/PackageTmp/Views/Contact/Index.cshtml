@@ -6,7 +6,7 @@
     <h2>Contact Us</h2>
     <hr/>
 
-        <div class="col-sm-5">
+        <div class="container col-sm-5">
             <p>Contact us and we'll get back to you within 24 hours.</p>
             <p><span class="glyphicon glyphicon-map-marker"></span>&nbsp;<span class="flag-icon flag-icon-gb img-rounded"></span> UK <span class="flag-icon flag-icon-ie img-rounded"></span> Ireland <span class="flag-icon flag-icon-es img-rounded"></span> Spain</p>
             <p><span class="glyphicon glyphicon-phone"></span> +34 602 584 781 <span class="flag-icon flag-icon-es"></span></p>
@@ -15,11 +15,24 @@
                 <span class="glyphicon glyphicon-envelope"></span>
                 <a href="mailto:info@lexusmortgages.co.uk">info@lexusmortgages.co.uk</a><br />
             </address>
-            <img src="@Url.Content("~/Content/Images/contact-us.png")" style="width:26%" alt="viber-logo" />
-            <img src="@Url.Content("~/Content/Images/whatsapp.png")" style="width:18%" alt="viber-logo" />
-            <img src="@Url.Content("~/Content/Images/viber-logo.png")" style="width:32%" alt="viber-logo" />
-            <img src="@Url.Content("~/Content/Images/messenger.png")" style="width:18%" alt="viber-logo" />
-
+                    <div class="row">
+                        <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+                        <div class="col-sm-5" id="SkypeButton_Call_Lexus.mortgages_1">
+                            <script type="text/javascript">
+                                Skype.ui({
+                                    "name": "dropdown",
+                                    "element": "SkypeButton_Call_Lexus.mortgages_1",
+                                    "participants": ["Lexus.mortgages"]
+                                });
+                            </script>
+                        </div>
+                    </div>
+            <div class="row">
+                <img src="@Url.Content("~/Content/Images/contact-us.png")" style="width:26%" alt="viber-logo" />
+                <img src="@Url.Content("~/Content/Images/whatsapp.png")" style="width:18%" alt="viber-logo" />
+                <img src="@Url.Content("~/Content/Images/viber-logo.png")" style="width:32%" alt="viber-logo" />
+                <img src="@Url.Content("~/Content/Images/messenger.png")" style="width:18%" alt="viber-logo" />
+            </div>
         </div>
         <br />
         <div class="col-sm-7 div-rounded-blue-contact">
@@ -68,7 +81,7 @@
                     </div>
                 </div>
                 <div class="col-md-5 form-group">
-                    <button class="btn btn-default pull-right mybutton" type="submit">Send Message</button>
+                    <button class="btn btn-default mybutton" type="submit">Send Message</button>
                 </div>
             </div>
             }

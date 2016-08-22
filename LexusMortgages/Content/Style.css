@@ -10,7 +10,6 @@ h2{
     font-weight: 700;
 }
 h3 {
-    color: #2D6895;
     font-weight:800;
 }
 h4 {
@@ -31,10 +30,9 @@ h6 {
 
 .myh3 {
     font-weight: 700;
-    font-size:xx-large;
+    font-size: 32px;
     font-style: italic;
     font-family: Calibri;
-    color: #2D6895!important;
 }
 
 .calculator-header {
@@ -196,13 +194,18 @@ footer .footer-below {
 
 @media(max-width:767px) {
 
+    .myh3 {
+        font-weight: 700;
+        font-size: 28px;
+        font-style: italic;
+        font-family: Calibri;
+    }
     .calculator-header {
         text-align:center;
         font-weight: 700;
         font-size: large;
         font-family: Calibri;
     }
-
 
     intro-header {
         height:250px;
@@ -296,6 +299,13 @@ p.copyright {
 
 @media screen and (max-width:640px) {
     
+     .myh3 {
+        font-weight: 700;
+        font-size: 24px;
+        font-style: italic;
+        font-family: Calibri;
+    }
+
     .intro-lmlogo {
         width:70%;
     }
@@ -313,7 +323,6 @@ p.copyright {
     }
     .myh3 {
         text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
-        color: #2D6895;
     }
 
     .smlCarousel {
