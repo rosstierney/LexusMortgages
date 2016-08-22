@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LexusMortgages", "LexusMortgages\LexusMortgages.csproj", "{1E0D3524-5582-4C72-8421-546C5B1BB06A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{E9C2B294-C3D3-4C40-8967-6C9A5D7637D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{AF585D94-474F-45B8-BCAE-D06BC3D40515}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{67814CA8-ED75-426B-ABC1-6F858C77759A}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\LexusMortgages.json = PublishScripts\Templates\LexusMortgages.json
+		PublishScripts\Templates\LexusMortgages.param.dev.json = PublishScripts\Templates\LexusMortgages.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E0D3524-5582-4C72-8421-546C5B1BB06A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E0D3524-5582-4C72-8421-546C5B1BB06A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E0D3524-5582-4C72-8421-546C5B1BB06A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E0D3524-5582-4C72-8421-546C5B1BB06A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AF585D94-474F-45B8-BCAE-D06BC3D40515} = {E9C2B294-C3D3-4C40-8967-6C9A5D7637D1}
+		{67814CA8-ED75-426B-ABC1-6F858C77759A} = {E9C2B294-C3D3-4C40-8967-6C9A5D7637D1}
+	EndGlobalSection
+EndGlobal

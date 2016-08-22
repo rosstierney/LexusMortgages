@@ -1,0 +1,327 @@
+﻿body {
+
+}
+
+
+body,
+h1,
+h2{
+    font-family: Calibri,"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+h3 {
+    color: #2D6895;
+    font-weight:800;
+}
+h4 {
+    color: #f8f8f8;
+}
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+}
+
+.lead {
+    font-size: 28px;
+    font-weight: 400;
+    padding:5%;
+    color: #f8f8f8;
+}
+
+.myh3 {
+    font-weight: 700;
+    font-size:xx-large;
+    font-style: italic;
+    font-family: Calibri;
+    color: #2D6895!important;
+}
+
+.calculator-header {
+    text-align:center;
+    font-weight: 700;
+    font-size:x-large;
+    font-family: Calibri;
+}
+.div-rounded-blue {
+    padding:5%;
+    border-radius:30px 30px 30px 30px;
+    margin: auto;
+    background-color: #2D6895;
+}
+.div-rounded-blue-contact {
+    padding:2%;
+    border-radius:30px 30px 30px 30px;
+    background-color: #2D6895;
+}
+.mydiv {
+    border-radius:30px 30px 30px 30px;
+    margin: auto;
+    background-color: #2D6895;
+    padding-bottom:30px;
+}
+
+.mybutton {
+  display: inline-block;
+  border-color: #4CAF50;
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.mybutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.mybutton span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  background-color: #438346;
+  transition: 0.5s;
+}
+
+.mybutton:hover {
+  background-color: #438346;
+  border-color: #438346;
+}
+
+.mybutton:hover span {
+  padding-right: 25px;
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+.grow:hover { 
+    transform: scale(1.1); 
+}
+
+.mybutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.myshadow {
+    text-shadow: 4px 4px 5px rgba(0,0,0,0.7);
+    color: #f8f8f8;
+    text-align:center;
+}
+
+.btn-social1 {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border: 2px solid white;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active {
+  outline: none;
+}
+
+footer .footer-above {
+  padding-top: 50px;
+  background-color: #2C3E50;
+}
+footer .footer-col {
+  margin-bottom: 50px;
+}
+footer .footer-below {
+  padding: 25px 0;
+  background-color: #233140;
+}
+
+.btn-outline1 {
+  color: white;
+  font-size: 20px;
+  border: solid 2px white;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+.btn-outline1:hover,
+.btn-outline1:focus,
+.btn-outline1:active,
+.btn-outline1.active {
+  color: #2D6895;
+  background: white;
+  border: solid 2px white;
+}
+
+
+.intro-header {
+    padding-top: 10%; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 10%;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../Content/Images/villa-img.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    height: 50%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
+}
+
+@media(max-width:767px) {
+
+    .calculator-header {
+        text-align:center;
+        font-weight: 700;
+        font-size: large;
+        font-family: Calibri;
+    }
+
+
+    intro-header {
+        height:250px;
+    }
+
+    .intro-message > h1 {
+        font-size: 4em;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../Content/Images/villa-img.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 4px 4px 5px rgba(0,0,0,0.7);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+    }
+    .intro-lmlogo {
+        width:65%;
+     }
+}
+
+@media(max-width:767px) {
+
+    .intro-lmlogo {
+        width:65%;
+     }
+
+  
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+@media screen and (max-width:640px) {
+    
+    .intro-lmlogo {
+        width:70%;
+    }
+
+    .lead {
+        font-size:20px;
+        padding:4% 0%;
+    }
+
+    .mydiv {
+        border-radius:30px 30px 30px 30px;
+        margin: auto;
+        background-color: #2D6895;
+        padding-bottom:30px;
+    }
+    .myh3 {
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
+        color: #2D6895;
+    }
+
+    .smlCarousel {
+        padding:5%;
+    }
+    .mycarousel-control {
+       padding:10%;
+    }
+    .mysocial {
+    }
+}

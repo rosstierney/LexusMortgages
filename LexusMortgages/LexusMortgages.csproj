@@ -1,0 +1,602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1E0D3524-5582-4C72-8421-546C5B1BB06A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LexusMortgages</RootNamespace>
+    <AssemblyName>LexusMortgages</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44301</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <ApplicationInsightsResourceId>/subscriptions/ce2a6951-a446-4aad-b27c-98b10826dfdb/resourcegroups/ResourceGrp/providers/microsoft.insights/components/LexusMortgages</ApplicationInsightsResourceId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.1.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.1.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.1.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.1.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.1.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.1.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ApplyOnlineController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MortgageProcessController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ApplyOnline.cs" />
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\MortgageProcess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-datepicker.css" />
+    <Content Include="Content\bootstrap-datepicker.min.css" />
+    <Content Include="Content\bootstrap-datepicker.standalone.css" />
+    <Content Include="Content\bootstrap-datepicker.standalone.min.css" />
+    <Content Include="Content\bootstrap-datepicker3.css" />
+    <Content Include="Content\bootstrap-datepicker3.min.css" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.css" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.min.css" />
+    <Content Include="Content\bootstrap-social.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\flag-icon.css" />
+    <Content Include="Content\flag-icon.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Images\android-icon-144x144.png" />
+    <Content Include="Content\Images\android-icon-192x192.png" />
+    <Content Include="Content\Images\android-icon-36x36.png" />
+    <Content Include="Content\Images\android-icon-48x48.png" />
+    <Content Include="Content\Images\android-icon-72x72.png" />
+    <Content Include="Content\Images\android-icon-96x96.png" />
+    <Content Include="Content\Images\apple-icon-114x114.png" />
+    <Content Include="Content\Images\apple-icon-120x120.png" />
+    <Content Include="Content\Images\apple-icon-144x144.png" />
+    <Content Include="Content\Images\apple-icon-152x152.png" />
+    <Content Include="Content\Images\apple-icon-180x180.png" />
+    <Content Include="Content\Images\apple-icon-57x57.png" />
+    <Content Include="Content\Images\apple-icon-60x60.png" />
+    <Content Include="Content\Images\apple-icon-72x72.png" />
+    <Content Include="Content\Images\apple-icon-76x76.png" />
+    <Content Include="Content\Images\apple-icon-precomposed.png" />
+    <Content Include="Content\Images\apple-icon.png" />
+    <Content Include="Content\Images\bankia-logo.jpg" />
+    <Content Include="Content\Images\bankinter-logo.jpg" />
+    <Content Include="Content\Images\browserconfig.xml" />
+    <Content Include="Content\Images\caixabank-logo.png" />
+    <Content Include="Content\Images\contact-us.png" />
+    <Content Include="Content\Images\favicon-16x16.png" />
+    <Content Include="Content\Images\favicon-32x32.png" />
+    <Content Include="Content\Images\favicon-96x96.png" />
+    <Content Include="Content\Images\favicon.ico" />
+    <Content Include="Content\Images\house-logo.png" />
+    <Content Include="Content\Images\intro_icon_btm.png" />
+    <Content Include="Content\Images\intro_icon_top.jpg" />
+    <Content Include="Content\Images\LexusMortgageApplyBanner.jpg" />
+    <Content Include="Content\Images\LexusMortgageMainBanner.jpg" />
+    <Content Include="Content\Images\LexusMortgageMainBanner.png" />
+    <Content Include="Content\Images\LexusMortgageMainBannerPNG.png" />
+    <Content Include="Content\Images\LexusMortgagesCalculator.jpg" />
+    <Content Include="Content\Images\LexusMortgagesContactUs.jpg" />
+    <Content Include="Content\Images\LexusMortgagesLogoTop.png" />
+    <Content Include="Content\Images\LexusMortgageStampLogo.jpg" />
+    <Content Include="Content\Images\logo-cajamar.png" />
+    <Content Include="Content\Images\messenger.png" />
+    <Content Include="Content\Images\ms-icon-144x144.png" />
+    <Content Include="Content\Images\ms-icon-150x150.png" />
+    <Content Include="Content\Images\ms-icon-310x310.png" />
+    <Content Include="Content\Images\ms-icon-70x70.png" />
+    <Content Include="Content\Images\popular-logo.png" />
+    <Content Include="Content\Images\sabdell-logo.jpg" />
+    <Content Include="Content\Images\santander-logo.png" />
+    <Content Include="Content\Images\viber-logo.png" />
+    <Content Include="Content\Images\villa-img.jpg" />
+    <Content Include="Content\Images\villa-img.png" />
+    <Content Include="Content\Images\whatsapp.png" />
+    <Content Include="Content\Style.css" />
+    <Content Include="Content\zocial.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="flags\4x3\ad.svg" />
+    <Content Include="flags\4x3\ae.svg" />
+    <Content Include="flags\4x3\af.svg" />
+    <Content Include="flags\4x3\ag.svg" />
+    <Content Include="flags\4x3\ai.svg" />
+    <Content Include="flags\4x3\al.svg" />
+    <Content Include="flags\4x3\am.svg" />
+    <Content Include="flags\4x3\ao.svg" />
+    <Content Include="flags\4x3\aq.svg" />
+    <Content Include="flags\4x3\ar.svg" />
+    <Content Include="flags\4x3\as.svg" />
+    <Content Include="flags\4x3\at.svg" />
+    <Content Include="flags\4x3\au.svg" />
+    <Content Include="flags\4x3\aw.svg" />
+    <Content Include="flags\4x3\ax.svg" />
+    <Content Include="flags\4x3\az.svg" />
+    <Content Include="flags\4x3\ba.svg" />
+    <Content Include="flags\4x3\bb.svg" />
+    <Content Include="flags\4x3\bd.svg" />
+    <Content Include="flags\4x3\be.svg" />
+    <Content Include="flags\4x3\bf.svg" />
+    <Content Include="flags\4x3\bg.svg" />
+    <Content Include="flags\4x3\bh.svg" />
+    <Content Include="flags\4x3\bi.svg" />
+    <Content Include="flags\4x3\bj.svg" />
+    <Content Include="flags\4x3\bl.svg" />
+    <Content Include="flags\4x3\bm.svg" />
+    <Content Include="flags\4x3\bn.svg" />
+    <Content Include="flags\4x3\bo.svg" />
+    <Content Include="flags\4x3\bq.svg" />
+    <Content Include="flags\4x3\br.svg" />
+    <Content Include="flags\4x3\bs.svg" />
+    <Content Include="flags\4x3\bt.svg" />
+    <Content Include="flags\4x3\bv.svg" />
+    <Content Include="flags\4x3\bw.svg" />
+    <Content Include="flags\4x3\by.svg" />
+    <Content Include="flags\4x3\bz.svg" />
+    <Content Include="flags\4x3\ca.svg" />
+    <Content Include="flags\4x3\cc.svg" />
+    <Content Include="flags\4x3\cd.svg" />
+    <Content Include="flags\4x3\cf.svg" />
+    <Content Include="flags\4x3\cg.svg" />
+    <Content Include="flags\4x3\ch.svg" />
+    <Content Include="flags\4x3\ci.svg" />
+    <Content Include="flags\4x3\ck.svg" />
+    <Content Include="flags\4x3\cl.svg" />
+    <Content Include="flags\4x3\cm.svg" />
+    <Content Include="flags\4x3\cn.svg" />
+    <Content Include="flags\4x3\co.svg" />
+    <Content Include="flags\4x3\cr.svg" />
+    <Content Include="flags\4x3\cu.svg" />
+    <Content Include="flags\4x3\cv.svg" />
+    <Content Include="flags\4x3\cw.svg" />
+    <Content Include="flags\4x3\cx.svg" />
+    <Content Include="flags\4x3\cy.svg" />
+    <Content Include="flags\4x3\cz.svg" />
+    <Content Include="flags\4x3\de.svg" />
+    <Content Include="flags\4x3\dj.svg" />
+    <Content Include="flags\4x3\dk.svg" />
+    <Content Include="flags\4x3\dm.svg" />
+    <Content Include="flags\4x3\do.svg" />
+    <Content Include="flags\4x3\dz.svg" />
+    <Content Include="flags\4x3\ec.svg" />
+    <Content Include="flags\4x3\ee.svg" />
+    <Content Include="flags\4x3\eg.svg" />
+    <Content Include="flags\4x3\eh.svg" />
+    <Content Include="flags\4x3\er.svg" />
+    <Content Include="flags\4x3\es.svg" />
+    <Content Include="flags\4x3\et.svg" />
+    <Content Include="flags\4x3\eu.svg" />
+    <Content Include="flags\4x3\fi.svg" />
+    <Content Include="flags\4x3\fj.svg" />
+    <Content Include="flags\4x3\fk.svg" />
+    <Content Include="flags\4x3\fm.svg" />
+    <Content Include="flags\4x3\fo.svg" />
+    <Content Include="flags\4x3\fr.svg" />
+    <Content Include="flags\4x3\ga.svg" />
+    <Content Include="flags\4x3\gb-eng.svg" />
+    <Content Include="flags\4x3\gb-nir.svg" />
+    <Content Include="flags\4x3\gb-sct.svg" />
+    <Content Include="flags\4x3\gb-wls.svg" />
+    <Content Include="flags\4x3\gb.svg" />
+    <Content Include="flags\4x3\gd.svg" />
+    <Content Include="flags\4x3\ge.svg" />
+    <Content Include="flags\4x3\gf.svg" />
+    <Content Include="flags\4x3\gg.svg" />
+    <Content Include="flags\4x3\gh.svg" />
+    <Content Include="flags\4x3\gi.svg" />
+    <Content Include="flags\4x3\gl.svg" />
+    <Content Include="flags\4x3\gm.svg" />
+    <Content Include="flags\4x3\gn.svg" />
+    <Content Include="flags\4x3\gp.svg" />
+    <Content Include="flags\4x3\gq.svg" />
+    <Content Include="flags\4x3\gr.svg" />
+    <Content Include="flags\4x3\gs.svg" />
+    <Content Include="flags\4x3\gt.svg" />
+    <Content Include="flags\4x3\gu.svg" />
+    <Content Include="flags\4x3\gw.svg" />
+    <Content Include="flags\4x3\gy.svg" />
+    <Content Include="flags\4x3\hk.svg" />
+    <Content Include="flags\4x3\hm.svg" />
+    <Content Include="flags\4x3\hn.svg" />
+    <Content Include="flags\4x3\hr.svg" />
+    <Content Include="flags\4x3\ht.svg" />
+    <Content Include="flags\4x3\hu.svg" />
+    <Content Include="flags\4x3\id.svg" />
+    <Content Include="flags\4x3\ie.svg" />
+    <Content Include="flags\4x3\il.svg" />
+    <Content Include="flags\4x3\im.svg" />
+    <Content Include="flags\4x3\in.svg" />
+    <Content Include="flags\4x3\io.svg" />
+    <Content Include="flags\4x3\iq.svg" />
+    <Content Include="flags\4x3\ir.svg" />
+    <Content Include="flags\4x3\is.svg" />
+    <Content Include="flags\4x3\it.svg" />
+    <Content Include="flags\4x3\je.svg" />
+    <Content Include="flags\4x3\jm.svg" />
+    <Content Include="flags\4x3\jo.svg" />
+    <Content Include="flags\4x3\jp.svg" />
+    <Content Include="flags\4x3\ke.svg" />
+    <Content Include="flags\4x3\kg.svg" />
+    <Content Include="flags\4x3\kh.svg" />
+    <Content Include="flags\4x3\ki.svg" />
+    <Content Include="flags\4x3\km.svg" />
+    <Content Include="flags\4x3\kn.svg" />
+    <Content Include="flags\4x3\kp.svg" />
+    <Content Include="flags\4x3\kr.svg" />
+    <Content Include="flags\4x3\kw.svg" />
+    <Content Include="flags\4x3\ky.svg" />
+    <Content Include="flags\4x3\kz.svg" />
+    <Content Include="flags\4x3\la.svg" />
+    <Content Include="flags\4x3\lb.svg" />
+    <Content Include="flags\4x3\lc.svg" />
+    <Content Include="flags\4x3\li.svg" />
+    <Content Include="flags\4x3\lk.svg" />
+    <Content Include="flags\4x3\lr.svg" />
+    <Content Include="flags\4x3\ls.svg" />
+    <Content Include="flags\4x3\lt.svg" />
+    <Content Include="flags\4x3\lu.svg" />
+    <Content Include="flags\4x3\lv.svg" />
+    <Content Include="flags\4x3\ly.svg" />
+    <Content Include="flags\4x3\ma.svg" />
+    <Content Include="flags\4x3\mc.svg" />
+    <Content Include="flags\4x3\md.svg" />
+    <Content Include="flags\4x3\me.svg" />
+    <Content Include="flags\4x3\mf.svg" />
+    <Content Include="flags\4x3\mg.svg" />
+    <Content Include="flags\4x3\mh.svg" />
+    <Content Include="flags\4x3\mk.svg" />
+    <Content Include="flags\4x3\ml.svg" />
+    <Content Include="flags\4x3\mm.svg" />
+    <Content Include="flags\4x3\mn.svg" />
+    <Content Include="flags\4x3\mo.svg" />
+    <Content Include="flags\4x3\mp.svg" />
+    <Content Include="flags\4x3\mq.svg" />
+    <Content Include="flags\4x3\mr.svg" />
+    <Content Include="flags\4x3\ms.svg" />
+    <Content Include="flags\4x3\mt.svg" />
+    <Content Include="flags\4x3\mu.svg" />
+    <Content Include="flags\4x3\mv.svg" />
+    <Content Include="flags\4x3\mw.svg" />
+    <Content Include="flags\4x3\mx.svg" />
+    <Content Include="flags\4x3\my.svg" />
+    <Content Include="flags\4x3\mz.svg" />
+    <Content Include="flags\4x3\na.svg" />
+    <Content Include="flags\4x3\nc.svg" />
+    <Content Include="flags\4x3\ne.svg" />
+    <Content Include="flags\4x3\nf.svg" />
+    <Content Include="flags\4x3\ng.svg" />
+    <Content Include="flags\4x3\ni.svg" />
+    <Content Include="flags\4x3\nl.svg" />
+    <Content Include="flags\4x3\no.svg" />
+    <Content Include="flags\4x3\np.svg" />
+    <Content Include="flags\4x3\nr.svg" />
+    <Content Include="flags\4x3\nu.svg" />
+    <Content Include="flags\4x3\nz.svg" />
+    <Content Include="flags\4x3\om.svg" />
+    <Content Include="flags\4x3\pa.svg" />
+    <Content Include="flags\4x3\pe.svg" />
+    <Content Include="flags\4x3\pf.svg" />
+    <Content Include="flags\4x3\pg.svg" />
+    <Content Include="flags\4x3\ph.svg" />
+    <Content Include="flags\4x3\pk.svg" />
+    <Content Include="flags\4x3\pl.svg" />
+    <Content Include="flags\4x3\pm.svg" />
+    <Content Include="flags\4x3\pn.svg" />
+    <Content Include="flags\4x3\pr.svg" />
+    <Content Include="flags\4x3\ps.svg" />
+    <Content Include="flags\4x3\pt.svg" />
+    <Content Include="flags\4x3\pw.svg" />
+    <Content Include="flags\4x3\py.svg" />
+    <Content Include="flags\4x3\qa.svg" />
+    <Content Include="flags\4x3\re.svg" />
+    <Content Include="flags\4x3\ro.svg" />
+    <Content Include="flags\4x3\rs.svg" />
+    <Content Include="flags\4x3\ru.svg" />
+    <Content Include="flags\4x3\rw.svg" />
+    <Content Include="flags\4x3\sa.svg" />
+    <Content Include="flags\4x3\sb.svg" />
+    <Content Include="flags\4x3\sc.svg" />
+    <Content Include="flags\4x3\sd.svg" />
+    <Content Include="flags\4x3\se.svg" />
+    <Content Include="flags\4x3\sg.svg" />
+    <Content Include="flags\4x3\sh.svg" />
+    <Content Include="flags\4x3\si.svg" />
+    <Content Include="flags\4x3\sj.svg" />
+    <Content Include="flags\4x3\sk.svg" />
+    <Content Include="flags\4x3\sl.svg" />
+    <Content Include="flags\4x3\sm.svg" />
+    <Content Include="flags\4x3\sn.svg" />
+    <Content Include="flags\4x3\so.svg" />
+    <Content Include="flags\4x3\sr.svg" />
+    <Content Include="flags\4x3\ss.svg" />
+    <Content Include="flags\4x3\st.svg" />
+    <Content Include="flags\4x3\sv.svg" />
+    <Content Include="flags\4x3\sx.svg" />
+    <Content Include="flags\4x3\sy.svg" />
+    <Content Include="flags\4x3\sz.svg" />
+    <Content Include="flags\4x3\tc.svg" />
+    <Content Include="flags\4x3\td.svg" />
+    <Content Include="flags\4x3\tf.svg" />
+    <Content Include="flags\4x3\tg.svg" />
+    <Content Include="flags\4x3\th.svg" />
+    <Content Include="flags\4x3\tj.svg" />
+    <Content Include="flags\4x3\tk.svg" />
+    <Content Include="flags\4x3\tl.svg" />
+    <Content Include="flags\4x3\tm.svg" />
+    <Content Include="flags\4x3\tn.svg" />
+    <Content Include="flags\4x3\to.svg" />
+    <Content Include="flags\4x3\tr.svg" />
+    <Content Include="flags\4x3\tt.svg" />
+    <Content Include="flags\4x3\tv.svg" />
+    <Content Include="flags\4x3\tw.svg" />
+    <Content Include="flags\4x3\tz.svg" />
+    <Content Include="flags\4x3\ua.svg" />
+    <Content Include="flags\4x3\ug.svg" />
+    <Content Include="flags\4x3\um.svg" />
+    <Content Include="flags\4x3\un.svg" />
+    <Content Include="flags\4x3\us.svg" />
+    <Content Include="flags\4x3\uy.svg" />
+    <Content Include="flags\4x3\uz.svg" />
+    <Content Include="flags\4x3\va.svg" />
+    <Content Include="flags\4x3\vc.svg" />
+    <Content Include="flags\4x3\ve.svg" />
+    <Content Include="flags\4x3\vg.svg" />
+    <Content Include="flags\4x3\vi.svg" />
+    <Content Include="flags\4x3\vn.svg" />
+    <Content Include="flags\4x3\vu.svg" />
+    <Content Include="flags\4x3\wf.svg" />
+    <Content Include="flags\4x3\ws.svg" />
+    <Content Include="flags\4x3\ye.svg" />
+    <Content Include="flags\4x3\yt.svg" />
+    <Content Include="flags\4x3\za.svg" />
+    <Content Include="flags\4x3\zm.svg" />
+    <Content Include="flags\4x3\zw.svg" />
+    <Content Include="flags\4x3\zz.svg" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\ai.0.22.19-build00125.js" />
+    <Content Include="Scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\Images\manifest.json" />
+    <Content Include="Content\bootstrap-datepicker.css.map" />
+    <Content Include="Content\bootstrap-datepicker.min.css.map" />
+    <Content Include="Content\bootstrap-datepicker.standalone.css.map" />
+    <Content Include="Content\bootstrap-datepicker.standalone.min.css.map" />
+    <Content Include="Content\bootstrap-datepicker3.css.map" />
+    <Content Include="Content\bootstrap-datepicker3.min.css.map" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.css.map" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <None Include="Properties\PublishProfiles\LexusMortgages.pubxml" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\ApplyOnline\Index.cshtml" />
+    <Content Include="Views\ApplyOnline\Sent.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Contact\Sent.cshtml" />
+    <Content Include="Views\MortgageProcess\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53065</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53065/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

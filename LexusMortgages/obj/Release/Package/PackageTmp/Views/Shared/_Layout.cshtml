@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title Lexus Mortgages</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="shortcut icon" href="@Url.Content("~/favicon.ico")" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+             <!--   @Html.ActionLink("Lexus Mortgages", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" }) -->
+                <a class="navbar-left" href='@Url.Action("Index", "Home")' >
+                    <img style="max-width:200px; margin-top: 7px;" 
+                     src="@Url.Content("~/Content/Images/LexusMortgageMainBanner.jpg")">
+                </a>
+            
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Mortgage Process", "Index", "MortgageProcess")</li>
+                    <li>@Html.ActionLink("Apply Online", "Index", "ApplyOnline")</li>
+                    <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+
+            <div style="width: 100%">
+
+                <div class="text-center">
+                    LEXUS MORTGAGES IS A LEGALLY REGISTERED COMPANY WITH CIF NUMBER B54045471
+                    YOUR HOME MAY BE REPOSSESSED IF YOU DO NOT KEEP UP REPAYMENTS ON YOUR MORTGAGE. CHANGES IN THE EXCHANGE RATE MAY INCREASE THE STERLING EQUIVALENT OF YOUR DEBT.
+                    <br /><br />
+                    Mortgages in Spain - Spanish Mortgages - Mortgage Brokers Spain - Mortgage Advisors Spain - Remortgages and Finance
+                </div>
+            </div>
+            <br /><br />
+            <p class="copyright text-muted small">Copyright &copy; CodeTech. All Rights Reserved &copy; @DateTime.Now.Year</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

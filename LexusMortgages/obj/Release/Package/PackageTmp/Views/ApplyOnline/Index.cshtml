@@ -1,0 +1,196 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Apply Online</title>
+
+</head>
+<body>
+    <div class="container">
+        @model LexusMortgages.Models.ApplyOnline
+        @{
+            ViewBag.Title = "Apply Online";
+        }
+        <h2>@ViewBag.Title</h2>
+        <hr />
+    @using (Html.BeginForm())
+        {
+        @Html.AntiForgeryToken()
+        <div class="col-lg-6 form-horizontal">
+            <div>
+                <p>Complete our online application form to take the first steps. We will then search our wide range of mortgages to find the one that best meets your own personal requirements. Then, we will contact you to let you know exactly what we can offer, in plain and simple English.</p>
+
+                <p> Please note, at Lexus Mortgages, we take the privacy of our clients very seriously. As such, none of your personal details will be disclosed to a third party other than the banking institutions used in our research process.</p>
+            </div>
+            <div class="div-rounded-blue-contact">
+                <div class="form-group">
+                    <h3 class="myshadow">Application</h3>
+                    <hr class="intro-divider"/>
+                    @Html.LabelFor(m => m.fname, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.fname, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.fname)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.sname, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.sname, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.sname)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.street, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.street, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.street)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.town, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.town, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.town)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.postcode, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.postcode, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.postcode)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.country, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.country, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.country)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.telephone, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.telephone, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.telephone)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.email, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.email, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.email)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.dob, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(m => m.dob, new { @class = "datecontrol form-control" })
+                        @Html.ValidationMessageFor(m => m.dob)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.martial, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+
+                        <div>
+                            @Html.DropDownListFor(m => m.martial, new SelectList(
+                            (List<Object>)ViewBag.MartialOptions,
+                                "value", "text", 2), new { @class = "form-control" })
+
+                            @Html.ValidationMessageFor(m => m.martial)
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.occupation, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.occupation, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.occupation)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.employer, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.employer, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.employer)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.netMonthlyIncome, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.netMonthlyIncome, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.netMonthlyIncome)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.otherIncome, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.otherIncome, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.otherIncome)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 form-horizontal">
+            
+            <div class="div-rounded-blue-contact">
+                <div class="form-group">
+                    <h3 class="myshadow">Mortgage Information</h3>
+                    <hr class="intro-divider"/>
+                    @Html.LabelFor(m => m.mortgageType, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.DropDownListFor(model => model.mortgageType, new SelectList(
+                            (List<Object>)ViewBag.MortgageTyOptions,
+                                "value", "text", 2), new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.mortgageType)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.purchasePrice, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.purchasePrice, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.purchasePrice)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.mortgageTerm, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.DropDownListFor(model => model.mortgageTerm, new SelectList(
+                        (List<Object>)ViewBag.MortgageTmOptions,
+                            "value", "text", 2), new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.mortgageTerm)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.propertType, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.DropDownListFor(model => model.propertType, new SelectList(
+                        (List<Object>)ViewBag.PropertyOptions,
+                            "value", "text", 2), new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.propertType)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.amountReq, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.amountReq, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.amountReq)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" class="btn mybutton pull-right" value="Send" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        }
+    </div>
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+</body>
+</html>

@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+    <h2>Contact Us</h2>
+    <hr/>
+
+        <div class="col-sm-5">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>&nbsp;<span class="flag-icon flag-icon-gb img-rounded"></span> UK <span class="flag-icon flag-icon-ie img-rounded"></span> Ireland <span class="flag-icon flag-icon-es img-rounded"></span> Spain</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +34 602 584 781 <span class="flag-icon flag-icon-es"></span></p>
+            <p><span class="glyphicon glyphicon-phone"></span> +353 (0)87 9833731 <span class="flag-icon flag-icon-ie"></span></p>
+            <address>
+                <span class="glyphicon glyphicon-envelope"></span>
+                <a href="mailto:info@lexusmortgages.co.uk">info@lexusmortgages.co.uk</a><br />
+            </address>
+            <img src="@Url.Content("~/Content/Images/contact-us.png")" style="width:26%" alt="viber-logo" />
+            <img src="@Url.Content("~/Content/Images/whatsapp.png")" style="width:18%" alt="viber-logo" />
+            <img src="@Url.Content("~/Content/Images/viber-logo.png")" style="width:32%" alt="viber-logo" />
+            <img src="@Url.Content("~/Content/Images/messenger.png")" style="width:18%" alt="viber-logo" />
+
+        </div>
+        <br />
+        <div class="col-sm-7 div-rounded-blue-contact">
+            @using (Html.BeginForm())
+            {
+            @Html.AntiForgeryToken()
+            @model LexusMortgages.Models.Contact
+            <div class="row">
+                <div class="form-group col-md-6">
+                    @Html.LabelFor(m => m.fullname, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.fullname, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.fullname)
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    @Html.LabelFor(m => m.email, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.email, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.email)
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    @Html.LabelFor(m => m.city, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.city, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.city)
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    @Html.LabelFor(m => m.telephone, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(m => m.telephone, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.telephone)
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    @Html.LabelFor(m => m.enquiry, new { @class = "col-md-4 control-label" })
+                    <div class="col-md-8">
+                        @Html.TextAreaFor(m => m.enquiry, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.enquiry)<br>
+                    </div>
+                </div>
+                <div class="col-md-5 form-group">
+                    <button class="btn btn-default pull-right mybutton" type="submit">Send Message</button>
+                </div>
+            </div>
+            }
+        </div>
+    
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
