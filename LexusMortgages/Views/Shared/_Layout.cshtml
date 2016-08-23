@@ -6,7 +6,14 @@
     <title>@ViewBag.Title Lexus Mortgages</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <link rel="shortcut icon" href="@Url.Content("~/favicon.ico")" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    @*<link rel="shortcut icon" href="@Url.Content("~/favicon.ico")" />*@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
@@ -22,7 +29,7 @@
              <!--   @Html.ActionLink("Lexus Mortgages", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" }) -->
                 <a class="navbar-left" href='@Url.Action("Index", "Home")' >
                     <img style="max-width:200px; margin-top: 7px;" 
-                     src="@Url.Content("~/Content/Images/LexusMortgageMainBanner.jpg")">
+                     src="@Url.Content("~/Content/Images/LexusMortgageMainBanner.png")">
                 </a>
             
             </div>
