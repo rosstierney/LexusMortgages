@@ -7,10 +7,13 @@ using LexusMortgages.Models;
 using System.Net;
 using System.Net.Mail;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using System.Text;
+using System.Web.Configuration;
 
 namespace LexusMortgages.Controllers
 {
-  
+
     public class ApplyOnlineController : Controller
     {
      
@@ -90,7 +93,7 @@ namespace LexusMortgages.Controllers
             ViewBag.mail = model.email;
             return View(model);
         }
-
+     
     }
 
 }

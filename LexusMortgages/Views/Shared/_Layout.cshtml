@@ -8,6 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
     <link rel="shortcut icon" href="@Url.Content("~/favicon.ico")" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -26,23 +27,58 @@
             
             </div>
             <div class="navbar-collapse collapse">
+                <!-- menu items -->
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Mortgage Process", "Index", "MortgageProcess")</li>
                     <li>@Html.ActionLink("Apply Online", "Index", "ApplyOnline")</li>
                     <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
+                    <li>
+                        <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+                        <div id="SkypeButton_Call_Lexus.mortgages_1">
+                            <script type="text/javascript">
+                                Skype.ui({
+                                    "name": "dropdown",
+                                    "element": "SkypeButton_Call_Lexus.mortgages_1",
+                                    "participants": ["Lexus.mortgages"],
+                                });
+                            </script>
+                        </div>
+                    </li>
                 </ul>
+                <!-- social media icons -->
+                
             </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
+       
         <hr />
         <footer>
 
             <div style="width: 100%">
-
+                <div class="container">
+                    <div class="row">
+                        <div class="text-center">
+                            <ul class="list-inline intro-social-buttons" style="padding:2%">
+                                <li>
+                                    <a href="https://www.facebook.com/Lexusmortgages" class="social"><i class="fa fa-fw fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social "><i class="fa fa-fw fa-google-plus"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social"><i class="fa fa-fw fa-skype"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UC1FAezybUppi8Ikq4bbEEfw" class="social"><i class="fa fa-fw fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="text-center">
                     LEXUS MORTGAGES IS A LEGALLY REGISTERED COMPANY WITH CIF NUMBER B54045471
                     YOUR HOME MAY BE REPOSSESSED IF YOU DO NOT KEEP UP REPAYMENTS ON YOUR MORTGAGE. CHANGES IN THE EXCHANGE RATE MAY INCREASE THE STERLING EQUIVALENT OF YOUR DEBT.
