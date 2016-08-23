@@ -29,7 +29,7 @@ namespace LexusMortgages
                       "~/Content/bootstrap.css",
                       "~/Content/bootstrap.min.css",
                       "~/Content/bootstrap-social.css",
-                      "~/Content/bootstrap-datepicker3.css",
+                      "~/Content/bootstrap-datepicker.css",
                       "~/Content/flag-icon.css",
                       "~/Content/flag-icon.min.css",
                       "~/Content/zocial.css",

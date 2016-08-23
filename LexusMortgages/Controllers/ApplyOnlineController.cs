@@ -47,25 +47,25 @@ namespace LexusMortgages.Controllers
         {
             if (ModelState.IsValid)
             {
-                var body = "<p>Mortgage Enquiry From: {0} {1} <br> D.O.B: {16}</p><p>Address:<br>{3}<br>{4}<br>{5}<br>{6}<br></p>"
-                   + "<p>Telephone: {7}<br>"
-                   + "Martial Status: {8}<br>"
-                   + "Occupation: {11}<br>"
-                   + "Employer: {18}<br>"
-                   + "Net Monthly Income: {12}<br>"
-                   + "Other Income: {13}<br>"
-                   + "Mortgage Type: {10}<br>"
-                   + "Mortgage Term: {9}<br>"
-                   + "Propery Type: {14}<br>"
-                   + "Purchase Price: {15}<br>"
-                   + "Amount Required: {17}<br></p>"
+                var body = "<p>Mortgage Enquiry From: {0} {1} <br> D.O.B: {13}</p><p>Address:<br>{3}<br></p>"
+                   + "<p>Telephone: {4}<br>"
+                   + "Martial Status: {5}<br>"
+                   + "Occupation: {8}<br>"
+                   + "Employer: {15}<br>"
+                   + "Net Monthly Income: {9}<br>"
+                   + "Other Income: {10}<br>"
+                   + "Mortgage Type: {7}<br>"
+                   + "Mortgage Term: {6}<br>"
+                   + "Propery Type: {11}<br>"
+                   + "Purchase Price: {12}<br>"
+                   + "Amount Required: {14}<br></p>"
                    + "This is an automated message.<br>";
 
                 var message = new MailMessage();
                 message.To.Add(new MailAddress("info@lexusmortgages.co.uk"));  // replace with valid value 
                 message.From = new MailAddress(model.email);  // replace with valid value
                 message.Subject = "Mortgage Enquiry From website";
-                message.Body = string.Format(body, model.fname, model.sname, model.email, model.street, model.town, model.country, model.postcode, model.telephone, model.martial, model.mortgageTerm, model.mortgageType, model.occupation, model.netMonthlyIncome, model.otherIncome, model.propertType, model.purchasePrice, model.dob, model.amountReq, model.employer);
+                message.Body = string.Format(body, model.fname, model.sname, model.email, model.address, model.telephone, model.martial, model.mortgageTerm, model.mortgageType, model.occupation, model.netMonthlyIncome, model.otherIncome, model.propertType, model.purchasePrice, model.dob, model.amountReq, model.employer);
                 message.IsBodyHtml = true;
                 using (var smtp = new SmtpClient())
                 {

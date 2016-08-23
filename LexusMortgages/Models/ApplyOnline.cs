@@ -13,14 +13,8 @@ namespace LexusMortgages.Models
         public string fname { get; set; }
         [Required, Display(Name = "Surname")]
         public string sname { get; set; }
-        [Required, Display(Name = "Street")]
-        public string street { get; set; }
-        [Required, Display(Name = "Town")]
-        public string town { get; set; }
-        [Required, Display(Name = "Postcode")]
-        public string postcode { get; set; }
-        [Required, Display(Name = "Country")]
-        public string country { get; set; }
+        [Required, Display(Name = "Address")]
+        public string address { get; set; }
         [Required, Display(Name = "Telephone")]
         public int telephone { get; set; }
         [Required, Display(Name = "Email")]

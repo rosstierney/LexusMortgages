@@ -35,14 +35,18 @@
                         @Scripts.Render("~/bundles/jqueryval")
                         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOmCPNlB72ldTsoLbD12eEoRIRlgZw360&libraries=places"></script>
                         <script type="text/javascript">
-                       
-                            function initialize() {
-
-                                var input = document.getElementById('town');
-                                var autocomplete = new google.maps.places.Autocomplete(input);
-                            }
-
-                            google.maps.event.addDomListener(window, 'load', initialize);
+                            google.maps.event.addDomListener(window, 'load', function () {
+                                
+                                var input = document.getElementById('address');
+                                var places = new google.maps.places.Autocomplete(input);
+                            });
+                           
+                        </script>
+                        <script type="text/javascript">
+                            $(function () { // will trigger when the document is ready
+                                $('.datepicker').datepicker(); //Initialise any date pickers
+                                $('#dob').datepicker('setDate', new Date(1975, 1, 1));
+                            });
                         </script>
 
                     </div>
@@ -63,34 +67,15 @@
                         @Html.ValidationMessageFor(m => m.sname)
                     </div>
                 </div>
+                
                 <div class="form-group">
-                    @Html.LabelFor(m => m.street, new { @class = "col-md-4 control-label" })
+                    @Html.LabelFor(m => m.address, new { @class = "col-md-4 control-label" })
                     <div class="col-md-8">
-                        @Html.TextBoxFor(m => m.street, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.street)
+                        @Html.TextBoxFor(m => m.address, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.address)
                     </div>
                 </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.town, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-                        @Html.TextBoxFor(m => m.town, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.town)
-                    </div>
-                </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.postcode, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-                        @Html.TextBoxFor(m => m.postcode, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.postcode)
-                    </div>
-                </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.country, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-                        @Html.TextBoxFor(m => m.country, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.country)
-                    </div>
-                </div>
+               
                 <div class="form-group">
                     @Html.LabelFor(m => m.telephone, new { @class = "col-md-4 control-label" })
                     <div class="col-md-8">
@@ -108,7 +93,7 @@
                 <div class="form-group">
                     @Html.LabelFor(m => m.dob, new { @class = "col-md-4 control-label" })
                     <div class="col-md-8">
-                        @Html.EditorFor(m => m.dob, new { @class = "datecontrol form-control" })
+                        @Html.TextBoxFor(m => m.dob, new { @class = "form-control datepicker" })
                         @Html.ValidationMessageFor(m => m.dob)
                     </div>
                 </div>
