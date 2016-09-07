@@ -1,4 +1,4 @@
-﻿body {
+body {
 
 }
 
@@ -77,7 +77,7 @@ h6 {
 }
 
 .mybutton span:after {
-  content: '»';
+  content: 'Â»';
   position: absolute;
   opacity: 0;
   top: 0;
@@ -176,6 +176,13 @@ h6 {
     color: #777;
 }
 
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.7);
+}
+
 footer .footer-above {
   background-color: #2C3E50;
 }
@@ -204,6 +211,9 @@ footer .footer-below {
   border: solid 2px white;
 }
 
+ .intro-lmlogo {
+    width:65%;
+}
 
 .intro-header {
     padding-top: 10%; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */

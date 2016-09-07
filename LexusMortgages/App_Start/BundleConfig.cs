@@ -21,6 +21,7 @@ namespace LexusMortgages
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
+                      "~/Scripts/calculatorJavaScript.js",
                       "~/Scripts/bootstrap-datepicker.js",
                       "~/Scripts/DatePickerReady.js",
                       "~/Scripts/respond.js"));
