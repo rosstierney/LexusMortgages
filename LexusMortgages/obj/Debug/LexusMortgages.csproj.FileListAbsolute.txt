@@ -64,7 +64,6 @@ C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\System.
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\System.Web.WebPages.Razor.xml
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\obj\Debug\LexusMortgages.dll
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\obj\Debug\LexusMortgages.pdb
-C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\obj\Debug\LexusMortgages.csprojResolveAssemblyReference.cache
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.Core.dll
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.dll
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.PlatformServices.dll
@@ -81,3 +80,4 @@ C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.Translate.v2.xml
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\log4net.xml
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Zlib.Portable.xml
+C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\obj\Debug\LexusMortgages.csprojResolveAssemblyReference.cache

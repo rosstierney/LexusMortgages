@@ -30,7 +30,8 @@ namespace LexusMortgages.Controllers
                 double term = model.years;
                 double cost = model.rate;
                 int months = model.years * 12;
-                ViewBag.answer = ((loan * (cost / 100)) * term)/months;
+
+                ViewBag.answer = ((((loan * cost) / 100)* term) + loan)/months;
                
             }
             return View(model);
@@ -38,10 +39,12 @@ namespace LexusMortgages.Controllers
         private void initDdl()
         {
             ViewBag.rateOptions = new List<Object>{
+            new { value = 2.0, text = "2.0%"},
             new { value = 2.5, text = "2.5%"},
             new { value = 3.0, text = "3.0%"},
             new { value = 3.5, text = "3.5%"},
-            new { value = 4.0, text = "4.0%"}};
+            new { value = 4.0, text = "4.0%"},
+            new { value = 4.5, text = "4.5%"}};
         }
 
     }

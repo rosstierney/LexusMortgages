@@ -221,6 +221,7 @@
     <Content Include="Content\Images\apple-icon.png" />
     <Content Include="Content\Images\bankia-logo.jpg" />
     <Content Include="Content\Images\bankinter-logo.jpg" />
+    <Content Include="Content\Images\beach.jpg" />
     <Content Include="Content\Images\browserconfig.xml" />
     <Content Include="Content\Images\caixabank-logo.png" />
     <Content Include="Content\Images\contact-us.png" />
@@ -228,6 +229,7 @@
     <Content Include="Content\Images\favicon-32x32.png" />
     <Content Include="Content\Images\favicon-96x96.png" />
     <Content Include="Content\Images\favicon.ico" />
+    <Content Include="Content\Images\house-clip.png" />
     <Content Include="Content\Images\house-logo.png" />
     <Content Include="Content\Images\intro_icon_btm.png" />
     <Content Include="Content\Images\intro_icon_top.jpg" />
@@ -240,12 +242,16 @@
     <Content Include="Content\Images\LexusMortgagesLogoTop.png" />
     <Content Include="Content\Images\LexusMortgageStampLogo.png" />
     <Content Include="Content\Images\logo-cajamar.png" />
+    <Content Include="Content\Images\main-house.jpg" />
     <Content Include="Content\Images\messenger-logo.png" />
     <Content Include="Content\Images\messenger.png" />
+    <Content Include="Content\Images\mini.jpg" />
+    <Content Include="Content\Images\money-house.jpg" />
     <Content Include="Content\Images\ms-icon-144x144.png" />
     <Content Include="Content\Images\ms-icon-150x150.png" />
     <Content Include="Content\Images\ms-icon-310x310.png" />
     <Content Include="Content\Images\ms-icon-70x70.png" />
+    <Content Include="Content\Images\pool.jpg" />
     <Content Include="Content\Images\popular-logo.png" />
     <Content Include="Content\Images\sabdell-logo.jpg" />
     <Content Include="Content\Images\santander-logo.png" />
@@ -547,6 +553,8 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
+    <None Include="Properties\PublishProfiles\lexusmortgages %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\lexusmortgages %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\LexusMortgages.pubxml" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\calculatorJavaScript.js" />
