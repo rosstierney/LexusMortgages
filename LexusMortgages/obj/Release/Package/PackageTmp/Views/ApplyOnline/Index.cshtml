@@ -19,8 +19,8 @@
     @using (Html.BeginForm())
         {
         @Html.AntiForgeryToken()
-        <div class="col-lg-6 form-horizontal">
-            <div class="box">
+        <div class="col-md-6 form-horizontal">
+            <div>
                 <p>Complete our online application form to take the first steps. We will then search our wide range of mortgages to find the one that best meets your own personal requirements. Then, we will contact you to let you know exactly what we can offer, in plain and simple English.</p>
 
                 <p> Please note, at Lexus Mortgages, we take the privacy of our clients very seriously. As such, none of your personal details will be disclosed to a third party other than the banking institutions used in our research process.</p>
@@ -138,7 +138,8 @@
                 </div>
             </div>
         </div>
-        <div class="container col-lg-6 form-horizontal">
+        <div class="container col-md-6 form-horizontal">
+            
             <div class="div-rounded-blue-contact">
                 <div class="form-group">
                     <h3 class="myshadow">Mortgage Information</h3>
@@ -187,13 +188,15 @@
                 </div>*@
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" class="btn mybutton pull-right" value="Apply Now" />
+                        <input type="submit" class="btn mybutton grow" style="width:100%" value="Apply Now" />
                     </div>
                 </div>
             </div>
+          
         </div>
-        
-        }
+      
+
+    }
     </div>
 </body>
 </html>

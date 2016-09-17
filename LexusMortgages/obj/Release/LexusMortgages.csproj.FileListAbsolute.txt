@@ -65,12 +65,6 @@ C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\roslyn\
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\roslyn\System.IO.FileSystem.Primitives.dll
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\roslyn\vbc.exe.config
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\roslyn\vbc.rsp
-C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.Core.dll
-C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.dll
-C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.PlatformServices.dll
-C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.Translate.v2.dll
-C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\log4net.dll
-C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Zlib.Portable.dll
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.pdb
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.xml
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.Core.pdb

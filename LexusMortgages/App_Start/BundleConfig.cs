@@ -9,6 +9,7 @@ namespace LexusMortgages
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+                        "~/Scripts/jquery.min.js",
                         "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
@@ -21,7 +22,10 @@ namespace LexusMortgages
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
-                      "~/Scripts/calculatorJavaScript.js",
+                      "~/Scripts/bootstrap.min.js",
+                      
+                      "~/Scripts/owl.carousel.js",
+                      "~/Scripts/owl.carousel.min.js",
                       "~/Scripts/bootstrap-datepicker.js",
                       "~/Scripts/DatePickerReady.js",
                       "~/Scripts/respond.js"));
@@ -29,6 +33,9 @@ namespace LexusMortgages
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/bootstrap.min.css",
+                      "~/Content/OwlCarousel/owl.carousel.css",
+                      "~/Content/OwlCarousel/owl.theme.css",
+                      "~/Content/OwlCarousel/owl.transitions.css",
                       "~/Content/bootstrap-social.css",
                       "~/Content/bootstrap-datepicker.css",
                       "~/Content/flag-icon.css",

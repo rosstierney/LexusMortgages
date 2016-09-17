@@ -185,6 +185,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\animation.css" />
     <Content Include="Content\bootstrap-datepicker.css" />
     <Content Include="Content\bootstrap-datepicker.min.css" />
     <Content Include="Content\bootstrap-datepicker.standalone.css" />
@@ -202,6 +203,7 @@
     <Content Include="Content\flag-icon.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Images\20euro.png" />
     <Content Include="Content\Images\android-icon-144x144.png" />
     <Content Include="Content\Images\android-icon-192x192.png" />
     <Content Include="Content\Images\android-icon-36x36.png" />
@@ -224,11 +226,13 @@
     <Content Include="Content\Images\beach.jpg" />
     <Content Include="Content\Images\browserconfig.xml" />
     <Content Include="Content\Images\caixabank-logo.png" />
+    <Content Include="Content\Images\cajamar-logo.jpg" />
     <Content Include="Content\Images\contact-us.png" />
     <Content Include="Content\Images\favicon-16x16.png" />
     <Content Include="Content\Images\favicon-32x32.png" />
     <Content Include="Content\Images\favicon-96x96.png" />
     <Content Include="Content\Images\favicon.ico" />
+    <Content Include="Content\Images\global-currency-logo.jpg" />
     <Content Include="Content\Images\house-clip.png" />
     <Content Include="Content\Images\house-logo.png" />
     <Content Include="Content\Images\intro_icon_btm.png" />
@@ -241,12 +245,16 @@
     <Content Include="Content\Images\LexusMortgagesContactUs.jpg" />
     <Content Include="Content\Images\LexusMortgagesLogoTop.png" />
     <Content Include="Content\Images\LexusMortgageStampLogo.png" />
+    <Content Include="Content\Images\LexusMortgageStampLogoOpaque.png" />
     <Content Include="Content\Images\logo-cajamar.png" />
+    <Content Include="Content\Images\logo_bk.gif" />
     <Content Include="Content\Images\main-house.jpg" />
+    <Content Include="Content\Images\main-house2.jpg" />
     <Content Include="Content\Images\messenger-logo.png" />
     <Content Include="Content\Images\messenger.png" />
     <Content Include="Content\Images\mini.jpg" />
     <Content Include="Content\Images\money-house.jpg" />
+    <Content Include="Content\Images\mortgage-key.jpg" />
     <Content Include="Content\Images\ms-icon-144x144.png" />
     <Content Include="Content\Images\ms-icon-150x150.png" />
     <Content Include="Content\Images\ms-icon-310x310.png" />
@@ -260,6 +268,15 @@
     <Content Include="Content\Images\villa-img.jpg" />
     <Content Include="Content\Images\villa-img.png" />
     <Content Include="Content\Images\whatsapp.png" />
+    <Content Include="Content\owl.carousel.css" />
+    <Content Include="Content\owl-theme.css" />
+    <Content Include="Content\owl.theme.css" />
+    <Content Include="Content\owl.transitions.css" />
+    <Content Include="Content\OwlCarousel\AjaxLoader.gif" />
+    <Content Include="Content\OwlCarousel\grabbing.png" />
+    <Content Include="Content\OwlCarousel\owl.carousel.css" />
+    <Content Include="Content\OwlCarousel\owl.theme.css" />
+    <Content Include="Content\OwlCarousel\owl.transitions.css" />
     <Content Include="Content\Style.css" />
     <Content Include="Content\zocial.css" />
     <Content Include="favicon.ico" />
@@ -557,7 +574,7 @@
     <None Include="Properties\PublishProfiles\lexusmortgages %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\LexusMortgages.pubxml" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\calculatorJavaScript.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -628,6 +645,8 @@
     <Content Include="Scripts\locales\bootstrap-datepicker.vi.min.js" />
     <Content Include="Scripts\locales\bootstrap-datepicker.zh-CN.min.js" />
     <Content Include="Scripts\locales\bootstrap-datepicker.zh-TW.min.js" />
+    <Content Include="Scripts\owl.carousel.js" />
+    <Content Include="Scripts\owl.carousel.min.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />

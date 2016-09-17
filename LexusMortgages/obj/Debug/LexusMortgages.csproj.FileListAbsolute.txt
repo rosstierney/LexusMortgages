@@ -64,12 +64,6 @@ C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\System.
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\System.Web.WebPages.Razor.xml
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\obj\Debug\LexusMortgages.dll
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\obj\Debug\LexusMortgages.pdb
-C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.Core.dll
-C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.dll
-C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.PlatformServices.dll
-C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.Translate.v2.dll
-C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\log4net.dll
-C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Zlib.Portable.dll
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.pdb
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.xml
 C:\Users\Ross Tierney\Documents\GitHub\LexusMortgages\LexusMortgages\bin\Google.Apis.Core.pdb
