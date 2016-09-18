@@ -1,12 +1,13 @@
 body {
-
 }
-
+footer {
+    color:#fff;
+}
 
 body,
 h1,
 h2{
-    font-family: Calibri,"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Lato","Helvetica Neue", Helvetica, 'Lobster', cursive, Arial, sans-serif;
     font-weight: 700;
 }
 h3 {
@@ -24,16 +25,15 @@ h6 {
     color:#fff;
 }
 .mypadding {
-    padding: 5% 5%;
+    padding: 8%;
 }
 
 .box {
-    margin: 3%;
-    background: rgba(229,172,52,0.7); 
-    border-radius:15px 30px 15px 30px;
+    margin: 2%;
+    background: rgba(229,172,52,0.7);
+    border-radius:15px 15px;
     box-shadow: 10px 10px 5px #888888;
-    
-    
+    padding-top: 1%;
 }
 
 element.style {
@@ -51,7 +51,6 @@ container-fluid {
     font-weight: 400;
     padding:5%;
     /* opacity: 1 !important; */
-    filter: alpha(opacity=100) !important; /* For IE8 and earlier */
     color: #f8f8f8;
 }
 
@@ -248,7 +247,7 @@ footer .footer-below {
     position: relative;
     padding-top: 10%;
     padding-bottom: 10%;
-    height: 50%;
+    /* height: 50%; */
 }
 
 .intro-message > h1 {
@@ -268,6 +267,18 @@ footer .footer-below {
 }
 
 @media(max-width:767px) {
+      .box {
+        margin-right: 8%;
+        background: rgba(229,172,52,0.7);
+        border-radius:15px 15px;
+        box-shadow: 10px 10px 5px #888888;
+    }
+      container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right:0;
+    margin-left:0;
+}
 
     .myh3 {
         font-weight: 700;
@@ -359,8 +370,6 @@ footer .footer-below {
     .intro-lmlogo {
         width:65%;
      }
-
-  
 }
 
 footer {
@@ -373,7 +382,13 @@ p.copyright {
 }
 
 @media screen and (max-width:640px) {
-    
+
+    .box {
+        margin: 10%;
+        background: rgba(229,172,52,0.7);
+        border-radius:15px 15px;
+        box-shadow: 10px 10px 5px #888888;
+    }
      .myh3 {
         font-weight: 700;
         font-size: 24px;
@@ -386,8 +401,7 @@ p.copyright {
     }
 
     .lead {
-        font-size:20px;
-        padding:4% 0%;
+        font-size:18px;
     }
 
     .mydiv {
@@ -490,17 +504,23 @@ p.copyright {
 
 #owl-demo .item{
   margin: 3px;
+  white-space: nowrap;
+  max-height:initial;
+  vertical-align: middle;
 }
 #owl-demo .item img{
-  display: block;
-  width: 100%;
-  height: auto;
+  vertical-align: middle;
 }
 
 #welcome {
     background-image: url(../Content/Images/LexusMortgageStampLogoOpaque.png);
     background-repeat: no-repeat;
     background-size: contain;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 /* navbar */
@@ -571,4 +591,18 @@ p.copyright {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #333;
     }
+}
+
+#fullname,#email,#city,#enquiry,#telephone,#btnContact {
+    width:100%;
+    padding:2%;
+    margin:2%;
+}
+#contact {
+    background: url(../Content/Images/beach.jpg) no-repeat center center;
+    margin:0px;
+}
+
+.container {
+    margin:0px;
 }

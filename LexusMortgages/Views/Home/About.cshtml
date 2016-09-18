@@ -1,36 +1,40 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title Us</h2>
-<hr />
+
 <div class="container">
-    <div class="col-md-6 style=" width:100% !important"">
-        <p>Lexus Mortgages are fully independent Spanish mortgage advisors. Founded in 2005 in the Costa Blanca, we now have offices in Spain, UK and Ireland. We specialize in researching the Spanish mortgage market to find the most competitive & suitable mortgages for our clients.</p>
+    <h2>@ViewBag.Title Us</h2>
+    <hr />
+    <div class="col-md-6">
+        <div style="padding-bottom:5%;">
+            <p>Lexus Mortgages are fully independent Spanish mortgage advisors. Founded in 2005 in the Costa Blanca, we now have offices in Spain, UK and Ireland. We specialize in researching the Spanish mortgage market to find the most competitive & suitable mortgages for our clients.</p>
 
-        <p>Our team members are from the UK, so there are no language barriers and nothing is lost in translation!</p>
+            <p>Our team members are from the UK, so there are no language barriers and nothing is lost in translation!</p>
 
-        <p>By working with banks and building societies in Spain and the UK on a daily basis, we know exactly where to direct our client's applications. This is vital in the highly varied mortgage market in Spain, saving time and effort for clients who are often on a timescale to complete.</p>
+            <p>By working with banks and building societies in Spain and the UK on a daily basis, we know exactly where to direct our client's applications. This is vital in the highly varied mortgage market in Spain, saving time and effort for clients who are often on a timescale to complete.</p>
 
-        <p>Spanish mortgages are unregulated, even UK FCA authorized companies are not regulated for overseas mortgages. Our team has been specially chosen for their qualifications & backgrounds in the UK financial services & banking industry, therefore ensuring that you receive the best advice. We are also fully experienced in the Spanish property market.</p>
-
-        <a href="@Url.Action("Index", "MortgageProcess")">
-            <img src="@Url.Content("~/Content/Images/LexusMortgagesCalculator.jpg")" style="width:100%" alt="mortgageCalculatorLogo" />
-        </a>
+            <p>Spanish mortgages are unregulated, even UK FCA authorized companies are not regulated for overseas mortgages. Our team has been specially chosen for their qualifications & backgrounds in the UK financial services & banking industry, therefore ensuring that you receive the best advice. We are also fully experienced in the Spanish property market.</p>
+        </div>
+        <div>
+            <a href="@Url.Action("Index", "MortgageProcess")">
+                <img class="grow" src="@Url.Content("~/Content/Images/LexusMortgagesCalculator.jpg")" style="width:100%" alt="mortgageCalculatorLogo" />
+            </a>
+        </div>
 
     </div>
     <div class="col-md-6">
 
-        <div class="row">
-            <div class="col-md-3 text-center" style="width:100% !important">
+            <div class="col-md-3 text-center" style="padding-bottom:5%;width:100% !important">
                 <a href="@Url.Action("Index", "ApplyOnline")">
-                    <img src="@Url.Content("~/Content/Images/LexusMortgageApplyBanner.jpg")" style="width:45%;margin-right:5%" alt="applyLogo" />
+                    <img class="grow" src="@Url.Content("~/Content/Images/LexusMortgageApplyBanner.jpg")" style="width:45%;margin-right:5%" alt="applyLogo" />
                 </a>
 
                 <a href="@Url.Action("Index", "Contact")">
-                    <img src="@Url.Content("~/Content/Images/LexusMortgagesContactUs.jpg")" style="width:45%" alt="contactUsLogo" />
+                    <img class="grow" src="@Url.Content("~/Content/Images/LexusMortgagesContactUs.jpg")" style="width:45%" alt="contactUsLogo" />
                 </a>
             </div>
 
+        <div class="mypadding">
             <h2>Why use Lexus Mortgages</h2>
 
             <p>

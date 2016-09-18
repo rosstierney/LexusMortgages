@@ -9,7 +9,7 @@ namespace LexusMortgages.Models
     public class Contact
     {
         [Key]
-        [Required, Display(Prompt = "Full Name",Name = "Full Name")]
+        [Required, Display(Name = "Full Name")]
         public string fullname { get; set; }
         [Required, Display(Name = "Email")]
         public string email { get; set; }
