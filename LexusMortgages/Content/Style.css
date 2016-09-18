@@ -504,12 +504,11 @@ p.copyright {
 
 #owl-demo .item{
   margin: 3px;
-  white-space: nowrap;
-  max-height:initial;
-  vertical-align: middle;
 }
 #owl-demo .item img{
-  vertical-align: middle;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 #welcome {
