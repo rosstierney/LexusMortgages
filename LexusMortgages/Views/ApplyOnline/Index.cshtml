@@ -9,26 +9,29 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div id="applyOnline" class="container-fluid">
         @model LexusMortgages.Models.ApplyOnline
         @{
             ViewBag.Title = "Apply Online";
         }
-        <h2>@ViewBag.Title</h2>
-        <hr />
+        <div class="col-md-12">
+            <h2>@ViewBag.Title</h2>
+            <hr />
+        </div>
     @using (Html.BeginForm())
         {
         @Html.AntiForgeryToken()
-        <div class="col-md-6 form-horizontal">
-            <div>
-                <p>Complete our online application form to take the first steps. We will then search our wide range of mortgages to find the one that best meets your own personal requirements. Then, we will contact you to let you know exactly what we can offer, in plain and simple English.</p>
+        <div class="col-md-4">
+            <p>Complete our online application form to take the first steps. We will then search our wide range of mortgages to find the one that best meets your own personal requirements. Then, we will contact you to let you know exactly what we can offer, in plain and simple English.</p>
 
-                <p> Please note, at Lexus Mortgages, we take the privacy of our clients very seriously. As such, none of your personal details will be disclosed to a third party other than the banking institutions used in our research process.</p>
-            </div>
-            <div class="div-rounded-blue-contact">
-                <div class="form-group">
+            <p> Please note, at Lexus Mortgages, we take the privacy of our clients very seriously. As such, none of your personal details will be disclosed to a third party other than the banking institutions used in our research process.</p>
+        </div>
+        <div class="col-md-4">
+           
+            <div class="col-md-12 div-rounded-blue-contact" style="padding-bottom:2%;margin-bottom:5%">
+              
                     <h3 class="myshadow">Application</h3>
-                    <hr class="intro-divider"/>
+                    <hr/>
 
                     @section Scripts {
                     <div>
@@ -51,148 +54,112 @@
 
                     </div>
                     }
-
-                    @Html.LabelFor(m => m.fname, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-                        @Html.TextBoxFor(m => m.fname, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.fname)
-                    </div>
+                <div class="col-md-12">
+                    @Html.TextBoxFor(m => m.fname, new { placeholder = Html.DisplayNameFor(n => n.fname) })
+                    <br />
+                     @Html.ValidationMessageFor(m => m.fname, "", new { @class = "text-danger" })
                 </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.sname, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-                        @Html.TextBoxFor(m => m.sname, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.sname)
-                    </div>
+                <div class="col-md-12">
+                    @Html.TextBoxFor(m => m.sname, new { placeholder = Html.DisplayNameFor(n => n.sname) })
+                    <br />
+                     @Html.ValidationMessageFor(m => m.sname, "", new { @class = "text-danger" })
                 </div>
-                
-                <div class="form-group">
-                    @Html.LabelFor(m => m.address, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-                        @Html.TextBoxFor(m => m.address, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.address)
-                    </div>
+                <div class="col-md-12">
+                    @Html.TextBoxFor(m => m.address, new { placeholder = Html.DisplayNameFor(n => n.address) })
+                    <br />
+                    @Html.ValidationMessageFor(m => m.address, "", new { @class = "text-danger" })
                 </div>
-               
-                <div class="form-group">
-                    @Html.LabelFor(m => m.telephone, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-                        @Html.TextBoxFor(m => m.telephone, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.telephone)
-                    </div>
+                <div class="col-md-12">
+                    @Html.TextBoxFor(m => m.telephone, new { placeholder = Html.DisplayNameFor(n => n.telephone) })
+                    <br />
+                     @Html.ValidationMessageFor(m => m.telephone, "", new { @class = "text-danger" })
                 </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.email, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-                        @Html.TextBoxFor(m => m.email, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.email)
-                    </div>
+                <div class="col-md-12">
+                    @Html.TextBoxFor(m => m.email, new { placeholder = Html.DisplayNameFor(n => n.email) })
+                    <br />
+                    @Html.ValidationMessageFor(m => m.email, "", new { @class = "text-danger" })
                 </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.dob, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-                        @Html.TextBoxFor(m => m.dob, new { @class = "form-control datepicker" })
-                        @Html.ValidationMessageFor(m => m.dob)
-                    </div>
+                <div class="col-md-12">
+                    @Html.TextBoxFor(m => m.dob, new {placeholder = Html.DisplayNameFor(n => n.dob), @class = "datepicker"})    
+                    <br />
+                    @Html.ValidationMessageFor(m => m.dob, "", new { @class = "text-danger" })
                 </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.martial, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-
-                        <div>
-                            @Html.DropDownListFor(m => m.martial, new SelectList(
-                            (List<Object>)ViewBag.MartialOptions,
-                                "value", "text", 2), new { @class = "form-control" })
-
-                            @Html.ValidationMessageFor(m => m.martial)
-                        </div>
-                    </div>
+                <div class="col-md-12">
+                        @Html.DropDownListFor(m => m.martial, new SelectList(
+                        (List<Object>)ViewBag.MartialOptions,
+                            "value", "text", 2), "---Martial---")
+                    <br />
+                        @Html.ValidationMessageFor(m => m.martial, "", new { @class = "text-danger" })
                 </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.occupation, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-                        @Html.TextBoxFor(m => m.occupation, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.occupation)
-                    </div>
+                <div class="col-md-12">
+                    @Html.TextBoxFor(m => m.occupation, new { placeholder = Html.DisplayNameFor(n => n.occupation) })
+                    <br />
+                    @Html.ValidationMessageFor(m => m.occupation, "", new { @class = "text-danger" })
                 </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.employer, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-                        @Html.TextBoxFor(m => m.employer, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.employer)
-                    </div>
+                <div class="col-md-12">
+                    @Html.TextBoxFor(m => m.employer, new { placeholder = Html.DisplayNameFor(n => n.employer) })
+                    <br />
+                     @Html.ValidationMessageFor(m => m.employer, "", new { @class = "text-danger" })
                 </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.netMonthlyIncome, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-                        @Html.TextBoxFor(m => m.netMonthlyIncome, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.netMonthlyIncome)
-                    </div>
+                <div class="col-md-12">
+                    @Html.TextBoxFor(m => m.netMonthlyIncome, new { placeholder = Html.DisplayNameFor(n => n.netMonthlyIncome) })
+                    <br />
+                    @Html.ValidationMessageFor(m => m.netMonthlyIncome, "", new { @class = "text-danger" })
                 </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.otherIncome, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-                        @Html.TextBoxFor(m => m.otherIncome, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.otherIncome)
-                    </div>
+                <div class="col-md-12">
+                    @Html.TextBoxFor(m => m.otherIncome, new { placeholder = Html.DisplayNameFor(n => n.otherIncome) })
+                    <br />
+                     @Html.ValidationMessageFor(m => m.otherIncome, "", new { @class = "text-danger" })
                 </div>
             </div>
         </div>
-        <div class="container col-md-6 form-horizontal">
-            
-            <div class="div-rounded-blue-contact">
-                <div class="form-group">
+
+        <div class="col-md-4">
+            <div class="col-md-12 div-rounded-blue-contact" style="margin-bottom:5%">
+                <div class="col-md-12">
                     <h3 class="myshadow">Mortgage Information</h3>
-                    <hr class="intro-divider"/>
-                    @Html.LabelFor(m => m.mortgageType, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
+                    <hr />
+                </div>
+                    <div class="col-md-12">
                         @Html.DropDownListFor(model => model.mortgageType, new SelectList(
                             (List<Object>)ViewBag.MortgageTyOptions,
-                                "value", "text", 2), new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.mortgageType)
+                                "value", "text", 2), "---Mortgage Type ---")
+                        @Html.ValidationMessageFor(m => m.mortgageType, "", new { @class = "text-danger" })
                     </div>
+                <div class="col-md-12">
+                    @Html.TextBoxFor(m => m.purchasePrice, new { placeholder = Html.DisplayNameFor(n => n.purchasePrice) })
+                    <br />
+                     @Html.ValidationMessageFor(m => m.purchasePrice, "", new { @class = "text-danger" })
                 </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.purchasePrice, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-                        @Html.TextBoxFor(m => m.purchasePrice, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.purchasePrice)
-                    </div>
+              
+                <div class="col-md-12">
+                    @Html.DropDownListFor(model => model.mortgageTerm, new SelectList(
+                    (List<Object>)ViewBag.MortgageTmOptions,
+                        "value", "text", 2), "---Mortgage Term ---")
+                    <br /> 
+                    @Html.ValidationMessageFor(m => m.mortgageTerm, "", new { @class = "text-danger" })
                 </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.mortgageTerm, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-                        @Html.DropDownListFor(model => model.mortgageTerm, new SelectList(
-                        (List<Object>)ViewBag.MortgageTmOptions,
-                            "value", "text", 2), new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.mortgageTerm)
-                    </div>
-                </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.propertType, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-                        @Html.DropDownListFor(model => model.propertType, new SelectList(
+
+                    <div class="col-md-12">
+                        @Html.DropDownListFor(model => model.propertyType, new SelectList(
                         (List<Object>)ViewBag.PropertyOptions,
-                            "value", "text", 2), new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.propertType)
+                            "value", "text", 2), "---Property Type---")
+                        <br />
+                        @Html.ValidationMessageFor(m => m.propertyType, "", new { @class = "text-danger" })
                     </div>
+
+                <div class="col-md-12">
+                    @Html.TextBoxFor(m => m.amountReq, new { placeholder = Html.DisplayNameFor(n => n.amountReq) })
+                    <br />
+                     @Html.ValidationMessageFor(m => m.amountReq, "", new { @class = "text-danger" })
                 </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.amountReq, new { @class = "col-md-4 control-label" })
-                    <div class="col-md-8">
-                        @Html.TextBoxFor(m => m.amountReq, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.amountReq)
-                    </div>
-                </div>
+                
                 @*<div class="g-recaptcha form-group" style="padding-left:20%;width:20%" data-sitekey="6LdzQygTAAAAADPFa5eq9hq_JXgXRyMPfxDxeQj4">
                 </div>*@
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" class="btn mybutton grow" style="width:100%" value="Apply Now" />
+                    <div class="col-md-12">
+                        <input id="btnapply" type="submit" class="btn mybutton grow" value="Apply Now" />
                     </div>
-                </div>
             </div>
-          
         </div>
       
 

@@ -23,7 +23,6 @@ namespace LexusMortgages
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/bootstrap.min.js",
-                      
                       "~/Scripts/owl.carousel.js",
                       "~/Scripts/owl.carousel.min.js",
                       "~/Scripts/bootstrap-datepicker.js",
@@ -33,11 +32,11 @@ namespace LexusMortgages
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/bootstrap.min.css",
+                      "~/Content/bootstrap-datepicker.css",
                       "~/Content/OwlCarousel/owl.carousel.css",
                       "~/Content/OwlCarousel/owl.theme.css",
                       "~/Content/OwlCarousel/owl.transitions.css",
                       "~/Content/bootstrap-social.css",
-                      "~/Content/bootstrap-datepicker.css",
                       "~/Content/flag-icon.css",
                       "~/Content/flag-icon.min.css",
                       "~/Content/zocial.css",

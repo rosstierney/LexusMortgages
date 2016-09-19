@@ -36,7 +36,7 @@ namespace LexusMortgages.Models
         [Display(Name = "Mortgage Type")]
         public string mortgageType { get; set; }
         [Display(Name = "Property Type")]
-        public string propertType { get; set; }
+        public string propertyType { get; set; }
         [Display(Name = "Mortgage Term")]
         public string mortgageTerm { get; set; }
         [Required, Display(Name = "Purchase Price")]

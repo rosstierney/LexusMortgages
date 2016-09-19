@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="~/Content/OwlCarousel/owl.theme.css">
     <link rel="stylesheet" href="~/Content/OwlCarousel/owl.transitions.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 </head>
 <body>
     <div class="navbar navbar-default navbar-fixed-top">
@@ -29,14 +30,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-             <!--   @Html.ActionLink("Lexus Mortgages", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" }) -->
-                <div>
+                </button> 
                     <a class="navbar-left left" href='@Url.Action("Index", "Home")'>
-                        <img style="max-width:220px; margin-top: 9px;"
+                        <img style="max-width:200px; margin-top: 9px;"
                              src="@Url.Content("~/Content/Images/LexusMortgageMainBanner.png")">
                     </a>
-                </div>
             </div>
             <div class="navbar-collapse collapse">
                 <!-- menu items -->
@@ -78,62 +76,59 @@
     <div class="container-fluid">
         @RenderBody()
        
-        <hr />
         <footer style="background-color:#2D6895">
 
-                <div class="container-fluid">
-                    <div class="row">
-                   
-                        <div class="text-center">
-                            
-                            <ul class="list-inline intro-social-buttons" style="padding:2%">
-                                <li>
-                                    <a href="https://www.facebook.com/Lexusmortgages" class="social"><i class="fa fa-fw fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social "><i class="fa fa-fw fa-google-plus"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social"><i class="fa fa-fw fa-skype"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/channel/UC1FAezybUppi8Ikq4bbEEfw" class="social"><i class="fa fa-fw fa-youtube"></i></a>
-                                </li>
-                            </ul>
-                            <div>
-                                <a class="text-center" href='@Url.Action("Index", "Home")'>
-                                    <img style="max-width:220px; padding: 1%;"
-                                         src="@Url.Content("~/Content/Images/LexusMortgageMainBanner.png")">
-                                </a>
-                            </div> 
+
+                    <div class="col-md-12 text-center" style="padding-top:1%">
+
+                        <ul class="list-inline intro-social-buttons" style="padding:2%">
+                            <li>
+                                <a href="https://www.facebook.com/Lexusmortgages" class="social"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social "><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social"><i class="fa fa-fw fa-skype"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC1FAezybUppi8Ikq4bbEEfw" class="social"><i class="fa fa-fw fa-youtube"></i></a>
+                            </li>
+                        </ul>
+
+                        <div class="col-md-12">
+                            <a class="text-center" href='@Url.Action("Index", "Home")'>
+                                <img style="max-width:220px; padding: 1%;"
+                                     src="@Url.Content("~/Content/Images/LexusMortgageMainBanner.png")">
+                            </a>
+                        </div>
+                        <div class="col-md-12" style="color:#fff">
+                            <p><span class="glyphicon glyphicon-phone"></span> +34 602 584 781 <span class="flag-icon flag-icon-es"></span></p>
+                            <p><span class="glyphicon glyphicon-phone"></span> +353 (0)87 9833731 <span class="flag-icon flag-icon-ie"></span></p>
+                            <address>
+                                <span class="glyphicon glyphicon-envelope"></span>
+                                <a href="mailto:info@lexusmortgages.co.uk">info@lexusmortgages.co.uk</a><br />
+                            </address>
                         </div>
                     </div>
-                   
-                </div>
-                <div class="text-center" style="color:#fff">
-                    LEXUS MORTGAGES IS A LEGALLY REGISTERED COMPANY WITH CIF NUMBER B54045471
-                    YOUR HOME MAY BE REPOSSESSED IF YOU DO NOT KEEP UP REPAYMENTS ON YOUR MORTGAGE. CHANGES IN THE EXCHANGE RATE MAY INCREASE THE STERLING EQUIVALENT OF YOUR DEBT.
+
+
+                    <div class="text-center" style="color:#fff">
+                        LEXUS MORTGAGES IS A LEGALLY REGISTERED COMPANY WITH CIF NUMBER B54045471
+                        YOUR HOME MAY BE REPOSSESSED IF YOU DO NOT KEEP UP REPAYMENTS ON YOUR MORTGAGE. CHANGES IN THE EXCHANGE RATE MAY INCREASE THE STERLING EQUIVALENT OF YOUR DEBT.
+                        <br /><br />
+                        Mortgages in Spain - Spanish Mortgages - Mortgage Brokers Spain - Mortgage Advisors Spain - Remortgages and Finance
+                    </div>
+
                     <br /><br />
-                    Mortgages in Spain - Spanish Mortgages - Mortgage Brokers Spain - Mortgage Advisors Spain - Remortgages and Finance
-                </div>
-           
-            <br /><br />
-            <p class="copyright text-muted small">Copyright &copy; CodeTech. All Rights Reserved &copy; @DateTime.Now.Year</p>
-        
+                    <p class="copyright text-muted small">Copyright &copy; CodeTech. All Rights Reserved &copy; @DateTime.Now.Year</p>
+             
         </footer>
     </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/bootstrap")
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-
-    <script src="~/Scripts/jquery.min.js"></script>
-    <script src="~/Scripts/owl.carousel.min.js"></script>
-    <script src="~/Scripts/owl.carousel.js"></script>
+ 
     @RenderSection("scripts", required: false)
 </body>
 </html>

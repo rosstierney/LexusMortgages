@@ -68,7 +68,7 @@ namespace LexusMortgages.Controllers
                 message.To.Add(new MailAddress("info@lexusmortgages.co.uk"));  // replace with valid value 
                 message.From = new MailAddress(model.email);  // replace with valid value
                 message.Subject = "Mortgage Enquiry From website";
-                message.Body = string.Format(body, model.fname, model.sname, model.email, model.address, model.telephone, model.martial, model.mortgageTerm, model.mortgageType, model.occupation, model.netMonthlyIncome, model.otherIncome, model.propertType, model.purchasePrice, model.dob, model.amountReq, model.employer);
+                message.Body = string.Format(body, model.fname, model.sname, model.email, model.address, model.telephone, model.martial, model.mortgageTerm, model.mortgageType, model.occupation, model.netMonthlyIncome, model.otherIncome, model.propertyType, model.purchasePrice, model.dob, model.amountReq, model.employer);
                 message.IsBodyHtml = true;
                 using (var smtp = new SmtpClient())
                 {

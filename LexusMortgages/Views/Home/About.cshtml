@@ -2,62 +2,70 @@
     ViewBag.Title = "About";
 }
 
-<div class="container">
-    <h2>@ViewBag.Title Us</h2>
-    <hr />
+<div id="aboutus" class="container-fluid">
+   
     <div class="col-md-6">
-        <div style="padding-bottom:5%;">
-            <p>Lexus Mortgages are fully independent Spanish mortgage advisors. Founded in 2005 in the Costa Blanca, we now have offices in Spain, UK and Ireland. We specialize in researching the Spanish mortgage market to find the most competitive & suitable mortgages for our clients.</p>
+        <div class="div-rounded-blue-contact" style="margin-top:5%">
+            <div class="col-md-12">
+                <h2 class="myshadow pull-left" style="color:#fff">@ViewBag.Title Us</h2>
 
-            <p>Our team members are from the UK, so there are no language barriers and nothing is lost in translation!</p>
+            </div>
+            <div class="col-md-12">
+                <hr />
+            </div>
+            <div style="padding-bottom:5%;color:#fff">
+                <p>Lexus Mortgages are fully independent Spanish mortgage advisors. Founded in 2005 in the Costa Blanca, we now have offices in Spain, UK and Ireland. We specialize in researching the Spanish mortgage market to find the most competitive & suitable mortgages for our clients.</p>
 
-            <p>By working with banks and building societies in Spain and the UK on a daily basis, we know exactly where to direct our client's applications. This is vital in the highly varied mortgage market in Spain, saving time and effort for clients who are often on a timescale to complete.</p>
+                <p>Our team members are from the UK, so there are no language barriers and nothing is lost in translation!</p>
 
-            <p>Spanish mortgages are unregulated, even UK FCA authorized companies are not regulated for overseas mortgages. Our team has been specially chosen for their qualifications & backgrounds in the UK financial services & banking industry, therefore ensuring that you receive the best advice. We are also fully experienced in the Spanish property market.</p>
+                <p>By working with banks and building societies in Spain and the UK on a daily basis, we know exactly where to direct our client's applications. This is vital in the highly varied mortgage market in Spain, saving time and effort for clients who are often on a timescale to complete.</p>
+
+                <p>Spanish mortgages are unregulated, even UK FCA authorized companies are not regulated for overseas mortgages. Our team has been specially chosen for their qualifications & backgrounds in the UK financial services & banking industry, therefore ensuring that you receive the best advice. We are also fully experienced in the Spanish property market.</p>
+            </div>
         </div>
-        <div>
+        <div class="col-md-12" style="padding-top:5%">
             <a href="@Url.Action("Index", "MortgageProcess")">
-                <img class="grow" src="@Url.Content("~/Content/Images/LexusMortgagesCalculator.jpg")" style="width:100%" alt="mortgageCalculatorLogo" />
+                <img class="grow img-rounded" src="@Url.Content("~/Content/Images/LexusMortgagesCalculator.png")" style="width:100%" alt="mortgageCalculatorLogo" />
             </a>
         </div>
-
     </div>
-    <div class="col-md-6">
+       
+        <div class="col-md-6">
 
-            <div class="col-md-3 text-center" style="padding-bottom:5%;width:100% !important">
+            <div class="col-md-3 text-center" style="margin-top:7%;padding-bottom:5%;width:100% !important">
                 <a href="@Url.Action("Index", "ApplyOnline")">
-                    <img class="grow" src="@Url.Content("~/Content/Images/LexusMortgageApplyBanner.jpg")" style="width:45%;margin-right:5%" alt="applyLogo" />
+                    <img class="grow img-rounded" src="@Url.Content("~/Content/Images/LexusMortgageApplyBanner.jpg")" style="width:45%;margin-right:5%" alt="applyLogo" />
                 </a>
 
                 <a href="@Url.Action("Index", "Contact")">
-                    <img class="grow" src="@Url.Content("~/Content/Images/LexusMortgagesContactUs.jpg")" style="width:45%" alt="contactUsLogo" />
+                    <img class="grow img-rounded" src="@Url.Content("~/Content/Images/LexusMortgagesContactUs.jpg")" style="width:45%" alt="contactUsLogo" />
                 </a>
             </div>
 
-        <div class="mypadding">
-            <h2>Why use Lexus Mortgages</h2>
+            <div class="col-md-12 mypadding div-rounded-blue-contact" style="margin-top:3%;margin-bottom:3%;color:#fff">
+                <h2 class="myshadow">Why use Lexus Mortgages</h2>
 
-            <p>
-                In the rapidly changing mortgage market in Spain, we keep up to date with changes in rates and conditions offered by lenders & ensure the small print is made clear in every case.
-                We have access to non high street lenders, so we can offer the most competitive products from the entire market.
-            </p>
+                <p>
+                    In the rapidly changing mortgage market in Spain, we keep up to date with changes in rates and conditions offered by lenders & ensure the small print is made clear in every case.
+                    We have access to non high street lenders, so we can offer the most competitive products from the entire market.
+                </p>
 
-            <p> Our business is built on trust and we ensure that our clients are protected from unfavourable terms & conditions imposed by Spanish lenders, for example:</p>
+                <p> Our business is built on trust and we ensure that our clients are protected from unfavourable terms & conditions imposed by Spanish lenders, for example:</p>
 
-            <ol style="list-style:disc">
-                <li>
-                    Compulsory tie-ins – Such as lump sum life assurance policies added to the mortgage which can add thousands of €uros to your balance
-                    Compulsory deposits to guarantee the repayments.
-                </li>
-                <li>
-                    Dual pricing – Where the advertised terms are increased at branch level, or the more profitable IRPH becomes the base rate rather than the Euribor.
-                </li>
-                <li>
-                    Rate floors – In times of low interest rates, you could be prevented from benefitting due to the floor rate, ie. the rate will not fall below a certain level.
-                </li>
-                <li>   At Lexus Mortgages we endeavour to provide total transparency & and can avoid the pitfalls of choosing a bank at random. </li>
-            </ol>
+                <ol style="list-style:disc">
+                    <li>
+                        Compulsory tie-ins – Such as lump sum life assurance policies added to the mortgage which can add thousands of €uros to your balance
+                        Compulsory deposits to guarantee the repayments.
+                    </li>
+                    <li>
+                        Dual pricing – Where the advertised terms are increased at branch level, or the more profitable IRPH becomes the base rate rather than the Euribor.
+                    </li>
+                    <li>
+                        Rate floors – In times of low interest rates, you could be prevented from benefitting due to the floor rate, ie. the rate will not fall below a certain level.
+                    </li>
+                    <li>   At Lexus Mortgages we endeavour to provide total transparency & and can avoid the pitfalls of choosing a bank at random. </li>
+                </ol>
+            </div>
         </div>
-    </div>
 
-</div>
+    </div>

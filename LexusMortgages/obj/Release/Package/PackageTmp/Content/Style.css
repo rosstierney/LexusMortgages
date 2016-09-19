@@ -1,7 +1,8 @@
 body {
-
 }
-
+footer {
+    color:#fff;
+}
 
 body,
 h1,
@@ -24,7 +25,7 @@ h6 {
     color:#fff;
 }
 .mypadding {
-    padding: 5% 5%;
+    padding: 8%;
 }
 
 .box {
@@ -32,6 +33,7 @@ h6 {
     background: rgba(229,172,52,0.7);
     border-radius:15px 15px;
     box-shadow: 10px 10px 5px #888888;
+    padding-top: 1%;
 }
 
 element.style {
@@ -49,7 +51,6 @@ container-fluid {
     font-weight: 400;
     padding:5%;
     /* opacity: 1 !important; */
-    filter: alpha(opacity=100) !important; /* For IE8 and earlier */
     color: #f8f8f8;
 }
 
@@ -102,7 +103,7 @@ container-fluid {
 }
 
 .mybutton span:after {
-  content: 'Â»';
+  content: '»';
   position: absolute;
   opacity: 0;
   top: 0;
@@ -267,12 +268,20 @@ footer .footer-below {
 
 @media(max-width:767px) {
       .box {
-        margin: 10%;
-        margin-right: 20%;
+        margin-right: 8%;
+        margin-left:0%;
+        padding-bottom:2%;
+        width:85%;
         background: rgba(229,172,52,0.7);
         border-radius:15px 15px;
         box-shadow: 10px 10px 5px #888888;
     }
+      container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right:0;
+    margin-left:0;
+}
 
     .myh3 {
         font-weight: 700;
@@ -377,9 +386,22 @@ p.copyright {
 
 @media screen and (max-width:640px) {
 
+    #maintext {
+        width:100%;
+    }
+    .container-fluid {
+        padding-left:0%;
+    }
+    .box {
+        margin-right: 8%;
+        margin-left:0%;
+        padding-bottom:2%;
+        background: rgba(229,172,52,0.7);
+        border-radius:15px 15px;
+        box-shadow: 10px 10px 5px #888888;
+    }
     .box {
         margin: 10%;
-        margin-right: 20%;
         background: rgba(229,172,52,0.7);
         border-radius:15px 15px;
         box-shadow: 10px 10px 5px #888888;
@@ -396,8 +418,7 @@ p.copyright {
     }
 
     .lead {
-        font-size:20px;
-        padding:4% 0%;
+        font-size:18px;
     }
 
     .mydiv {
@@ -512,6 +533,11 @@ p.copyright {
     background-repeat: no-repeat;
     background-size: contain;
 }
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
 
 /* navbar */
 .navbar-default {
@@ -581,4 +607,59 @@ p.copyright {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #333;
     }
+}
+#martial, #mortgageTerm, #propertyType, #mortgageType, #btnapply, #martial {
+    height:100%;
+}
+
+#fullname,#email,#city,#enquiry,#telephone,#btnContact {
+    width:100%;
+    padding:2%;
+    margin:2%;
+}
+#amountReq,#purchasePrice,#mortgageTerm,#mortgageType,#propertyType,#btnapply {
+    width:100%;
+    padding:2%;
+    margin:2%;
+}
+#fname,#sname,#address,#telephone,#netMonthlyIncome,#otherIncome,#dob, #occupation, #employer, #martial {
+    width:100%;
+    padding:2%;
+    margin:2%;
+}
+#amount,#years,#rate,#btnCalculator {
+    width:100%;
+    padding:2%;
+    margin:2%;
+}
+#contact {
+    background: url(../Content/Images/beach.jpg) no-repeat center center;
+    margin:0px;
+}
+
+.container {
+    margin:0px;
+}
+
+#about {
+    background: url(../Content/Images/LexusMortgageStampLogoOpaque.png) no-repeat center center;
+    margin:0px;
+}
+#aboutus {
+    background: url(../Content/Images/calculator-background.jpg) no-repeat center center;
+    margin:0px;
+}
+#calculator-bk {
+    background: url(../Content/Images/calculator-background.jpg) no-repeat center center;
+    margin:0px;
+}
+
+#applyOnline {
+    background: url(../Content/Images/calculator-background.jpg) no-repeat center center;
+    background-size:cover;
+    margin:0px;
+}
+
+.wide {
+    width:100% !important;
 }

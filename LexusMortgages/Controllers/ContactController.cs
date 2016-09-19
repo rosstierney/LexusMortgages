@@ -36,16 +36,20 @@ namespace LexusMortgages.Controllers
                     + "Thank you for the interest you have shown in Lexus Mortgages. </p>"
                     + "This is an automated message.<br>";
 
+                // send information for lexusmortgages
                 var message = new MailMessage();
-                message.To.Add(new MailAddress("rossgtierney@gmail.com"));  // replace with valid value // "info@lexusmortgages.co.uk"
-                message.From = new MailAddress(model.email);  // replace with valid value
+                message.To.Add(new MailAddress("info@lexusmortgages.co.uk"));  // lexus email // "info@lexusmortgages.co.uk"
+                message.From = new MailAddress(model.email);  // users email
+                message.Sender = new MailAddress(model.email); // change sender
                 message.Subject = "Mortgage Enquiry From website";
                 message.Body = string.Format(body, model.fullname, model.city, model.email, model.telephone, model.enquiry);
                 message.IsBodyHtml = true;
 
+                // send email back to client from LexusMortgages
                 var message1 = new MailMessage();
-                message1.To.Add(new MailAddress(model.email));  // replace with valid value // "info@lexusmortgages.co.uk"
-                message1.From = new MailAddress("rossgtierney@gmail.com");  // replace with valid value
+                message1.To.Add(new MailAddress(model.email));  // user email // 
+                message1.From = new MailAddress("info@lexusmortgages.co.uk");
+                message1.Sender = new MailAddress("info@lexusmortgages.co.uk"); // change sender
                 message1.Subject = "Confirmation Email";
                 message1.Body = string.Format(body1, model.fullname);
                 message1.IsBodyHtml = true;
