@@ -223,11 +223,14 @@
     <Content Include="Content\Images\apple-icon.png" />
     <Content Include="Content\Images\approved.png" />
     <Content Include="Content\Images\bankia-logo.jpg" />
+    <Content Include="Content\Images\bankia-logo.png" />
     <Content Include="Content\Images\bankinter-logo.jpg" />
     <Content Include="Content\Images\beach.jpg" />
+    <Content Include="Content\Images\bmn-logo.png" />
     <Content Include="Content\Images\browserconfig.xml" />
     <Content Include="Content\Images\caixabank-logo.png" />
     <Content Include="Content\Images\cajamar-logo.jpg" />
+    <Content Include="Content\Images\cajamar-logo.png" />
     <Content Include="Content\Images\calculator-background.jpg" />
     <Content Include="Content\Images\contact-us.png" />
     <Content Include="Content\Images\favicon-16x16.png" />
@@ -235,6 +238,7 @@
     <Content Include="Content\Images\favicon-96x96.png" />
     <Content Include="Content\Images\favicon.ico" />
     <Content Include="Content\Images\global-currency-logo.jpg" />
+    <Content Include="Content\Images\global-currency-logo.png" />
     <Content Include="Content\Images\house-clip.png" />
     <Content Include="Content\Images\house-logo.png" />
     <Content Include="Content\Images\intro_icon_btm.png" />
@@ -249,7 +253,6 @@
     <Content Include="Content\Images\LexusMortgagesLogoTop.png" />
     <Content Include="Content\Images\LexusMortgageStampLogo.png" />
     <Content Include="Content\Images\LexusMortgageStampLogoOpaque.png" />
-    <Content Include="Content\Images\logo-cajamar.png" />
     <Content Include="Content\Images\logo_bk.gif" />
     <Content Include="Content\Images\main-house.jpg" />
     <Content Include="Content\Images\main-house2.jpg" />
@@ -264,7 +267,10 @@
     <Content Include="Content\Images\ms-icon-70x70.png" />
     <Content Include="Content\Images\pool.jpg" />
     <Content Include="Content\Images\popular-logo.png" />
+    <Content Include="Content\Images\sabadell-logo.jpg" />
+    <Content Include="Content\Images\sabadell-logo.png" />
     <Content Include="Content\Images\sabdell-logo.jpg" />
+    <Content Include="Content\Images\sabdell-logo.png" />
     <Content Include="Content\Images\santander-logo.png" />
     <Content Include="Content\Images\skype-logo.png" />
     <Content Include="Content\Images\viber-logo.png" />
