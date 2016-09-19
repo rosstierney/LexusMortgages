@@ -10,8 +10,32 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(Document).ready(function () {
+        animate();
+        /* Toggle between adding and removing the "active" and "show" classes when the user clicks on one of the "Section" buttons. The "active" class is used to add a background color to the current button when its belonging panel is open. The "show" class is used to open the specific accordion panel */
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function () {
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+            }
+        }
+    });
+    function animate() {
+        $("#img-approve").fadeOut("slow", animate);
+        $("#img-approve").fadeIn("slow", animate);
+    };
+    $(function () {
+        $("#accordion").accordion();
+    });
+
+    
+</script>
 <!-- /.intro-header --> 
-    <div class="container-fluid" style="background-color: #2D6895">          
+    <div class="container-fluid" style="border-radius:0px 0px 30px 30px;background-color: #2D6895">          
         <div id="welcome" class="col-md-6 text-center">
             <hr />
             <p class="lead myshadow">
@@ -22,37 +46,37 @@
             </p>
             <hr />
         </div>
-        <div class="col-md-6">
-                <img src="@Url.Content("~/Content/Images/20euro.png")" style="padding:5%;width:90%" alt="cash-house-img" />
-        </div>
+            <div class="col-md-6" style="margin-top:6%">
+                <button class="accordion img-rounded"><h3 class="myshadow">About Lexus Mortgages</h3></button>
+                <div class="panel">
+                    <p>
+                        Our wealth of experience ensures that you receive the best possible rates and conditions for your Spanish Mortgage.
+                        We only recommend reputable lenders & negotiate on your behalf to obtain the best deal on a Spanish mortgage.
+                    </p>
+                    <p><a class="grow btn btn-default center-block" href="@Url.Action("About", "Home")">Learn more &raquo;</a></p>
+                </div>
+                <button class="accordion img-rounded"><h3 class="myshadow">Mortgage Process</h3></button>
+                <div class="panel">
+                    <p>
+                        At Lexus Mortgages we are fully experienced in the lending criteria's of the Spanish lenders. We are often able to give an instant decision as to whether the mortgage would be approved.
+                    </p>
+                    <p><a class="grow btn btn-default center-block" href="@Url.Action("Index", "MortgageProcess")">Learn more &raquo;</a></p>
+                </div>
+                <button class="accordion img-rounded"><h3 class="myshadow">Apply Online</h3></button>
+                <div class="panel">
+                    <p>
+                        Complete our online application form to take the first steps. We will then search our wide range of mortgages to find the one that best meets your own personal requirements.
+                    </p>
+                    <p><a class="grow btn btn-info center-block" href="@Url.Action("Index", "ApplyOnline")">Apply Online! &raquo;</a></p>
+                </div>
+            </div>
+        @*<div class="col-md-6" style="padding:2%">
+                <img class="overlayimage" src="@Url.Content("~/Content/Images/20euro.png")" style="position:relative;padding:5%;width:90%" alt="cash-house-img" />
+                <img id="img-approve" class="overlayimage" src="@Url.Content("~/Content/Images/approved.png")" style="position:absolute;padding:5%;width:80%" alt="cash-house-img" />
+        </div>*@
      </div>
-     <div class="container" style="width:100%;border-radius:0px 0px 30px 30px;background-color: #2D6895">
-        
-             <div class="box col-md-3">
-                 <h2 class="myshadow">About Lexus Mortgages</h2>
-                 <hr />
-                 <p>
-                     Our wealth of experience ensures that you receive the best possible rates and conditions for your Spanish Mortgage.
-                     We only recommend reputable lenders & negotiate on your behalf to obtain the best deal on a Spanish mortgage.
-                 </p>
-                 <p><a class="grow btn btn-default center-block" href="@Url.Action("About", "Home")">Learn more &raquo;</a></p>
-             </div>
-             <div class="box col-md-3">
-                 <h2 class="myshadow">Mortgage Process</h2>
-                 <hr />
-                 <p">
-                     At Lexus Mortgages we are fully experienced in the lending criteria´s of the Spanish lenders. We are often able to give an instant decision as to whether the mortgage would be approved.</p>
-                     <p><a class="grow btn btn-default center-block" href="@Url.Action("Index", "MortgageProcess")">Learn more &raquo;</a></p>
-             </div>
-             <div class="box col-md-3">
-                 <h2 class="myshadow">Apply Online</h2>
-                 <hr />
-                 <p>
-                     Complete our online application form to take the first steps. We will then search our wide range of mortgages to find the one that best meets your own personal requirements.
-                 </p>
-                 <p><a class="grow btn btn-info center-block" href="@Url.Action("Index", "ApplyOnline")">Apply Online! &raquo;</a></p>
-             </div>
-    </div>
+
+     
              
 <div class="mydiv">
     <div class="text-center">

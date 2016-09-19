@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width" />
     <title>Apply Online</title>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 </head>
 <body>
     <div id="applyOnline" class="container-fluid">
@@ -19,7 +18,7 @@
             <hr />
         </div>
     @using (Html.BeginForm())
-        {
+    {
         @Html.AntiForgeryToken()
         <div class="col-md-4">
             <p>Complete our online application form to take the first steps. We will then search our wide range of mortgages to find the one that best meets your own personal requirements. Then, we will contact you to let you know exactly what we can offer, in plain and simple English.</p>
@@ -46,12 +45,18 @@
                            
                         </script>
                         <script type="text/javascript">
-                            $(function () { // will trigger when the document is ready
-                                $('.datepicker').datepicker(); //Initialise any date pickers
-                                $('#dob').datepicker('setDate', new Date(1975, 1, 1));
+                            $(document).ready(function () { // will trigger when the document is ready
+                                $("#dob").one("click", function () {
+                                    $('.datepicker').datepicker(); //Initialise any date pickers
+                                    $("#dob").addClass("datepicker");
+                                    $('#dob').datepicker('setDate', new Date(1975, 1, 1));
+                                    $('#dob').show();
+                                });
                             });
                         </script>
-
+                        <script>
+                           
+                        </script>
                     </div>
                     }
                 <div class="col-md-12">
@@ -80,7 +85,7 @@
                     @Html.ValidationMessageFor(m => m.email, "", new { @class = "text-danger" })
                 </div>
                 <div class="col-md-12">
-                    @Html.TextBoxFor(m => m.dob, new {placeholder = Html.DisplayNameFor(n => n.dob), @class = "datepicker"})    
+                    @Html.TextBoxFor(m => m.dob, new {placeholder = Html.DisplayNameFor(n => n.dob) })    
                     <br />
                     @Html.ValidationMessageFor(m => m.dob, "", new { @class = "text-danger" })
                 </div>

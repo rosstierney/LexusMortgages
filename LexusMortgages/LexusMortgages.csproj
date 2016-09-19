@@ -221,6 +221,7 @@
     <Content Include="Content\Images\apple-icon-76x76.png" />
     <Content Include="Content\Images\apple-icon-precomposed.png" />
     <Content Include="Content\Images\apple-icon.png" />
+    <Content Include="Content\Images\approved.png" />
     <Content Include="Content\Images\bankia-logo.jpg" />
     <Content Include="Content\Images\bankinter-logo.jpg" />
     <Content Include="Content\Images\beach.jpg" />
