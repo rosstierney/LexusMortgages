@@ -225,6 +225,7 @@
     <Content Include="Content\Images\bankia-logo.jpg" />
     <Content Include="Content\Images\bankia-logo.png" />
     <Content Include="Content\Images\bankinter-logo.jpg" />
+    <Content Include="Content\Images\bankinter-logo.png" />
     <Content Include="Content\Images\beach.jpg" />
     <Content Include="Content\Images\bmn-logo.png" />
     <Content Include="Content\Images\browserconfig.xml" />
@@ -272,6 +273,7 @@
     <Content Include="Content\Images\sabdell-logo.jpg" />
     <Content Include="Content\Images\sabdell-logo.png" />
     <Content Include="Content\Images\santander-logo.png" />
+    <Content Include="Content\Images\sky.png" />
     <Content Include="Content\Images\skype-logo.png" />
     <Content Include="Content\Images\viber-logo.png" />
     <Content Include="Content\Images\villa-img.jpg" />

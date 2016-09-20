@@ -13,18 +13,25 @@
         @{
             ViewBag.Title = "Apply Online";
         }
-        <div class="col-md-12">
-            <h2>@ViewBag.Title</h2>
-            <hr />
+        <div class="col-md-12"  style="color:black !important;">
+            <h2 style="color:black !important;">@ViewBag.Title</h2>
+            <hr style="color:black !important;"/>
         </div>
     @using (Html.BeginForm())
     {
         @Html.AntiForgeryToken()
-        <div class="col-md-4">
-            <p>Complete our online application form to take the first steps. We will then search our wide range of mortgages to find the one that best meets your own personal requirements. Then, we will contact you to let you know exactly what we can offer, in plain and simple English.</p>
+         <div class="col-md-4">   
+             <p>Complete our online application form to take the first steps. We will then search our wide range of mortgages to find the one that best meets your own personal requirements. Then, we will contact you to let you know exactly what we can offer, in plain and simple English.</p>
 
             <p> Please note, at Lexus Mortgages, we take the privacy of our clients very seriously. As such, none of your personal details will be disclosed to a third party other than the banking institutions used in our research process.</p>
-        </div>
+             <div class="col-md-12 mypadding center-block">
+                 <img class="overlayimage" src="@Url.Content("~/Content/Images/20euro.png")" style="position:relative;margin-left:3%;padding:5%;width:90%" alt="cash-house-img" />
+                 <img id="img-approve" class="overlayimage" src="@Url.Content("~/Content/Images/approved.png")" style="position:absolute;padding:5%;margin-left:7%;width:80%" alt="cash-house-img" />
+             </div>
+
+         </div>
+           
+        
         <div class="col-md-4">
            
             <div class="col-md-12 div-rounded-blue-contact" style="padding-bottom:2%;margin-bottom:5%">
@@ -45,7 +52,8 @@
                            
                         </script>
                         <script type="text/javascript">
-                            $(document).ready(function () { // will trigger when the document is ready
+                            $(document).ready(function () {
+                                animate();// will trigger when the document is ready
                                 $("#dob").one("click", function () {
                                     $('.datepicker').datepicker(); //Initialise any date pickers
                                     $("#dob").addClass("datepicker");
@@ -53,9 +61,10 @@
                                     $('#dob').show();
                                 });
                             });
-                        </script>
-                        <script>
-                           
+                            function animate() {
+                                $("#img-approve").fadeOut("slow", animate);
+                                $("#img-approve").fadeIn("slow", animate);
+                            };
                         </script>
                     </div>
                     }
@@ -92,7 +101,7 @@
                 <div class="col-md-12">
                         @Html.DropDownListFor(m => m.martial, new SelectList(
                         (List<Object>)ViewBag.MartialOptions,
-                            "value", "text", 2), "---Martial---")
+                            "value", "text", 2), "---Martial Status---")
                     <br />
                         @Html.ValidationMessageFor(m => m.martial, "", new { @class = "text-danger" })
                 </div>
@@ -128,7 +137,7 @@
                     <div class="col-md-12">
                         @Html.DropDownListFor(model => model.mortgageType, new SelectList(
                             (List<Object>)ViewBag.MortgageTyOptions,
-                                "value", "text", 2), "---Mortgage Type ---")
+                                "value", "text", 2), "---Mortgage Type---")
                         @Html.ValidationMessageFor(m => m.mortgageType, "", new { @class = "text-danger" })
                     </div>
                 <div class="col-md-12">
@@ -136,11 +145,12 @@
                     <br />
                      @Html.ValidationMessageFor(m => m.purchasePrice, "", new { @class = "text-danger" })
                 </div>
-              
+
+
                 <div class="col-md-12">
                     @Html.DropDownListFor(model => model.mortgageTerm, new SelectList(
                     (List<Object>)ViewBag.MortgageTmOptions,
-                        "value", "text", 2), "---Mortgage Term ---")
+                        "value", "text", 2), "---Mortgage Term---")
                     <br /> 
                     @Html.ValidationMessageFor(m => m.mortgageTerm, "", new { @class = "text-danger" })
                 </div>
@@ -161,12 +171,12 @@
                 
                 @*<div class="g-recaptcha form-group" style="padding-left:20%;width:20%" data-sitekey="6LdzQygTAAAAADPFa5eq9hq_JXgXRyMPfxDxeQj4">
                 </div>*@
-                    <div class="col-md-12">
-                        <input id="btnapply" type="submit" class="btn mybutton grow" value="Apply Now" />
+                    <div class="col-md-12 wide">
+                        <button id="btnapply" class="btn mybutton grow" type="submit" >Apply Now!</button>
                     </div>
             </div>
         </div>
-      
+       
 
     }
     </div>

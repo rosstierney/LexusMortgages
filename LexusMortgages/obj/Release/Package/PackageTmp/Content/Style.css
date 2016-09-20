@@ -525,7 +525,7 @@ p.copyright {
 #owl-demo .item img{
   display: block;
   width: 100%;
-  height: auto;
+  height: 127px;
 }
 
 #welcome {
@@ -617,6 +617,10 @@ p.copyright {
     padding:2%;
     margin:2%;
 }
+input,select,text,textarea  {
+    max-width:1000px !important;
+    width:100% !important;
+}
 #amountReq,#purchasePrice,#mortgageTerm,#mortgageType,#propertyType,#btnapply {
     width:100%;
     padding:2%;
@@ -634,7 +638,7 @@ p.copyright {
 }
 #contact {
     background: url(../Content/Images/beach.jpg) no-repeat center center;
-    margin:0px;
+    background-size:cover;
 }
 
 .container {
@@ -656,6 +660,13 @@ p.copyright {
     background-size:cover;
     margin:0px;
 }
+
+#footerpic {
+    background: url(../Content/Images/sky.png) no-repeat center center;
+    background-size:cover;
+    margin:0px;
+}
+
 #calculator-bk {
     background: url(../Content/Images/calculator-background.jpg) no-repeat center center;
     background-size:cover;
@@ -714,4 +725,26 @@ div.panel.show {
     opacity: 1;
     max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
     box-shadow: none;
+}
+
+  /* Kick in the inline*/
+  @media (min-width: @screen-sm-min) {
+    /* Inline-block all the things for "inline"*/
+    .form-group {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+
+    /* In navbar-form, allow folks to *not* use `.form-group`*/
+    .form-control {
+      display: inline-block;
+      width: auto; // Prevent labels from stacking above inputs in `.form-group`
+      vertical-align: middle;
+    }
+    /* Input groups need that 100% width though*/
+    .input-group > .form-control {
+      width: 100%;
+    }
+
 }

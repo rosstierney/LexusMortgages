@@ -10,31 +10,42 @@
     @{
         ViewBag.Title = "Contact";
     }
-    <!-- Container (Contact Section) -->
-    <div id="contact" class="container mypadding" style="width:100%">
-        <div class="col-md-4 pull-right div-rounded-blue-contact" style="opacity:0.85">
-            <h2 class="text-center" style="color:#fff"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</h2>
-            <hr />
-
-            @using (Html.BeginForm())
-            {
-                @section Scripts {
-                    @Scripts.Render("~/bundles/jqueryval")
-                    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOmCPNlB72ldTsoLbD12eEoRIRlgZw360&libraries=places"></script>
-                    <script type="text/javascript">
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOmCPNlB72ldTsoLbD12eEoRIRlgZw360&libraries=places"></script>
+        <script type="text/javascript">
                         google.maps.event.addDomListener(window, 'load', function () {
 
                             var input1 = document.getElementById('city');
                             var places1 = new google.maps.places.Autocomplete(input1);
                         });
 
-                    </script>
-                }
+                        $(Document).ready(function () {
+                            animate();
+                        });
+
+                            function animate() {
+                                $("#gly-icon").fadeOut("slow", animate);
+                                $("#gly-icon").fadeIn("slow", animate);
+                            };
+                       
+        </script>
+    }
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container mypadding" style="width:100%">
+        <div class="col-md-4 pull-right div-rounded-blue-contact" style="opacity:0.85">
+         
+                <h2 class="text-center" style="color:#fff"><span  class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</h2>
+            <hr />
+
+            @using (Html.BeginForm())
+            {
+               
                 @Html.AntiForgeryToken()
                 @model LexusMortgages.Models.Contact
                 <div class="col-md-12">
-                    @Html.TextBoxFor(m => m.fullname, new { placeholder = Html.DisplayNameFor(n => n.fullname) })
-                    @Html.ValidationMessageFor(m => m.fullname, "", new { @class = "text-danger" })
+                    @Html.TextBoxFor(m => m.fullname, new { placeholder = Html.DisplayNameFor(n => n.fullname), @class = "wide" } )
+                    @Html.ValidationMessageFor(m => m.fullname, "", new { @class = "text-danger wide" })
                 </div>
                 <div class="col-md-12">
                     @Html.TextBoxFor(m => m.email, new { placeholder = Html.DisplayNameFor(n => n.email) })
