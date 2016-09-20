@@ -2,40 +2,39 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="intro-header">
-     
-    <div class="container-fluid">
+<div class="container-fluid">
+    <div class="col-md-12 intro-header">
+
         <div class="intro-message">
             <h1 id="maintext" class="myshadow text-center" style="font-family:'Great Vibes'; color:#E5AC36"><span class="glyphicon glyphicon-home"></span>&nbsp;Spanish Mortgage Specialists</h1>
         </div>
     </div>
-</div>
-<script type="text/javascript">
-    $(Document).ready(function () {
-        animate();
-        /* Toggle between adding and removing the "active" and "show" classes when the user clicks on one of the "Section" buttons. The "active" class is used to add a background color to the current button when its belonging panel is open. The "show" class is used to open the specific accordion panel */
-        var acc = document.getElementsByClassName("accordion");
-        var i;
+    <script type="text/javascript">
+        $(Document).ready(function () {
+            animate();
+            /* Toggle between adding and removing the "active" and "show" classes when the user clicks on one of the "Section" buttons. The "active" class is used to add a background color to the current button when its belonging panel is open. The "show" class is used to open the specific accordion panel */
+            var acc = document.getElementsByClassName("accordion");
+            var i;
 
-        for (i = 0; i < acc.length; i++) {
-            acc[i].onclick = function () {
-                this.classList.toggle("active");
-                this.nextElementSibling.classList.toggle("show");
+            for (i = 0; i < acc.length; i++) {
+                acc[i].onclick = function () {
+                    this.classList.toggle("active");
+                    this.nextElementSibling.classList.toggle("show");
+                }
             }
-        }
-    });
-    function animate() {
-        $("#img-approve").fadeOut("slow", animate);
-        $("#img-approve").fadeIn("slow", animate);
-    };
-    $(function () {
-        $("#accordion").accordion();
-    });
+        });
+        function animate() {
+            $("#img-approve").fadeOut("slow", animate);
+            $("#img-approve").fadeIn("slow", animate);
+        };
+        $(function () {
+            $("#accordion").accordion();
+        });
 
-    
-</script>
-<!-- /.intro-header --> 
-    <div class="container-fluid" style="border-radius:0px 0px 30px 30px;background-color: #2D6895">          
+
+    </script>
+    <!-- /.intro-header -->
+    <div class="container-fluid" style="border-radius:0px 0px 30px 30px;background-color: #2D6895">
         <div id="welcome" class="col-md-6 text-center">
             <hr />
             <p class="lead myshadow">
@@ -46,77 +45,77 @@
             </p>
             <hr />
         </div>
-            <div class="col-md-6" style="margin-top:6%">
-                <button class="accordion img-rounded"><h3 class="myshadow">About Lexus Mortgages</h3></button>
-                <div class="panel">
-                    <p>
-                        Our wealth of experience ensures that you receive the best possible rates and conditions for your Spanish Mortgage.
-                        We only recommend reputable lenders & negotiate on your behalf to obtain the best deal on a Spanish mortgage.
-                    </p>
-                    <p><a class="grow btn btn-default center-block" href="@Url.Action("About", "Home")">Learn more &raquo;</a></p>
-                </div>
-                <button class="accordion img-rounded"><h3 class="myshadow">Mortgage Process</h3></button>
-                <div class="panel">
-                    <p>
-                        At Lexus Mortgages we are fully experienced in the lending criteria's of the Spanish lenders. We are often able to give an instant decision as to whether the mortgage would be approved.
-                    </p>
-                    <p><a class="grow btn btn-default center-block" href="@Url.Action("Index", "MortgageProcess")">Learn more &raquo;</a></p>
-                </div>
-                <button class="accordion img-rounded"><h3 class="myshadow">Apply Online</h3></button>
-                <div class="panel">
-                    <p>
-                        Complete our online application form to take the first steps. We will then search our wide range of mortgages to find the one that best meets your own personal requirements.
-                    </p>
-                    <p><a class="grow btn btn-info center-block" href="@Url.Action("Index", "ApplyOnline")">Apply Online! &raquo;</a></p>
-                </div>
+        <div class="col-md-6" style="margin-top:6%">
+            <button class="accordion img-rounded"><h3 class="myshadow">About Lexus Mortgages</h3></button>
+            <div class="panel">
+                <p>
+                    Our wealth of experience ensures that you receive the best possible rates and conditions for your Spanish Mortgage.
+                    We only recommend reputable lenders & negotiate on your behalf to obtain the best deal on a Spanish mortgage.
+                </p>
+                <p><a class="grow btn btn-default center-block" href="@Url.Action("About", "Home")">Learn more &raquo;</a></p>
             </div>
-        
-     </div>
-
-     
-             
-<div class="mydiv">
-    <div class="text-center">
-        <hr />
-        <h3 class="myshadow smlCarousel" style="color:#ffffff">Testimonials</h3>
-        <hr />
-    </div>
-    <div id="myCarousel" class="carousel slide text-center smlCarousel" data-ride="carousel">
-        <!-- Wrapper for slides -->
-        <div>
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <h4>"Thank you for all the help you have given me with obtaining the mortgage. I will be sure to drop in and say hi when I'm over on holiday. If I purchase another property in future I will not hesitate to contact Lexus mortgages."<br><span style="font-style:normal;">Martin Pendlebury</span></h4>
-                </div>
-                <div class="item">
-                    <h4>"I wanted to take a moment of your time to thank you and your staff for the efficient and courteous way that you dealt with the business of obtaining our mortgage."<br><span style="font-style:normal;">Tracey Howell</span></h4>
-                </div>
-                <div class="item">
-                    <h4>"Please thank everyone for me. I will certainly recommend you to anyone I meet who needs help on this vein."<br><span style="font-style:normal;">Tony Harding</span></h4>
-                </div>
-                <div class="item">
-                    <h4>"Big pats on the back to you all……we will certainly use you again…excellent service."<br><span style="font-style:normal;">T Bell</span></h4>
-                </div>
-                <div class="item">
-                    <h4>"Can I say what an absolute pleasure it has been dealing with you. You've made what could have been a very complicated and stressful period quite straightforward. I can't recommend your services highly enough."<br><span style="font-style:normal;">Paul Johnson</span></h4>
-                </div>
+            <button class="accordion img-rounded"><h3 class="myshadow">Mortgage Process</h3></button>
+            <div class="panel">
+                <p>
+                    At Lexus Mortgages we are fully experienced in the lending criteria's of the Spanish lenders. We are often able to give an instant decision as to whether the mortgage would be approved.
+                </p>
+                <p><a class="grow btn btn-default center-block" href="@Url.Action("Index", "MortgageProcess")">Learn more &raquo;</a></p>
+            </div>
+            <button class="accordion img-rounded"><h3 class="myshadow">Apply Online</h3></button>
+            <div class="panel">
+                <p>
+                    Complete our online application form to take the first steps. We will then search our wide range of mortgages to find the one that best meets your own personal requirements.
+                </p>
+                <p><a class="grow btn btn-info center-block" href="@Url.Action("Index", "ApplyOnline")">Apply Online! &raquo;</a></p>
             </div>
         </div>
 
-        <!-- Left and right controls -->
-        <a class="left carousel-control mycarousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control mycarousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
-</div>
-  
 
-    <div class="container" style="width:100%">
+
+
+    <div class="mydiv">
+        <div class="text-center">
+            <hr />
+            <h3 class="myshadow smlCarousel" style="color:#ffffff">Testimonials</h3>
+            <hr />
+        </div>
+        <div id="myCarousel" class="carousel slide text-center smlCarousel" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h4>"Thank you for all the help you have given me with obtaining the mortgage. I will be sure to drop in and say hi when I'm over on holiday. If I purchase another property in future I will not hesitate to contact Lexus mortgages."<br><span style="font-style:normal;">Martin Pendlebury</span></h4>
+                    </div>
+                    <div class="item">
+                        <h4>"I wanted to take a moment of your time to thank you and your staff for the efficient and courteous way that you dealt with the business of obtaining our mortgage."<br><span style="font-style:normal;">Tracey Howell</span></h4>
+                    </div>
+                    <div class="item">
+                        <h4>"Please thank everyone for me. I will certainly recommend you to anyone I meet who needs help on this vein."<br><span style="font-style:normal;">Tony Harding</span></h4>
+                    </div>
+                    <div class="item">
+                        <h4>"Big pats on the back to you all……we will certainly use you again…excellent service."<br><span style="font-style:normal;">T Bell</span></h4>
+                    </div>
+                    <div class="item">
+                        <h4>"Can I say what an absolute pleasure it has been dealing with you. You've made what could have been a very complicated and stressful period quite straightforward. I can't recommend your services highly enough."<br><span style="font-style:normal;">Paul Johnson</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control mycarousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control mycarousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="container-fluid" style="width:100%">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center">
                 <h2>Let's Get In Touch!</h2>
@@ -134,48 +133,48 @@
             </div>
         </div>
         @*<div class="text-center" style="margin:auto;padding-top:7px">
-            <a href="https://www.youtube.com/channel/UC1FAezybUppi8Ikq4bbEEfw"
-               class="zocial youtube">
-                Subscribe
-            </a>
-        </div>*@
+                <a href="https://www.youtube.com/channel/UC1FAezybUppi8Ikq4bbEEfw"
+                   class="zocial youtube">
+                    Subscribe
+                </a>
+            </div>*@
     </div>
-    
 
 
-@section Scripts {
-    <script src="~/Scripts/jquery.min.js"></script>
-    <script src="~/Scripts/owl.carousel.min.js"></script>
-    <script src="~/Scripts/owl.carousel.js"></script>
-    <script>
-        $(document).ready(function () {
 
-            $("#owl-demo").owlCarousel({
+    @section Scripts {
+        <script src="~/Scripts/owl.carousel.min.js"></script>
+        <script src="~/Scripts/owl.carousel.js"></script>
+        <script>
+            $(document).ready(function () {
 
-                navigation: false,
-                pagination: false,
-                autoPlay: 3500, //Set AutoPlay to 3.5 seconds
+                $("#owl-demo").owlCarousel({
 
-                items: 4,
-                itemsDesktop: [1199, 3],
-                itemsDesktopSmall: [979, 3],
-                
+                    navigation: false,
+                    pagination: false,
+                    autoPlay: 3500, //Set AutoPlay to 3.5 seconds
+
+                    items: 4,
+                    itemsDesktop: [1199, 3],
+                    itemsDesktopSmall: [979, 3],
+
+                });
+
             });
+        </script>
+    }
+    <hr />
+    <div id="owl-demo" class="owl-carousel container-fluid">
 
-        }); 
-    </script>
-}
-<hr />
-<div id="owl-demo" class="owl-carousel container">
+        <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/bankia-logo.png")" width="290" alt="Owl Image"></div>
+        <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/caixabank-logo.png")" width="290" alt="Owl Image"></div>
+        <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/bankinter-logo.png")" width="290" alt="Owl Image"></div>
+        <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/cajamar-logo.png")" width="290" alt="Owl Image"></div>
+        <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/santander-logo.png")" width="290" alt="Owl Image"></div>
+        <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/popular-logo.png")" width="290" alt="Owl Image"></div>
+        <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/sabadell-logo.png")" width="290" alt="Owl Image"></div>
+        <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/bmn-logo.png")" width="290" alt="Owl Image"></div>
+        <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/global-currency-logo.png")" width="290" alt="Owl Image"></div>
 
-    <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/bankia-logo.png")" width="290" alt="Owl Image"></div>
-    <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/caixabank-logo.png")" width="290"  alt="Owl Image"></div>
-    <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/bankinter-logo.png")" width="290" alt="Owl Image"></div>
-    <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/cajamar-logo.png")" width="290"  alt="Owl Image"></div>
-    <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/santander-logo.png")" width="290"  alt="Owl Image"></div>
-    <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/popular-logo.png")" width="290" alt="Owl Image"></div>
-    <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/sabadell-logo.png")" width="290"  alt="Owl Image"></div>
-    <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/bmn-logo.png")" width="290" alt="Owl Image"></div>
-    <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/global-currency-logo.png")" width="290"  alt="Owl Image"></div>
-
+    </div>
 </div>
