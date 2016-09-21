@@ -26,52 +26,53 @@
 <body>
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button> 
+            <div class="row">
+                <div class="navbar-header col-md-3">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <a class="navbar-left left" href='@Url.Action("Index", "Home")'>
                         <img style="max-width:200px; margin-top: 9px;"
                              src="@Url.Content("~/Content/Images/LexusMortgageMainBanner.png")">
                     </a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <!-- menu items -->
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Mortgage Process", "Index", "MortgageProcess")</li>
-                    <li>@Html.ActionLink("Apply Online", "Index", "ApplyOnline")</li>
-                    <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
-                    <li>
-                        <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
-                        <div style="width:80px" id="SkypeButton_Call_Lexus.mortgages_1">
-                            <script type="text/javascript">
-                                Skype.ui({
-                                    "name": "dropdown",
-                                    "element": "SkypeButton_Call_Lexus.mortgages_1",
-                                    "participants": ["Lexus.mortgages"],
-                                    imageSize : 100
-                                });
-                            </script>
-                        </div>
-                    </li>
-                </ul>
-                <div style="padding-top:14px">
-                    <span class="flag-icon flag-icon-gb img-rounded">&nbsp;</span><span class="flag-icon flag-icon-ie img-rounded">&nbsp;</span><span class="flag-icon flag-icon-es img-rounded">&nbsp;</span>
                 </div>
-                 
-                    <div style="width:70px;margin-top:-30px" class="pull-right">
-                      
+                <div class="navbar-collapse collapse col-md-9">
+                    <!-- menu items -->
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Mortgage Process", "Index", "MortgageProcess")</li>
+                        <li>@Html.ActionLink("Apply Online", "Index", "ApplyOnline")</li>
+                        <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
+                        <li>
+                            <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+                            <div style="width:80px" id="SkypeButton_Call_Lexus.mortgages_1">
+                                <script type="text/javascript">
+                                    Skype.ui({
+                                        "name": "dropdown",
+                                        "element": "SkypeButton_Call_Lexus.mortgages_1",
+                                        "participants": ["Lexus.mortgages"],
+                                    });
+                                </script>
+                            </div>
+                        </li>
+                    </ul>
+                    @*<div style="padding-top:14px">
+                    <span class="flag-icon flag-icon-gb img-rounded">&nbsp;</span><span class="flag-icon flag-icon-ie img-rounded">&nbsp;</span><span class="flag-icon flag-icon-es img-rounded">&nbsp;</span>
+                </div>*@
+
+                    <div style="width:70px;padding-top:2px" class="pull-right">
+
                         <a href="http://www.accuweather.com/en/es/alicante/310681/weather-forecast/310681" class="aw-widget-legal">
                             <!--
-                By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
-                -->
+                    By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+                    -->
                         </a><div id="awcc1474117299875" class="aw-widget-current" data-locationkey="310681" data-unit="c" data-language="en-us" data-useip="false" data-uid="awcc1474117299875" data-targeturl="http://lexusmortgages.azurewebsites.net"></div>
                         <script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
                     </div>
+                </div>
             </div>
         </div>
     </div>
