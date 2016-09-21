@@ -186,7 +186,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\animation.css" />
-    <Content Include="Content\bankia-logo.png" />
     <Content Include="Content\bootstrap-datepicker.css" />
     <Content Include="Content\bootstrap-datepicker.min.css" />
     <Content Include="Content\bootstrap-datepicker.standalone.css" />
@@ -200,8 +199,6 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\cajamar-logo.jpg" />
-    <Content Include="Content\cajamar-logo.png" />
     <Content Include="Content\flag-icon.css" />
     <Content Include="Content\flag-icon.min.css" />
     <Content Include="Content\font-awesome.css" />
@@ -229,7 +226,6 @@
     <Content Include="Content\Images\bankinter-logo.jpg" />
     <Content Include="Content\Images\bankinter-logo.png" />
     <Content Include="Content\Images\beach.jpg" />
-    <Content Include="Content\Images\bmn-logo.png" />
     <Content Include="Content\Images\browserconfig.xml" />
     <Content Include="Content\Images\caixabank-logo.png" />
     <Content Include="Content\Images\cajamar-logo.jpg" />
@@ -269,7 +265,6 @@
     <Content Include="Content\Images\ms-icon-70x70.png" />
     <Content Include="Content\Images\pool.jpg" />
     <Content Include="Content\Images\popular-logo.png" />
-    <Content Include="Content\Images\sabadell-logo.png" />
     <Content Include="Content\Images\sabdell-logo.jpg" />
     <Content Include="Content\Images\santander-logo.png" />
     <Content Include="Content\Images\sky.png" />
@@ -287,7 +282,6 @@
     <Content Include="Content\OwlCarousel\owl.carousel.css" />
     <Content Include="Content\OwlCarousel\owl.theme.css" />
     <Content Include="Content\OwlCarousel\owl.transitions.css" />
-    <Content Include="Content\sabadell-logo.png" />
     <Content Include="Content\Style.css" />
     <Content Include="Content\zocial.css" />
     <Content Include="favicon.ico" />

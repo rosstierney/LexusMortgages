@@ -521,7 +521,7 @@ p.copyright {
 #owl-demo .item img{
   display: block;
   width: 100%;
-  height: 127px;
+  height: auto;
 }
 
 #welcome {
@@ -721,26 +721,4 @@ div.panel.show {
     opacity: 1;
     max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
     box-shadow: none;
-}
-
-  /* Kick in the inline*/
-  @media (min-width: @screen-sm-min) {
-    /* Inline-block all the things for "inline"*/
-    .form-group {
-      display: inline-block;
-      margin-bottom: 0;
-      vertical-align: middle;
-    }
-
-    /* In navbar-form, allow folks to *not* use `.form-group`*/
-    .form-control {
-      display: inline-block;
-      width: auto; // Prevent labels from stacking above inputs in `.form-group`
-      vertical-align: middle;
-    }
-    /* Input groups need that 100% width though*/
-    .input-group > .form-control {
-      width: 100%;
-    }
-
 }
