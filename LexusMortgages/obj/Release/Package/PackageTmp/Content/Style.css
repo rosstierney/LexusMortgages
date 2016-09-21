@@ -267,7 +267,14 @@ footer .footer-below {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
 }
 
-@media(max-width:767px) {
+@media(max-width:769px) {
+    #navbar-col {
+        margin-left:2%;
+    }
+
+    #weather {
+        margin-right:5%;
+    }
       .box {
         margin-right: 8%;
         margin-left:0%;
@@ -369,6 +376,7 @@ footer .footer-below {
      }
 }
 
+
 @media(max-width:767px) {
 
     .intro-lmlogo {
@@ -382,7 +390,9 @@ p.copyright {
 }
 
 @media screen and (max-width:640px) {
-
+       #weather {
+        padding-right:2%;
+    }
     #maintext {
         width:100%;
     }
