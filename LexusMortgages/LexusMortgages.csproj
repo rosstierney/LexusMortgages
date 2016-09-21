@@ -226,6 +226,7 @@
     <Content Include="Content\Images\bankinter-logo.jpg" />
     <Content Include="Content\Images\bankinter-logo.png" />
     <Content Include="Content\Images\beach.jpg" />
+    <Content Include="Content\Images\bmn-logo.png" />
     <Content Include="Content\Images\browserconfig.xml" />
     <Content Include="Content\Images\caixabank-logo.png" />
     <Content Include="Content\Images\cajamar-logo.jpg" />
@@ -265,6 +266,7 @@
     <Content Include="Content\Images\ms-icon-70x70.png" />
     <Content Include="Content\Images\pool.jpg" />
     <Content Include="Content\Images\popular-logo.png" />
+    <Content Include="Content\Images\sabadell-logo.png" />
     <Content Include="Content\Images\sabdell-logo.jpg" />
     <Content Include="Content\Images\santander-logo.png" />
     <Content Include="Content\Images\sky.png" />
