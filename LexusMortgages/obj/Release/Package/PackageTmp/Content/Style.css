@@ -40,7 +40,7 @@ element.style {
     padding-left: 0px;
     padding-right: 0px;
 }
-container-fluid {
+.container-fluid {
     padding-left: 0px;
     padding-right: 0px;
     margin-right:0;
@@ -386,7 +386,7 @@ p.copyright {
         width:100%;
     }
     .container-fluid {
-        padding-left:0%;
+        padding:0%;
     }
     .box {
         margin-right: 8%;
@@ -637,8 +637,9 @@ input,select,text,textarea  {
     background-size:cover;
 }
 
-.container {
+.container, .container-fluid {
     margin:0px;
+    padding:0px;
 }
 
 #about {

@@ -174,7 +174,7 @@ legend {
   border: 0;
 }
 textarea {
-   overflow: auto; 
+  overflow: auto;
 }
 optgroup {
   font-weight: bold;
@@ -1072,9 +1072,9 @@ th {
 }
 *:before,
 *:after {
-   -webkit-box-sizing: border-box; 
-  -moz-box-sizing: border-box;
-   box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 html {
   font-size: 10px;
