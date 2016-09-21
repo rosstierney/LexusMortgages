@@ -613,7 +613,7 @@ p.copyright {
     padding:2%;
     margin:2%;
 }
-input,select,textarea  {
+input,select,text,textarea  {
     max-width:1000px !important;
     width:100% !important;
 }
@@ -637,7 +637,7 @@ input,select,textarea  {
     background-size:cover;
 }
 
-.container, .container-fluid {
+.container {
     margin:0px;
 }
 
@@ -675,6 +675,9 @@ input,select,textarea  {
     margin:0px;
 }
 
+.wide {
+    width:100% !important;
+}
 
 .overlayimage
 {
@@ -720,4 +723,24 @@ div.panel.show {
     box-shadow: none;
 }
 
- 
+  /* Kick in the inline*/
+  @media (min-width: @screen-sm-min) {
+    /* Inline-block all the things for "inline"*/
+    .form-group {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+
+    /* In navbar-form, allow folks to *not* use `.form-group`*/
+    .form-control {
+      display: inline-block;
+      width: auto; // Prevent labels from stacking above inputs in `.form-group`
+      vertical-align: middle;
+    }
+    /* Input groups need that 100% width though*/
+    .input-group > .form-control {
+      width: 100%;
+    }
+
+}
