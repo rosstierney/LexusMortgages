@@ -22,6 +22,18 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Nunito:700|Patua+One|Varela+Round" rel="stylesheet">
+    <script type="text/javascript">
+                                $('#tt').on({
+                                    "click": function () {
+                                        $(this).tooltip({ items: "#tt", content: "Displaying on click" });
+                                        $(this).tooltip("enable"); // this line added
+                                        $(this).tooltip("open");
+                                    },
+                                    "mouseout": function () {
+                                        $(this).tooltip("disable");
+                                    }
+                                });
+    </script>
 </head>
 <body>
     <div class="navbar navbar-default navbar-fixed-top">
@@ -84,7 +96,11 @@
             <div class="container-fluid" id="footerpic" >
                 <div class="col-md-12">
                     <div class="col-md-4 col-md-offset-4 text-center" style="padding-top:2%">
-
+                      <script>
+                          $(function () {
+                              $('[data-toggle="tooltip"]').tooltip()
+                          })
+                      </script>
                         <ul class="list-inline intro-social-buttons" style="padding:2%">
                             <li>
                                 <a href="https://www.facebook.com/Lexusmortgages" class="social"><i class="fa fa-fw fa-facebook" style="background-color:#4060A5"></i></a>
@@ -95,7 +111,7 @@
 
                             </li>
                             <li>
-                                <a href="#" class="social"><i class="fa fa-fw fa-skype" style="background-color:#00C6FF"></i></a>
+                                <a data-toggle="tooltip" data-placement="top" title="Lexus.Mortgages" class="social"><i class="fa fa-fw fa-skype" style="background-color:#00C6FF"></i></a>
                             </li>
                             <li>
                                 <a href="https://www.youtube.com/channel/UC1FAezybUppi8Ikq4bbEEfw" class="social"><i class="fa fa-fw fa-youtube" style="background-color:#FF1F25"></i></a>

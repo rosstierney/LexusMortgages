@@ -267,13 +267,16 @@ footer .footer-below {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
 }
 
-@media(max-width:769px) {
+@media only screen and (max-width:769px) {
+
+
+
     #navbar-col {
         margin-left:2%;
     }
 
     #weather {
-        margin-right:5%;
+        /* padding-right:15%; */
     }
       .box {
         margin-right: 8%;
@@ -367,17 +370,20 @@ footer .footer-below {
     margin-top: 0;
 }
 
-@media(max-width:1199px) {
+@media only screen and (min-device-width: 768px)  and (max-width:1199px) {
     ul.banner-social-buttons {
         float: left;
     }
     .intro-lmlogo {
         width:65%;
      }
+      #weather {
+        padding-left:11%;
+    }
 }
 
 
-@media(max-width:767px) {
+@media only screen and (max-width:767px) {
 
     .intro-lmlogo {
         width:65%;
@@ -389,9 +395,9 @@ p.copyright {
     margin: 15px 0 0;
 }
 
-@media screen and (max-width:640px) {
+@media only screen and (min-device-width: 320px)  and (max-width:640px) {
        #weather {
-        padding-right:2%;
+        float:right;
     }
     #maintext {
         width:100%;
@@ -606,7 +612,7 @@ p.copyright {
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #CCC;
 }
-@media (max-width: 767px) {
+@media only screen and  (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #777;
     }
