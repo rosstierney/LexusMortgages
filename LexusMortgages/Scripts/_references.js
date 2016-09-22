@@ -3,6 +3,7 @@
 /// <reference path="ai.1.0.0-build00159.js" />
 /// <reference path="bootstrap.min.js" />
 /// <reference path="bootstrap-datepicker.min.js" />
+/// <reference path="jquery.unobtrusive-ajax.min.js" />
 /// <reference path="jquery.validate.min.js" />
 /// <reference path="jquery.validate.unobtrusive.js" />
 /// <reference path="jquery-1.9.1.min.js" />

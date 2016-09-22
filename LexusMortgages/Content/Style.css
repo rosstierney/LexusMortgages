@@ -66,8 +66,7 @@ element.style {
 .calculator-header {
     text-align:center;
     font-weight: 700;
-    font-size:x-large;
-    font-family: Calibri;
+    font-family: 'Electrolize', sans-serif;
 }
 .div-rounded-blue {
     padding:5%;
@@ -93,6 +92,7 @@ element.style {
   background-color: #4CAF50;
   color: #FFFFFF;
   text-align: center;
+  font-family: 'Electrolize', sans-serif;
   transition: all 0.5s;
   cursor: pointer;
 }

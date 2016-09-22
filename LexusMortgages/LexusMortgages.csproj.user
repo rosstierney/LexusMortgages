@@ -4,6 +4,11 @@
     <UseIISExpress>true</UseIISExpress>
     <NameOfLastUsedPublishProfile>lexusmortgages %283%29</NameOfLastUsedPublishProfile>
     <IISExpressSSLPort>44301</IISExpressSSLPort>
+    <WebStackScaffolding_ViewDialogWidth>600</WebStackScaffolding_ViewDialogWidth>
+    <WebStackScaffolding_IsLayoutPageSelected>True</WebStackScaffolding_IsLayoutPageSelected>
+    <WebStackScaffolding_IsPartialViewSelected>True</WebStackScaffolding_IsPartialViewSelected>
+    <WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
+    <WebStackScaffolding_LayoutPageFile />
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

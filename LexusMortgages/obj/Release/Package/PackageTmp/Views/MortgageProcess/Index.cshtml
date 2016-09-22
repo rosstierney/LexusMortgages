@@ -1,5 +1,13 @@
 ﻿@{
     ViewBag.Title = "MortgageProcess";
+    AjaxOptions options = new AjaxOptions
+    {
+        Confirm = "Are you sure to save record?",
+        OnBegin = "OnBeginMethod",
+        OnFailure = "OnFailtureMethod",
+        OnSuccess = "OnSuccessMethod",
+        OnComplete = "OnCompleteMethod"
+    };
 }
 
 <!DOCTYPE html>
@@ -36,9 +44,31 @@
             The mortgage process will take approximately 3-4 weeks to be finalized. Lexus Mortgages will liaise direct with your lawyer & the lender to co-ordinate a smooth completion.
         </p>
     </div>
+        <script>
+            $(document).ready(function () {
+                $("#btnCalculator").on("click", function () {
+                    $.ajax({
+                        url: 'Create',
+                        type: "POST",
+                        dataType: "html"
+                    })
+                    .done(function (partialViewResult) {
+                        $("#cal-result").html(partialViewResult);
+                    });
+                });
+            });
+         
+        </script>
     <div class="col-md-6">
         @model LexusMortgages.Models.MortgageProcess
-        @using (Html.BeginForm())
+        @using (@Ajax.BeginForm("ShowDetails", "MortgageProcess",
+     new AjaxOptions
+     {
+         HttpMethod = "POST",
+         UpdateTargetId = "cal-result",
+         InsertionMode = InsertionMode.Replace,
+         LoadingElementId = "waitimage"
+     }))
         {
             @Html.AntiForgeryToken()
             <div class="col-md-10 col-md-offset-1 div-rounded-blue-contact" style="margin:5%" >
@@ -61,26 +91,21 @@
                     <div class="col-md-12">
 
                         @Html.DropDownListFor(model => model.rate, new SelectList(
-                              (List<Object>)ViewBag.rateOptions,
-                                  "value", "text", 1), "---Interest Rate---")
+                       (List<Object>)ViewBag.rateOptions,
+                           "value", "text", 1), "---Interest Rate---")
                         <br />
                         @Html.ValidationMessageFor(model => model.rate, "", new { @class = "text-danger" })
                     </div>
 
-                    <div class="col-md-12">
-                        <button id="btnCalculator" class="grow center-block btn btn-primary mybutton" type="submit">
-                            <span>Calculate</span>
-                        </button>
-                    </div>
-                
-            </div>
-       
-            if (ViewBag.answer != null)
-            {
-                <div class="alert alert-success">
-                    <strong>APR: @(((decimal)ViewBag.answer).ToString("C2")) per month.</strong>
+                <div class="col-md-12">
+                    <input type="submit" value="Calculate" id="btnCalculator" class="grow center-block btn btn-primary mybutton">
+                 
                 </div>
-            }
+
+                    </div>
+                    
+
+                 </div>
         }
         </div>
         </div>
