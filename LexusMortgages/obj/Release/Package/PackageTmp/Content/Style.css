@@ -276,7 +276,7 @@ footer .footer-below {
     }
 
     #weather {
-        /* padding-right:15%; */
+         margin-right:11%; 
     }
       .box {
         margin-right: 8%;
@@ -378,7 +378,7 @@ footer .footer-below {
         width:65%;
      }
       #weather {
-        padding-left:11%;
+        /* padding-left:11%; */
     }
 }
 
@@ -399,6 +399,7 @@ p.copyright {
        #weather {
         float:right;
     }
+
     #maintext {
         width:100%;
     }
@@ -453,7 +454,8 @@ p.copyright {
 }
 
 .social .fa-facebook:hover { /* round facebook icon*/
-    background: #4060A5;
+   /* background: #4060A5;*/
+    background: rgba(64, 96, 165, 0.7) !important;
 }
 
 .social .fa-twitter:hover { /* round twitter icon*/
@@ -481,7 +483,8 @@ p.copyright {
 }
 
 .social .fa-instagram:hover { /* round instagram icon*/
-    background: #375989;
+    /*background: #375989;*/
+    background: rgba(55, 89, 137, 0.7) !important;
 }
 
 .social .fa-vimeo-square:hover { /* round vimeo square icon*/
@@ -505,7 +508,8 @@ p.copyright {
 }
 
 .social .fa-skype:hover { /* round skype icon*/
-    background: #00C6FF;
+    /*background: #00C6FF;*/
+    background: rgba(0, 198, 225, 0.7) !important;
 }
 
 .social .fa-stack-exchange:hover { /* round stack exchange icon*/
@@ -513,7 +517,8 @@ p.copyright {
 }
 
 .social .fa-youtube:hover { /* round youtube icon*/
-    background: #FF1F25;
+   /* background: #FF1F25;*/
+    background: rgba(225, 31, 37, 0.7) !important;
 }
 
 .social .fa-xing:hover { /* round xing icon*/
@@ -744,4 +749,3 @@ div.panel.show {
 #myCarousel {
     font-family:'Architects Daughter', cursive;
 }
-

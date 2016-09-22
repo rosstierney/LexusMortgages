@@ -25,12 +25,13 @@
             }
         });
         function animate() {
-            $("#img-approve").fadeOut("slow", animate);
-            $("#img-approve").fadeIn("slow", animate);
+            $("#img-approve").slideUp("slow", animate);
+            $("#img-approve").slideDown("slow", animate);
         };
         $(function () {
             $("#accordion").accordion();
         });
+
 
 
     </script>
