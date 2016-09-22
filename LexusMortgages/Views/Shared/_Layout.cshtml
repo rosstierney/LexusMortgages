@@ -25,8 +25,9 @@
 </head>
 <body>
     <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
+                <div class="navbar-header col-md-3 col-lg-3">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -37,6 +38,7 @@
                              src="@Url.Content("~/Content/Images/LexusMortgageMainBanner.png")">
                     </a>
                 </div>
+                <div id="navbar-col" class="navbar-collapse collapse col-md-9">
                     <!-- menu items -->
                     <ul class="nav navbar-nav">
                         <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -61,6 +63,7 @@
                     <span class="flag-icon flag-icon-gb img-rounded">&nbsp;</span><span class="flag-icon flag-icon-ie img-rounded">&nbsp;</span><span class="flag-icon flag-icon-es img-rounded">&nbsp;</span>
                 </div>*@
 
+                    <div id="weather" style="width:70px;padding-top:2px" class="col-md-3 navbar-right right">
 
                         <a href="http://www.accuweather.com/en/es/alicante/310681/weather-forecast/310681" class="aw-widget-legal">
                             <!--

@@ -266,6 +266,7 @@
     <Content Include="Content\Images\villa-img.jpg" />
     <Content Include="Content\Images\villa-img.png" />
     <Content Include="Content\Images\whatsapp.png" />
+    <Content Include="Content\ipad.css" />
     <Content Include="Content\owl.carousel.css" />
     <Content Include="Content\owl-theme.css" />
     <Content Include="Content\owl.theme.css" />
