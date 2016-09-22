@@ -87,12 +87,12 @@ element.style {
 }
 
 .mybutton {
-  display: inline-block;
   border-color: #4CAF50;
   background-color: #4CAF50;
   color: #FFFFFF;
   text-align: center;
   font-family: 'Electrolize', sans-serif;
+  font-size: 18px;
   transition: all 0.5s;
   cursor: pointer;
 }
