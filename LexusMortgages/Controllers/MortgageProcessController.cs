@@ -17,25 +17,13 @@ namespace LexusMortgages.Controllers
             initDdl();
             return View();
         }
-
+        
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Index(MortgageProcess model)
-        {
-            initDdl();
-
-            if (ModelState.IsValid)
-            {
-                double loan = model.amount;
-                double term = model.years;
-                double cost = model.rate;
-                int months = model.years * 12;
-
-                ViewBag.answer = ((((loan * cost) / 100)* term) + loan)/months;
-               
-            }
-            return View(model);
-        }
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Index(MortgageProcess model)
+        //{
+           
+        //}
         private void initDdl()
         {
             ViewBag.rateOptions = new List<Object>{
@@ -45,6 +33,27 @@ namespace LexusMortgages.Controllers
             new { value = 3.5, text = "3.5%"},
             new { value = 4.0, text = "4.0%"},
             new { value = 4.5, text = "4.5%"}};
+        }
+
+        [HttpPost]
+        public PartialViewResult ShowDetails(MortgageProcess model)
+        {
+            initDdl();
+            MortgageProcess mp = new MortgageProcess();
+            if (ModelState.IsValid)
+            {
+                double loan = model.amount;
+                double term = model.years;
+                double cost = model.rate;
+                int months = model.years * 12;
+                double calresult = ((((loan * cost) / 100) * term) + loan) / months;
+                // ViewBag.answer = ((((loan * cost) / 100)* term) + loan)/months;
+             
+                mp.result = calresult;
+            }
+           // if (Request.IsAjaxRequest())
+          
+            return PartialView("CalculatorView", mp);
         }
 
     }
