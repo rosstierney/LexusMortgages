@@ -10,6 +10,7 @@ namespace LexusMortgages
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery.min.js",
+                        "~/Scripts/typed.js",
                         "~/Scripts/jquery.unobtrusive-ajax.min.js",
                         "~/Scripts/jquery-{version}.js"));
 

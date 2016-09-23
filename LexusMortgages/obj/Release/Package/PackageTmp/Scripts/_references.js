@@ -75,3 +75,4 @@
 /// <reference path="locales/bootstrap-datepicker.zh-tw.min.js" />
 /// <reference path="owl.carousel.min.js" />
 /// <reference path="respond.min.js" />
+/// <reference path="typed.js" />

@@ -56,25 +56,27 @@
                         $("#cal-result").html(partialViewResult);
                     });
                 });
+            
             });
-         
+
         </script>
+        
     <div class="col-md-6">
         @model LexusMortgages.Models.MortgageProcess
         @using (@Ajax.BeginForm("ShowDetails", "MortgageProcess",
-     new AjaxOptions
-     {
-         HttpMethod = "POST",
-         UpdateTargetId = "cal-result",
-         InsertionMode = InsertionMode.Replace,
-         LoadingElementId = "waitimage"
-     }))
+                     new AjaxOptions
+                     {
+                         HttpMethod = "POST",
+                         UpdateTargetId = "cal-result",
+                         InsertionMode = InsertionMode.Replace,
+                         LoadingElementId = "waitimage"
+                     }))
         {
             @Html.AntiForgeryToken()
             <div class="col-md-10 col-md-offset-1 div-rounded-blue-contact" style="margin:5%" >
-                
-                <h4 class="calculator-header myshadow text-center">&nbsp;<span class="fa fa-calculator"></span>Mortgage Calculator</h4>
-                
+                <div class="col-md-12">
+                    <h3 class="myshadow text-center" style="font-family:'Electrolize', sans-serif;">&nbsp;<span class="fa fa-calculator"></span>Mortgage Calculator</h3>
+                </div>
                 <div class="col-md-12">
                     <hr />
                 </div>
@@ -97,14 +99,14 @@
                         @Html.ValidationMessageFor(model => model.rate, "", new { @class = "text-danger" })
                     </div>
 
-                <div class="col-md-12">
-                    <input type="submit" value="Calculate" id="btnCalculator" class="grow center-block btn btn-primary mybutton">
+                <div class="col-md-10 col-md-offset-1">
+                    <input type="submit" value="Calculate" id="btnCalculator" class="grow center-block mybutton">
                  
                 </div>
 
                     </div>
                     
-                <div id="cal-result" class="col-md-11">
+                <div id="cal-result" class="col-md-11 text-center">
 
                  </div>
         }
