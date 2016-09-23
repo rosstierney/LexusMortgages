@@ -376,6 +376,10 @@ footer .footer-below {
       #weather {
          padding-left:8%; 
     }
+
+    #testimonal {
+    min-height: 225px !important;
+    }
 }
 
 
@@ -392,8 +396,16 @@ p.copyright {
 }
 
 @media only screen and (min-device-width: 320px)  and (max-width:640px) {
+
+    #testimonal {
+    min-height: 360px !important;
+    }
+    #typed-element {
+    min-height: 62px !important;
+    }
        #weather {
         float:right;
+        margin-right:10%;
     }
 
     #maintext {
@@ -745,3 +757,4 @@ div.panel.show {
 #myCarousel {
     font-family:'Architects Daughter', cursive;
 }
+
