@@ -33,10 +33,10 @@
     }
     <!-- Container (Contact Section) -->
     <div id="contact" class="container-fluid">
-        <div class="col-md-12 mypadding">
-            <div class="col-md-4 pull-right div-rounded-blue-contact mypadding" style="opacity:0.85">
+        <div class="col-md-12" style="padding-top:3%;padding-bottom:5%;padding-right:5%">
+            <div class="col-md-4 pull-right div-rounded-blue-contact" style="opacity:0.85">
 
-                <h2 class="text-center" style="color:#fff"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</h2>
+                <h2 class="text-center" style="color:#fff"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Request Call Back</h2>
                 <hr />
 
                 @using (Html.BeginForm())
@@ -45,7 +45,7 @@
                     @Html.AntiForgeryToken()
                     @model LexusMortgages.Models.Contact
                     <div class="col-md-12">
-                        @Html.TextBoxFor(m => m.fullname, new { placeholder = Html.DisplayNameFor(n => n.fullname), @class = "wide" })
+                        @Html.TextBoxFor(m => m.fullname, new { placeholder = Html.DisplayNameFor(n => n.fullname) })
                         @Html.ValidationMessageFor(m => m.fullname, "", new { @class = "text-danger bg-danger" })
                     </div>
                     <div class="col-md-12">
