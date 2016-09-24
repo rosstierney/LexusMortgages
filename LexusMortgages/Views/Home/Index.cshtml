@@ -6,8 +6,8 @@
         <div class="col-md-12 intro-header">
 
             <div class="intro-message">
-                <span style="font-family:'Great Vibes'; color:#E5AC36" class="glyphicon glyphicon-home"></span><h1 id="maintext" class="tlt myshadow text-center" data-in-effect="fadeInLeftBig" style="font-family:'Great Vibes'; color:#E5AC36">&nbsp;Spanish Mortgage Specialists</h1>
-                <h2 id="subtext" class="myshadow tlt col-md-6 col-md-offset-5" data-in-effect="fadeInRightBig" style="font-family:'Great Vibes'; color:#E5AC36">Over 20 years experience</h2>
+                <h1 id="maintext" class="col-md-12 tlt myshadow text-center" data-in-effect="fadeInLeftBig" data-out-effect="rollOut" style="font-family:'Great Vibes'; color:#E5AC36">&nbsp;Spanish Mortgage Specialists</h1>
+                <h2 id="subtext" class="myshadow tlt col-md-6 col-md-offset-5" data-in-effect="fadeInRightBig" data-out-effect="rollOut" style="font-family:'Great Vibes'; color:#E5AC36">Over 20 years experience</h2>
             </div>
         </div>
     </div>
@@ -33,7 +33,10 @@
             $("#accordion").accordion();
         });
         $(function () {
-            $('.tlt').textillate();
+            $('.tlt').textillate({
+                loop: true,
+                minDisplayTime: 5000
+            });
         });
 
 
@@ -43,7 +46,7 @@
         <div id="welcome" class="col-md-6 text-justify">
             <hr />
             <p class="lead myshadow">
-                Welcome to Lexus Mortgages your first choice for mortgages in Spain.
+                <b>Welcome</b> to Lexus Mortgages your first choice for mortgages in Spain.
             </p>
             <p class="lead myshadow">
                 At Lexus Mortgages we offer a comprehensive range of services to guide you through the process of obtaining a mortgage in Spain.

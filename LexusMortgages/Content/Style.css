@@ -366,7 +366,7 @@ footer .footer-below {
     margin-top: 0;
 }
 
-@media only screen and (min-device-width: 768px)  and (max-width:1199px) {
+@media only screen and (min-device-width: 768px)  and (max-width:1399px) {
     ul.banner-social-buttons {
         float: left;
     }
@@ -378,7 +378,7 @@ footer .footer-below {
     }
 
     #testimonal {
-    min-height: 225px !important;
+    min-height: 235px !important;
     }
 }
 
