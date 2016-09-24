@@ -779,3 +779,9 @@ input[type="text"] {
   box-shadow: inset 1px 1px 2px 0 #707070;
   transition: box-shadow 0.3s;
 }
+
+.text-danger {
+    color: #D8000C;
+    background-color: #FFBABA;
+    border-radius:.3em;
+}

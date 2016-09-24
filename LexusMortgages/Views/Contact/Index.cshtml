@@ -46,26 +46,26 @@
                     @model LexusMortgages.Models.Contact
                     <div class="col-md-12">
                         @Html.TextBoxFor(m => m.fullname, new { placeholder = Html.DisplayNameFor(n => n.fullname), @class = "wide" })
-                        @Html.ValidationMessageFor(m => m.fullname, "", new { @class = "text-danger wide" })
+                        @Html.ValidationMessageFor(m => m.fullname, "", new { @class = "text-danger bg-danger" })
                     </div>
                     <div class="col-md-12">
                         @Html.TextBoxFor(m => m.email, new { placeholder = Html.DisplayNameFor(n => n.email) })
-                        @Html.ValidationMessageFor(m => m.email, "", new { @class = "text-danger" })
+                        @Html.ValidationMessageFor(m => m.email, "", new { @class = "text-danger bg-danger" })
                     </div>
 
                     <div class="col-md-12">
                         @Html.TextBoxFor(m => m.city, new { placeholder = Html.DisplayNameFor(n => n.city) })
-                        @Html.ValidationMessageFor(m => m.city, "", new { @class = "text-danger" })
+                        @Html.ValidationMessageFor(m => m.city, "", new { @class = "text-danger bg-danger" })
                     </div>
 
                     <div class="col-md-12">
                         @Html.TextBoxFor(m => m.telephone, new { placeholder = Html.DisplayNameFor(n => n.telephone) })
-                        @Html.ValidationMessageFor(m => m.telephone, "", new { @class = "text-danger" })
+                        @Html.ValidationMessageFor(m => m.telephone, "", new { @class = "text-danger bg-danger" })
                     </div>
 
                     <div class="col-md-12">
                         @Html.TextAreaFor(m => m.enquiry, new { placeholder = Html.DisplayNameFor(n => n.enquiry) })
-                        @Html.ValidationMessageFor(m => m.enquiry, "", new { @class = "text-danger" })<br>
+                        @Html.ValidationMessageFor(m => m.enquiry, "", new { @class = "text-danger bg-danger" })<br>
                     </div>
 
                     <div class="col-md-12 form-group">
