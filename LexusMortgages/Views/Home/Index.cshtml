@@ -6,7 +6,8 @@
         <div class="col-md-12 intro-header">
 
             <div class="intro-message">
-                <h1 id="maintext" class="myshadow text-center" style="font-family:'Great Vibes'; color:#E5AC36"><span class="glyphicon glyphicon-home"></span>&nbsp;Spanish Mortgage Specialists</h1>
+                <span style="font-family:'Great Vibes'; color:#E5AC36" class="glyphicon glyphicon-home"></span><h1 id="maintext" class="tlt myshadow text-center" data-in-effect="fadeInLeftBig" style="font-family:'Great Vibes'; color:#E5AC36">&nbsp;Spanish Mortgage Specialists</h1>
+                <h2 id="subtext" class="myshadow tlt col-md-6 col-md-offset-5" data-in-effect="fadeInRightBig" style="font-family:'Great Vibes'; color:#E5AC36">Over 20 years experience</h2>
             </div>
         </div>
     </div>
@@ -31,7 +32,9 @@
         $(function () {
             $("#accordion").accordion();
         });
-
+        $(function () {
+            $('.tlt').textillate();
+        });
 
 
     </script>

@@ -11,7 +11,10 @@ namespace LexusMortgages
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery.min.js",
                         "~/Scripts/typed.js",
-                        "~/Scripts/jquery.unobtrusive-ajax.min.js",
+                        "~/Scripts/jquery.fittext.js",
+                        "~/Scripts/jquery.lettering.js",
+                        "~/Scripts/jquery.textillate.js",
+                        /*needed for AJAX*/"~/Scripts/jquery.unobtrusive-ajax.min.js",
                         "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
@@ -45,6 +48,7 @@ namespace LexusMortgages
                       "~/Content/Style.css",
                       "~/Content/font-awesome.css",
                       "~/Content/ipad.css",
+                      "~/Content/animate.css",
                       "~/Content/site.css"));
         }
     }
