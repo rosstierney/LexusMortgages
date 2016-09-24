@@ -12,6 +12,7 @@ namespace LexusMortgages.Models
         [Required, Display(Name = "Full Name")]
         public string fullname { get; set; }
         [Required, Display(Name = "Email")]
+        [EmailAddress(ErrorMessage = "Invalid Email Address")]
         public string email { get; set; }
         [Required, Display(Name = "City")]
         public string city { get; set; }

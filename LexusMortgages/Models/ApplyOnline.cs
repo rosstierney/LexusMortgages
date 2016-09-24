@@ -18,6 +18,7 @@ namespace LexusMortgages.Models
         [Required, Display(Name = "Telephone")]
         public int telephone { get; set; }
         [Required, Display(Name = "Email")]
+        [EmailAddress(ErrorMessage = "Invalid Email Address")]
         public string email { get; set; }        
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
