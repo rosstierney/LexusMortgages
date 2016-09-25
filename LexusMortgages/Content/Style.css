@@ -385,7 +385,8 @@ footer .footer-below {
         padding-top:4%;
     }
     #testimonal {
-    min-height: 235px !important;
+    min-height: 246px !important;
+    margin-top:3%;padding-bottom:3%;
     }
 }
 
@@ -408,7 +409,8 @@ p.copyright {
 @media only screen and (min-device-width: 320px)  and (max-width:767px) {
 
     #testimonal {
-    min-height: 360px !important;
+    min-height: 360px !important;    
+    margin-top:3%;padding-bottom:3%;
     }
     #typed-element {
     min-height: 62px !important;

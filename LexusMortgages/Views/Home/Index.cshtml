@@ -35,6 +35,9 @@
     <script type="text/javascript">
         $(Document).ready(function () {
             animate();
+            $("#owl-demo .item").change(function () {
+                alert("The text has been changed.");
+            });
             /* Toggle between adding and removing the "active" and "show" classes when the user clicks on one of the "Section" buttons. The "active" class is used to add a background color to the current button when its belonging panel is open. The "show" class is used to open the specific accordion panel */
             var acc = document.getElementsByClassName("accordion");
             var i;
@@ -94,7 +97,7 @@
                 <p>
                     At Lexus Mortgages we are fully experienced in the lending criteria's of the Spanish lenders. We are often able to give an instant decision as to whether the mortgage would be approved.
                 </p>
-                <p><a class="grow btn btn-info center-block" href="@Url.Action("Index", "MortgageProcess")">Mortgage Calculator &raquo;</a></p>
+                <p><a class="grow btn btn-info center-block" href="@Url.Action("Index", "MortgageProcess")"><span class="fa fa-home"></span>&nbsp;Mortgage Calculator &raquo;</a></p>
             </div>
             <button class="accordion"><h3 class="myshadow text-center">Apply Online</h3></button>
             <div class="panel">
@@ -106,7 +109,7 @@
         </div>
     </div>
 
-    <div id="testimonal" class="mydiv container-fluid text-center" style="margin-top:3%;padding-bottom:5%">
+    <div id="testimonal" class="mydiv container-fluid text-center">
             <h3 class="myshadow smlCarousel" style="color:#ffffff">Testimonials</h3>
             <hr />
         <div id="myCarousel" class="col-md-12 carousel slide text-center smlCarousel" data-ride="carousel">
@@ -114,19 +117,19 @@
             <div>
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <h4>"Thank you for all the help you have given me with obtaining the mortgage. I will be sure to drop in and say hi when I'm over on holiday. If I purchase another property in future I will not hesitate to contact Lexus mortgages."<br><span style="font-style:normal;">Martin Pendlebury</span></h4>
+                        <h4 data-animation="animated bounceInRight"><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; Thank you for all the help you have given me with obtaining the mortgage. I will be sure to drop in and say hi when I'm over on holiday. If I purchase another property in future I will not hesitate to contact Lexus mortgages.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><span style="font-style:normal;">Martin Pendlebury</span></h4>
                     </div>
                     <div class="item">
-                        <h4>"I wanted to take a moment of your time to thank you and your staff for the efficient and courteous way that you dealt with the business of obtaining our mortgage."<br><span style="font-style:normal;">Tracey Howell</span></h4>
+                        <h4 data-animation="animated bounceInRight"><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; I wanted to take a moment of your time to thank you and your staff for the efficient and courteous way that you dealt with the business of obtaining our mortgage.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><span style="font-style:normal;">Tracey Howell</span></h4>
                     </div>
                     <div class="item">
-                        <h4>"Please thank everyone for me. I will certainly recommend you to anyone I meet who needs help on this vein."<br><span style="font-style:normal;">Tony Harding</span></h4>
+                        <h4 data-animation="animated bounceInRight"><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; Please thank everyone for me. I will certainly recommend you to anyone I meet who needs help on this vein.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><span style="font-style:normal;">Tony Harding</span></h4>
                     </div>
                     <div class="item">
-                        <h4>"Big pats on the back to you all……we will certainly use you again…excellent service."<br><span style="font-style:normal;">T Bell</span></h4>
+                        <h4 data-animation="animated bounceInRight"><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; Big pats on the back to you all……we will certainly use you again…excellent service.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><span style="font-style:normal;">T Bell</span></h4>
                     </div>
                     <div class="item">
-                        <h4>"Can I say what an absolute pleasure it has been dealing with you. You've made what could have been a very complicated and stressful period quite straightforward. I can't recommend your services highly enough."<br><span style="font-style:normal;">Paul Johnson</span></h4>
+                        <h4 data-animation="animated bounceInRight"><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; Can I say what an absolute pleasure it has been dealing with you. You've made what could have been a very complicated and stressful period quite straightforward. I can't recommend your services highly enough.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><span style="font-style:normal;">Paul Johnson</span></h4>
                     </div>
                 </div>
             </div>
