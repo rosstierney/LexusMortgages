@@ -388,6 +388,9 @@ footer .footer-below {
     .intro-lmlogo {
         width:65%;
      }
+    .intro-header {
+        padding-bottom:15%;
+    }
 }
 
 
@@ -568,7 +571,7 @@ p.copyright {
 /* navbar */
 .navbar-default {
     background-color: #2D6895;
-    border-color: #E7E7E7;
+    border-color: #2D6895;
 }
 /* title */
 .navbar-default .navbar-brand {
@@ -584,19 +587,21 @@ p.copyright {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #E5AC36;
+    color: #fff;
+    background-color: #E5AC36;
+    border-radius: 15px;
 }
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
     color: #555;
-    background-color: #E7E7E7;
+    background-color: #E5AC36;
 }
 .navbar-default .navbar-nav > .open > a, 
 .navbar-default .navbar-nav > .open > a:hover, 
 .navbar-default .navbar-nav > .open > a:focus {
     color: #555;
-    background-color: #D5D5D5;
+    background-color: #E5AC36;
 }
 /* caret */
 .navbar-default .navbar-nav > .dropdown > a .caret {
@@ -785,3 +790,4 @@ input[type="text"] {
     background-color: #FFBABA;
     border-radius:.3em;
 }
+
