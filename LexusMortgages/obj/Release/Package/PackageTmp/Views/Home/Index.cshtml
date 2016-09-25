@@ -7,7 +7,13 @@
 
             <div class="intro-message">
                 <h1 id="maintext" class="col-md-12 tlt myshadow text-center" data-in-effect="fadeInLeftBig" data-out-effect="rollOut" style="font-family:'Great Vibes'; color:#E5AC36">&nbsp;Spanish Mortgage Specialists</h1>
-                <h2 id="subtext" class="myshadow tlt col-md-6 col-md-offset-5" data-in-effect="fadeInRightBig" data-out-effect="rollOut" style="font-family:'Great Vibes'; color:#E5AC36">Over 20 years experience</h2>
+                <div class="col-md-12">
+                    <ul class="texts col-md-12 tlt1 myshadow col-md-6 col-md-offset-5" data-in-effect="fadeInRightBig" data-out-effect="rollOut" style="font-family:'Great Vibes'; color:#E5AC36; font-size:28px">
+                        <li id="subtext">Over 20 years experience</li>
+                        <li id="subtext2">Lower mortgage rates</li>
+                        
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -33,12 +39,18 @@
             $("#accordion").accordion();
         });
         $(function () {
-            $('.tlt').textillate({
+            $('.tlt1').textillate({
                 loop: true,
-                minDisplayTime: 5000
+                minDisplayTime: 3000
             });
         });
-
+        $(function () {
+            $('.tlt').textillate({
+                loop: false,
+                autoStart: true,
+                initialDelay: 0
+            });
+        });
 
     </script>
     <!-- /.intro-header -->
