@@ -413,14 +413,19 @@ p.copyright {
     #typed-element {
     min-height: 62px !important;
     }
-       #weather {
-        float:right;
-        margin-right:10%;
-        max-width:70px!important;
+    #weather {
+    float:right;
+    margin-right:10%;
+    max-width:70px!important;
+    max-height:70px!important;
     }
 
     #maintext {
         width:100%;
+        font-size:4em!important;
+    }
+    #main-subtext {
+        min-height:82px;
     }
     .container-fluid {
         padding:0%;
@@ -579,7 +584,7 @@ p.copyright {
 /* navbar */
 .navbar-default {
     background-color: #2D6895;
-    border-color: #2D6895;
+    border: 1px solid #f8f8f8;
 }
 /* title */
 .navbar-default .navbar-brand {
@@ -592,6 +597,7 @@ p.copyright {
 /* link */
 .navbar-default .navbar-nav > li > a {
     color: #fff;
+    margin-top:2%;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -742,12 +748,21 @@ button.accordion {
     outline: none;
     transition: 0.4s;
     box-shadow: 5px 7px 2px #888888;
+    border-radius: 4px 4px 4px 4px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button.accordion.active, button.accordion:hover {
-    background-color: #acacac;
+button.accordion.active {
+    background-color: #0A3F67;
     box-shadow: none;
+    border-radius: 4px 4px 0 0;
+   
+}
+button.accordion:hover {
+    background-color: #0A3F67;
+    box-shadow: none;
+    border-radius: 4px 4px;
+   
 }
 
 
@@ -765,6 +780,8 @@ div.panel.show {
     opacity: 1;
     max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
     box-shadow: none;
+    border-radius: 0 0 4px 4px;
+    padding-top:1%;
 }
 
 #myCarousel {

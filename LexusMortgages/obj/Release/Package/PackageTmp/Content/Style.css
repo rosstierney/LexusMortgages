@@ -405,7 +405,7 @@ p.copyright {
     margin: 15px 0 0;
 }
 
-@media only screen and (min-device-width: 320px)  and (max-width:640px) {
+@media only screen and (min-device-width: 320px)  and (max-width:767px) {
 
     #testimonal {
     min-height: 360px !important;
@@ -413,13 +413,19 @@ p.copyright {
     #typed-element {
     min-height: 62px !important;
     }
-       #weather {
-        float:right;
-        margin-right:10%;
+    #weather {
+    float:right;
+    margin-right:10%;
+    max-width:70px!important;
+    max-height:70px!important;
     }
 
     #maintext {
         width:100%;
+        font-size:4em!important;
+    }
+    #main-subtext {
+        min-height:82px;
     }
     .container-fluid {
         padding:0%;
@@ -578,7 +584,7 @@ p.copyright {
 /* navbar */
 .navbar-default {
     background-color: #2D6895;
-    border-color: #2D6895;
+    border: 1px solid #f8f8f8;
 }
 /* title */
 .navbar-default .navbar-brand {
@@ -591,6 +597,7 @@ p.copyright {
 /* link */
 .navbar-default .navbar-nav > li > a {
     color: #fff;
+    margin-top:2%;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
