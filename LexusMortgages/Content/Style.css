@@ -405,7 +405,7 @@ p.copyright {
     margin: 15px 0 0;
 }
 
-@media only screen and (min-device-width: 320px)  and (max-width:640px) {
+@media only screen and (min-device-width: 320px)  and (max-width:767px) {
 
     #testimonal {
     min-height: 360px !important;
@@ -416,6 +416,7 @@ p.copyright {
        #weather {
         float:right;
         margin-right:10%;
+        max-width:70px!important;
     }
 
     #maintext {

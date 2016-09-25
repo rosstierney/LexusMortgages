@@ -374,9 +374,16 @@ footer .footer-below {
         width:65%;
      }
       #weather {
-         padding-left:8%; 
+         padding-left:20%; 
+         padding-top:8%;
+         max-width:220px!important;
+         max-height:200px;
+         
     }
-
+    .intro-header {
+        padding-bottom:4%;
+        padding-top:4%;
+    }
     #testimonal {
     min-height: 235px !important;
     }
