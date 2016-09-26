@@ -388,6 +388,8 @@ footer .footer-below {
     min-height: 246px !important;
     margin-top:3%;padding-bottom:3%;
     }
+    #testimonal h4 {
+    }
 }
 
 
@@ -409,7 +411,7 @@ p.copyright {
 @media only screen and (min-device-width: 320px)  and (max-width:767px) {
 
     #testimonal {
-    min-height: 360px !important;    
+    min-height: 429px !important;    
     margin-top:3%;padding-bottom:3%;
     }
     #typed-element {
@@ -422,12 +424,16 @@ p.copyright {
     max-height:70px!important;
     }
 
+    #myCarousel {
+        text-align:justify;
+    }
+
     #maintext {
         width:100%;
         font-size:4em!important;
     }
     #main-subtext {
-        min-height:82px;
+        font-size:2em!important;
     }
     .container-fluid {
         padding:0%;

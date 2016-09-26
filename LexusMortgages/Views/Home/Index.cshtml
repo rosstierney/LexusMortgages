@@ -48,7 +48,35 @@
                     this.nextElementSibling.classList.toggle("show");
                 }
             }
+            var $myCarousel = $('#myCarousel');
+            // Initialize carousel
+            $myCarousel.carousel();
+
+           
+            $myCarousel.carousel({
+                interval: 7000
+            });
+            // Select the elements to be animated
+            // in the first slide on page load
+            var $firstAnimatingElems = $myCarousel.find('.item')
+                                       .find('[data-animation ^= "animated"]');
+
+            // Apply the animation using our function
+            doAnimations($firstAnimatingElems);
+
+            // Pause the carousel 
+            $myCarousel.carousel('pause');
+
+            // Attach our doAnimations() function to the
+            // carousel's slide.bs.carousel event 
+            $myCarousel.on('slide.bs.carousel', function (e) {
+                // Select the elements to be animated inside the active slide 
+                var $animatingElems = $(e.relatedTarget)
+                                      .find("[data-animation ^= 'animated']");
+                doAnimations($animatingElems);
+            });
         });
+
         function animate() {
             $("#img-approve").slideUp("slow", animate);
             $("#img-approve").slideDown("slow", animate);
@@ -69,11 +97,27 @@
                 initialDelay: 0
             });
         });
+        function doAnimations(elems) {
+            var animEndEv = 'webkitAnimationEnd animationend';
+
+            elems.each(function () {
+                var $this = $(this),
+                    $animationType = $this.data('animation');
+
+                // Add animate.css classes to
+                // the elements to be animated 
+                // Remove animate.css classes
+                // once the animation event has ended
+                $this.addClass($animationType).one(animEndEv, function () {
+                    $this.removeClass($animationType);
+                });
+            });
+        }
 
     </script>
     <!-- /.intro-header -->
     <div class="container-fluid" style="border-radius:0px 0px 30px 30px;background-color: #2D6895">
-        <div id="welcome" class="col-md-6 text-justify">
+        <div id="welcome" data-animation="animated tada" class="col-md-6 text-justify">
             <hr />
             <p class="lead myshadow">
                 <b>Welcome</b> to Lexus Mortgages your first choice for mortgages in Spain.
@@ -110,26 +154,26 @@
     </div>
 
     <div id="testimonal" class="mydiv container-fluid text-center">
-            <h3 class="myshadow smlCarousel" style="color:#ffffff">Testimonials</h3>
+            <h3 class="myshadow smlCarousel" style="color:#ffffff">TESTIMONIALS</h3>
             <hr />
         <div id="myCarousel" class="col-md-12 carousel slide text-center smlCarousel" data-ride="carousel">
             <!-- Wrapper for slides -->
             <div>
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <h4 data-animation="animated bounceInRight"><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; Thank you for all the help you have given me with obtaining the mortgage. I will be sure to drop in and say hi when I'm over on holiday. If I purchase another property in future I will not hesitate to contact Lexus mortgages.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><span style="font-style:normal;">Martin Pendlebury</span></h4>
+                <div class="carousel-inner col-md-12" role="listbox">
+                    <div class="item active col-md-10 col-md-offset-1">
+                        <h4 data-animation="animated bounceInRight"><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; Thank you for all the help you have given me with obtaining the mortgage. I will be sure to drop in and say hi when I'm over on holiday. If I purchase another property in future I will not hesitate to contact Lexus mortgages.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><br><span style="font-style:normal;">Martin Pendlebury</span></h4>
                     </div>
-                    <div class="item">
-                        <h4 data-animation="animated bounceInRight"><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; I wanted to take a moment of your time to thank you and your staff for the efficient and courteous way that you dealt with the business of obtaining our mortgage.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><span style="font-style:normal;">Tracey Howell</span></h4>
+                    <div class="item col-md-10 col-md-offset-1">
+                        <h4 data-animation="animated bounceInRight"><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; I wanted to take a moment of your time to thank you and your staff for the efficient and courteous way that you dealt with the business of obtaining our mortgage.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><br><span style="font-style:normal;">Tracey Howell</span></h4>
                     </div>
-                    <div class="item">
-                        <h4 data-animation="animated bounceInRight"><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; Please thank everyone for me. I will certainly recommend you to anyone I meet who needs help on this vein.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><span style="font-style:normal;">Tony Harding</span></h4>
+                    <div class="item col-md-10 col-md-offset-1">
+                        <h4 data-animation="animated bounceInRight"><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; Please thank everyone for me. I will certainly recommend you to anyone I meet who needs help on this vein.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><br><span style="font-style:normal;">Tony Harding</span></h4>
                     </div>
-                    <div class="item">
-                        <h4 data-animation="animated bounceInRight"><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; Big pats on the back to you all……we will certainly use you again…excellent service.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><span style="font-style:normal;">T Bell</span></h4>
+                    <div class="item col-md-10 col-md-offset-1">
+                        <h4 data-animation="animated bounceInRight"><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; Big pats on the back to you all……we will certainly use you again…excellent service.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><br><span style="font-style:normal;">T Bell</span></h4>
                     </div>
-                    <div class="item">
-                        <h4 data-animation="animated bounceInRight"><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; Can I say what an absolute pleasure it has been dealing with you. You've made what could have been a very complicated and stressful period quite straightforward. I can't recommend your services highly enough.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><span style="font-style:normal;">Paul Johnson</span></h4>
+                    <div class="item col-md-10 col-md-offset-1">
+                        <h4 data-animation="animated bounceInRight"><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; Can I say what an absolute pleasure it has been dealing with you. You've made what could have been a very complicated and stressful period quite straightforward. I can't recommend your services highly enough.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><br><span style="font-style:normal;">Paul Johnson</span></h4>
                     </div>
                 </div>
             </div>
