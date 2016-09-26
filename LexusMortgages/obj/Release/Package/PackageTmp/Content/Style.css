@@ -235,8 +235,8 @@ footer .footer-below {
 }
 
 .intro-header {
-    padding-top: 6%; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 5%;
+    padding-top: 10%; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 10%;
     text-align: center;
     color: #f8f8f8;
     background: url(../Content/Images/main-house2.jpg) no-repeat center center;
@@ -266,7 +266,7 @@ footer .footer-below {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
 }
 #testimonal {
-    min-height: 246px !important;    
+    min-height: 264px !important;    
     margin-top:3%;padding-bottom:3%;
     }
     
@@ -389,9 +389,7 @@ footer .footer-below {
     ul.banner-social-buttons {
         float: left;
     }
-    .intro-lmlogo {
-        width:65%;
-     }
+
       #weather {
          padding-left:20%; 
          padding-top:8%;
@@ -404,21 +402,11 @@ footer .footer-below {
         padding-top:4%;
     }
     #testimonal {
-    min-height: 246px !important;
+    min-height: 260px !important;
     margin-top:3%;padding-bottom:3%;
     }
 }
 
-
-@media only screen and (max-width:767px) {
-
-    .intro-lmlogo {
-        width:65%;
-     }
-    .intro-header {
-        padding-bottom:15%;
-    }
-}
 
 
 p.copyright {
@@ -477,8 +465,8 @@ p.copyright {
         font-family: Calibri;
     }
 
-    .intro-lmlogo {
-        width:70%;
+    .intro-header {
+        padding-bottom:15%;
     }
 
     .lead {

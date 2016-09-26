@@ -49,6 +49,7 @@ namespace LexusMortgages
                       "~/Content/font-awesome.css",
                       "~/Content/ipad.css",
                       "~/Content/animate.css",
+                      "~/Content/animation.css",
                       "~/Content/site.css"));
         }
     }
