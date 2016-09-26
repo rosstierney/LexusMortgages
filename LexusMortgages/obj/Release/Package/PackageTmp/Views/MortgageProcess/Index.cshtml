@@ -1,0 +1,123 @@
+﻿@{
+    ViewBag.Title = "MortgageProcess";
+    AjaxOptions options = new AjaxOptions
+    {
+        Confirm = "Are you sure to save record?",
+        OnBegin = "OnBeginMethod",
+        OnFailure = "OnFailtureMethod",
+        OnSuccess = "OnSuccessMethod",
+        OnComplete = "OnCompleteMethod"
+    };
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div id="calculator-bk" class="container-fluid">
+    <div class="col-md-12" style="color:#000">
+        <h2>The Mortgage Process</h2>
+        <hr />
+    </div>
+    <div class="col-md-6">
+        <div class="col-md-12">
+            <p>
+                At Lexus Mortgages we are fully experienced in the lending criteria's of the Spanish lenders.
+                We are often able to give an instant decision as to whether the mortgage would be approved.
+                The banks require the following documentation to support an application:
+            </p>
+        </div>
+        <div class="col-md-12">
+            <ul class="texts">
+                <li class="tlt" data-in-effect="fadeInLeftBig"> Copy Passport</li>
+                <li class="tlt" data-in-effect="fadeInLeftBig"> NIE or residents certificate (this can be provided at completion)</li>
+                <li class="tlt" data-in-effect="fadeInLeftBig"> If employed – Latest P60 & past 3 months pay slips</li>
+                <li class="tlt" data-in-effect="fadeInLeftBig"> If self employed – Last 2 years business accounts & personal tax returns</li>
+                <li class="tlt" data-in-effect="fadeInLeftBig"> If retired – Latest P60 or pension notification for following year</li>
+                <li class="tlt" data-in-effect="fadeInLeftBig"> Proof of any other income</li>
+                <li class="tlt" data-in-effect="fadeInLeftBig"> 3 months full bank statements showing income received</li>
+                <li class="tlt" data-in-effect="fadeInLeftBig"> Purchase contract or Escritura for already owned properties</li>
+                <li class="tlt" data-in-effect="fadeInLeftBig"> Credit Report</li>
+            </ul>
+        </div>
+        <div class="col-md-12">
+            <p>
+                The mortgage process will take approximately 3-4 weeks to be finalized. Lexus Mortgages will liaise direct with your lawyer & the lender to co-ordinate a smooth completion.
+            </p>
+        </div>
+    </div>
+        <script>
+            $(document).ready(function () {
+                $("#btnCalculator").on("click", function () {
+                    $.ajax({
+                        url: 'Create',
+                        type: "POST",
+                        dataType: "html"
+                    })
+                    .done(function (partialViewResult) {
+                        $("#cal-result").html(partialViewResult);
+                    });
+                });
+            
+            });
+            $(function () {
+                $('.tlt').textillate();
+            });
+        </script>
+        
+    <div class="col-md-6">
+        @model LexusMortgages.Models.MortgageProcess
+        @using (@Ajax.BeginForm("ShowDetails", "MortgageProcess",
+                     new AjaxOptions
+                     {
+                         HttpMethod = "POST",
+                         UpdateTargetId = "cal-result",
+                         InsertionMode = InsertionMode.Replace,
+                         LoadingElementId = "waitimage"
+                     }))
+        {
+            @Html.AntiForgeryToken()
+            <div class="col-md-10 col-md-offset-1 div-rounded-blue-contact" style="margin:5%" >
+                <div class="col-md-12">
+                    <h3 class="myshadow text-center" style="font-family:'Electrolize', sans-serif;">&nbsp;<span class="fa fa-calculator"></span>Mortgage Calculator</h3>
+                </div>
+                <div class="col-md-12">
+                    <hr />
+                </div>
+                    <div class="col-md-12">
+                        @Html.TextBoxFor(m => m.amount, new { placeholder = Html.DisplayNameFor(n => n.amount) })
+                        <br />
+                        @Html.ValidationMessageFor(m => m.amount, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-12">
+                        @Html.TextBoxFor(m => m.years, new { placeholder = Html.DisplayNameFor(n => n.years) })
+                        <br />
+                         @Html.ValidationMessageFor(m => m.years, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-12">
+
+                        @Html.DropDownListFor(model => model.rate, new SelectList(
+                       (List<Object>)ViewBag.rateOptions,
+                           "value", "text", 1), "---Interest Rate---")
+                        <br />
+                        @Html.ValidationMessageFor(model => model.rate, "", new { @class = "text-danger" })
+                    </div>
+
+                <div class="col-md-10 col-md-offset-1">
+                    <input data-animation="animated lightSpeedIn" type="submit" value="Calculate" id="btnCalculator" class="grow center-block mybutton">
+                </div>
+
+                    </div>
+                    
+                <div id="cal-result" class="col-md-11 text-center">
+
+                 </div>
+        }
+        </div>
+        </div>
+</body>
+</html>
