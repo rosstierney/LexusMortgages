@@ -235,8 +235,8 @@ footer .footer-below {
 }
 
 .intro-header {
-    padding-top: 10%; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 10%;
+    padding-top: 6%; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 5%;
     text-align: center;
     color: #f8f8f8;
     background: url(../Content/Images/main-house2.jpg) no-repeat center center;
@@ -265,7 +265,17 @@ footer .footer-below {
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
 }
-
+#testimonal {
+    min-height: 246px !important;    
+    margin-top:3%;padding-bottom:3%;
+    }
+    
+    #weather {
+    float:right;
+    margin-right:10%;
+    max-width:70px!important;
+    max-height:70px!important;
+    }
 @media only screen and (max-width:769px) {
     #contact {
         padding-bottom:15%;
@@ -605,11 +615,10 @@ p.copyright {
 /* link */
 .navbar-default .navbar-nav > li > a {
     color: #fff;
-    margin-top:2%;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #fff;
+    color: #0a3f67;
     background-color: #E5AC36;
     border-radius: 15px;
 }

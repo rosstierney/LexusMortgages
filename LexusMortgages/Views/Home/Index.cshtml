@@ -35,9 +35,7 @@
     <script type="text/javascript">
         $(Document).ready(function () {
             animate();
-            $("#owl-demo .item").change(function () {
-                alert("The text has been changed.");
-            });
+
             /* Toggle between adding and removing the "active" and "show" classes when the user clicks on one of the "Section" buttons. The "active" class is used to add a background color to the current button when its belonging panel is open. The "show" class is used to open the specific accordion panel */
             var acc = document.getElementsByClassName("accordion");
             var i;
@@ -117,7 +115,7 @@
     </script>
     <!-- /.intro-header -->
     <div class="container-fluid" style="border-radius:0px 0px 30px 30px;background-color: #2D6895">
-        <div id="welcome" data-animation="animated tada" class="col-md-6 text-justify">
+        <div id="welcome" class="col-md-6 text-justify">
             <hr />
             <p class="lead myshadow">
                 <b>Welcome</b> to Lexus Mortgages your first choice for mortgages in Spain.
@@ -153,7 +151,7 @@
         </div>
     </div>
 
-    <div id="testimonal" class="mydiv container-fluid text-center">
+    <div id="testimonal" class="container-fluid text-center mydiv">
             <h3 class="myshadow smlCarousel" style="color:#ffffff">TESTIMONIALS</h3>
             <hr />
         <div id="myCarousel" class="col-md-12 carousel slide text-center smlCarousel" data-ride="carousel">
