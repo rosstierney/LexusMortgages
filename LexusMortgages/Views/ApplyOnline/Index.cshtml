@@ -13,20 +13,23 @@
         @{
             ViewBag.Title = "Apply Online";
         }
-        <div class="col-md-12">
+        <div class="col-md-12" style="padding-top:1%;">
             <h2 class="text-center" >@ViewBag.Title</h2>
-            <hr />
+          
         </div>
     @using (Html.BeginForm())
     {
         @Html.AntiForgeryToken()
-         <div class="col-md-10 col-md-offset-1">   
+         <div class="col-md-8 col-md-offset-2">   
+             <hr />
              <p>Complete our online application form to take the first steps. We will then search our wide range of mortgages to find the one that best meets your own personal requirements. Then, we will contact you to let you know exactly what we can offer, in plain and simple English.</p>
 
             <p> Please note, at Lexus Mortgages, we take the privacy of our clients very seriously. As such, none of your personal details will be disclosed to a third party other than the banking institutions used in our research process.</p>
+         <hr />
          </div>
 
-        <div class="col-md-4 col-md-offset-1">
+   <div class="col-md-12">     
+       <div class="col-md-4 col-md-offset-1">
             <div class="col-md-12" style="padding-bottom:2%;margin-bottom:5%">
                     <h3 class="text-center">Application</h3>
                     @section Scripts {
@@ -118,7 +121,7 @@
             </div>
         </div>
 
-        <div class="col-md-4 col-md-offset-1">
+        <div class="col-md-4 col-md-offset-2">
             <div class="col-md-12" style="margin-bottom:5%">
                 <div class="col-md-12">
                     <h3 class="text-center">Mortgage Information</h3>
@@ -168,6 +171,7 @@
                 <img class="overlayimage" src="@Url.Content("~/Content/Images/20euro.png")" style="position:relative;margin-left:3%;padding:5%;width:90%" alt="cash-house-img" />
                 <img id="img-approve" class="overlayimage" src="@Url.Content("~/Content/Images/approved.png")" style="position:absolute;padding:5%;margin-left:7%;width:80%" alt="cash-house-img" />
             </div>
+        </div>
         </div>
     }
        
