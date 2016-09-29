@@ -46,8 +46,6 @@
                     this.nextElementSibling.classList.toggle("show");
                 }
             }
-
-          
         });
 
         $(function () {
@@ -77,12 +75,11 @@
             <div class="col-md-12">
                 <p>
                     Lexus Mortgages is your first choice for mortgages in Spain.
-
                     At Lexus Mortgages we offer a comprehensive range of services to guide you through the process of obtaining a mortgage in Spain.
-
+                </p>
+                <p>
                     Our wealth of experience ensures that you receive the best possible rates and conditions for your Spanish Mortgage. We only recommend reputable lenders & negotiate on your behalf to obtain the best deal on a Spanish mortgage.
                 </p>
-                <hr />
             </div>
             
         </div>
@@ -134,16 +131,29 @@
         </script>
     }
    <div class="col-md-12">
-        <div class="col-md-4" style="padding-top:5%">
-            <button onclick="window.location.href='@Url.Action("Index", "Contact")';" id="button-contact" class="button-styled" style="font-family: 'Electrolize', sans-serif;"><span class="fa fa-phone fa-3x"></span>Contact Us</button>
-        </div>
-        <div class="col-md-4" style="padding-top:5%">
-            <button onclick="window.location.href = '@Url.Action("About", "Home")';" id="button-apply" class="button-styled" style="font-family: 'Electrolize', sans-serif;"><span class="fa fa-pencil-square fa-3x"></span>Apply Online</button>
-        </div>
-        <div class="col-md-4" style="padding-top:5%">
-            <button onclick="window.location.href = '@Url.Action("Index", "MortgageProcess")';" id="button-cal" class="button-styled" style="font-family: 'Electrolize', sans-serif;"><span class="fa fa-home fa-3x"></span>Mortgage Calculator</button>
-        </div>
-    </div>
+       <div class="col-md-4 col-md-offset-4">
+           <h1 class="text-center">At Your Service</h1>
+           <hr class="myhr"/>
+       </div>
+       <div class="col-md-12">
+           <div class="col-md-4 text-justify">
+               <p>
+                   Complete our online application form to take the first steps. We will then search our wide range of mortgages to find the one that best meets your own personal requirements.
+               </p>
+               <button onclick="window.location.href = '@Url.Action("About", "ApplyOnline")';" id="button-apply" class="button-styled" style="font-family: 'Electrolize', sans-serif;"><span class="fa fa-pencil-square fa-3x"></span>Apply Online</button>
+           </div>
+           <div class="col-md-4 text-justify">
+               <p>
+                   At Lexus Mortgages we are fully experienced in the lending criteria's of the Spanish lenders. We are often able to give an instant decision as to whether the mortgage would be approved.
+               </p>
+               <button onclick="window.location.href = '@Url.Action("Index", "MortgageProcess")';" id="button-cal" class="button-styled" style="font-family: 'Electrolize', sans-serif;"><span class="fa fa-home fa-3x"></span>Mortgage Calculator</button>
+           </div>
+           <div class="col-md-4 text-justify">
+               <p>Please do not hesitate to contact us if you have any queries. We simplify the mortgage process and assist you from getting approval in principal, to when you pick up the keys for your new home.</p>
+               <button onclick="window.location.href='@Url.Action("Index", "Contact")';" id="button-contact" class="button-styled" style="font-family: 'Electrolize', sans-serif;"><span class="fa fa-phone fa-3x"></span>Contact Us</button>
+           </div>
+       </div>
+       </div>
 
  <div class="container-fluid" >
      <div class="col-md-12"><hr /></div>

@@ -31,7 +31,6 @@ filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=2,Color=#3300000
   position: absolute;
   left: 0;
   width: 50px;
-  height:auto;
   background-color:rgba(0,0,0,0.5);
   
   -webkit-border-top-left-radius: 5px;

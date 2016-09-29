@@ -18,13 +18,13 @@
     <title></title>
 </head>
 <body>
-    <div id="calculator-bk" class="container-fluid">
-    <div class="col-md-12" style="color:#000">
-        <h2>The Mortgage Process</h2>
-        <hr />
+    <div class="container-fluid" style="padding-bottom:1%">
+    <div class="col-md-12" style="padding-top:1%">
+        <h2 class="text-center">The Mortgage Process</h2>
+        <hr class="myhr"/>
     </div>
     <div class="col-md-6">
-        <div class="col-md-12">
+        <div class="col-md-12 text-justify">
             <p>
                 At Lexus Mortgages we are fully experienced in the lending criteria's of the Spanish lenders.
                 We are often able to give an instant decision as to whether the mortgage would be approved.
@@ -33,15 +33,15 @@
         </div>
         <div class="col-md-12">
             <ul class="texts">
-                <li class="tlt" data-in-effect="fadeInLeftBig"> Copy Passport</li>
-                <li class="tlt" data-in-effect="fadeInLeftBig"> NIE or residents certificate (this can be provided at completion)</li>
-                <li class="tlt" data-in-effect="fadeInLeftBig"> If employed – Latest P60 & past 3 months pay slips</li>
-                <li class="tlt" data-in-effect="fadeInLeftBig"> If self employed – Last 2 years business accounts & personal tax returns</li>
-                <li class="tlt" data-in-effect="fadeInLeftBig"> If retired – Latest P60 or pension notification for following year</li>
-                <li class="tlt" data-in-effect="fadeInLeftBig"> Proof of any other income</li>
-                <li class="tlt" data-in-effect="fadeInLeftBig"> 3 months full bank statements showing income received</li>
-                <li class="tlt" data-in-effect="fadeInLeftBig"> Purchase contract or Escritura for already owned properties</li>
-                <li class="tlt" data-in-effect="fadeInLeftBig"> Credit Report</li>
+                <li> Copy Passport</li>
+                <li> NIE or residents certificate (this can be provided at completion)</li>
+                <li> If employed – Latest P60 & past 3 months pay slips</li>
+                <li> If self employed – Last 2 years business accounts & personal tax returns</li>
+                <li> If retired – Latest P60 or pension notification for following year</li>
+                <li> Proof of any other income</li>
+                <li> 3 months full bank statements showing income received</li>
+                <li> Purchase contract or Escritura for already owned properties</li>
+                <li> Credit Report</li>
             </ul>
         </div>
         <div class="col-md-12">
@@ -81,24 +81,22 @@
                      }))
         {
             @Html.AntiForgeryToken()
-            <div class="col-md-10 col-md-offset-1 div-rounded-blue-contact" style="margin:5%" >
+            <div class="col-md-10 col-md-offset-1" style="margin:5%" >
                 <div class="col-md-12">
-                    <h3 class="myshadow text-center" style="font-family:'Electrolize', sans-serif;">&nbsp;<span class="fa fa-calculator"></span>Mortgage Calculator</h3>
+                    <h3 class="text-center">&nbsp;<span class="fa fa-calculator"></span>Mortgage Calculator</h3>
                 </div>
-                <div class="col-md-12">
-                    <hr />
-                </div>
-                    <div class="col-md-12">
+                
+                    <div class="col-md-10 col-md-offset-1">
                         @Html.TextBoxFor(m => m.amount, new { placeholder = Html.DisplayNameFor(n => n.amount) })
                         <br />
                         @Html.ValidationMessageFor(m => m.amount, "", new { @class = "text-danger" })
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-10 col-md-offset-1">
                         @Html.TextBoxFor(m => m.years, new { placeholder = Html.DisplayNameFor(n => n.years) })
                         <br />
                          @Html.ValidationMessageFor(m => m.years, "", new { @class = "text-danger" })
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-10 col-md-offset-1">
 
                         @Html.DropDownListFor(model => model.rate, new SelectList(
                        (List<Object>)ViewBag.rateOptions,
