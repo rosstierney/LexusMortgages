@@ -2,15 +2,18 @@
     ViewBag.Title = "About";
 }
 
-<div id="aboutus" class="container-fluid">
-   
-    <div class="col-md-6">
-        <div class="div-rounded-blue-contact mypadding" style="margin-top:5%">
-            <div class="col-md-12">
-                <h2 class="myshadow text-center" style="color:#fff">@ViewBag.Title Us</h2>
-                <hr />
+<div class="container-fluid" style="background-color:#f8f8f8">
+    <div class="gallery">
+        <div class="gallery-image text-center"><img src="~/Content/Images/mini.jpg" style="width:100%"/></div>
+        <div class="gallery-text"><span id="aboutus-text" style="color:#fff;">Professional and Trustworthy Service</span><br /><img src="~/Content/Images/LexusMortgageStampLogo.png" style="width:15%" /></div>
+    </div>
+    
+        <div class="col-md-6 col-md-offset-3" style="margin-top:1%">
+            <div class="col-md-12 text-center">
+       
+                <h1 class="text-center" style="color:#646464">@ViewBag.Title Us</h1>
             </div>
-            <div class="text-justify" style="padding:3%;color:#fff">
+            <div class="text-justify" style="padding:1%;color:#646464">
                 <p>Lexus Mortgages are fully independent Spanish mortgage advisors. Founded in 2005 in the Costa Blanca, we now have offices in Spain, UK and Ireland. We specialize in researching the Spanish mortgage market to find the most competitive & suitable mortgages for our clients.</p>
 
                 <p>Our team members are from the UK, so there are no language barriers and nothing is lost in translation!</p>
@@ -20,27 +23,10 @@
                 <p>Spanish mortgages are unregulated, even UK FCA authorized companies are not regulated for overseas mortgages. Our team has been specially chosen for their qualifications & backgrounds in the UK financial services & banking industry, therefore ensuring that you receive the best advice. We are also fully experienced in the Spanish property market.</p>
             </div>
         </div>
-        <div class="col-md-12" style="padding-top:5%">
-            <a href="@Url.Action("Index", "MortgageProcess")">
-                <img class="grow img-rounded" src="@Url.Content("~/Content/Images/LexusMortgagesCalculator.png")" style="width:100%" alt="mortgageCalculatorLogo" />
-            </a>
-        </div>
-    </div>
-       
+
         <div class="col-md-6">
-
-            <div class="col-md-3 text-center" style="margin-top:7%;padding-bottom:5%;width:100% !important">
-                <a href="@Url.Action("Index", "ApplyOnline")">
-                    <img class="grow img-rounded" src="@Url.Content("~/Content/Images/LexusMortgageApplyBanner.jpg")" style="width:45%;margin-right:5%" alt="applyLogo" />
-                </a>
-
-                <a href="@Url.Action("Index", "Contact")">
-                    <img class="grow img-rounded" src="@Url.Content("~/Content/Images/LexusMortgagesContactUs.jpg")" style="width:45%" alt="contactUsLogo" />
-                </a>
-            </div>
-
-            <div class="col-md-12 mypadding div-rounded-blue-contact" style="margin-top:3%;margin-bottom:3%;color:#fff">
-                <h2 class="myshadow text-center">Why use Lexus Mortgages</h2>
+            <div class="col-md-10 col-md-offset-1" style="margin-top:3%;margin-bottom:3%;color:#646464">
+                <h2 class="text-center">Why use Lexus Mortgages &nbsp;<span class="fa fa-question-circle"></span></h2>
 
                 <div class="text-justify" style="padding:3%">
                     <p>
@@ -66,5 +52,65 @@
                 </div>
             </div>
         </div>
+    <div class="col-md-6">
+        <div class="col-md-10 col-md-offset-1" style="margin-top:3%;margin-bottom:3%;color:#646464">
+            <h2 class="text-center">Commitment &nbsp;<span class="glyphicon glyphicon-ok-sign" style="color:#1db510"></span></h2>
 
+            <div class="text-justify" style="padding:3%">
+                <p>
+                    Our commitment to our clients is to treat them as individuals, offering a personal and professional service.
+                </p>
+                <p>
+                    We pride ourselves in offering full transparency throughout the process. We can advise you on every aspect of purchasing & mortgaging in Spain.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-10 col-md-offset-1" style="margin-top:3%;margin-bottom:3%;color:#646464">
+            <h2 class="text-center">Privacy & Confidentiality &nbsp;<span class="glyphicon glyphicon-info-sign" style="color:#0a79ad"></span></h2>
+
+            <div class="text-justify" style="padding:3%">
+                <p>
+                    Any personal information provided is confidential and will be used solely for the purpose or arranging a mortgage or other service instructed. Information will not be released to outside parties under any circumstances, and will be held only for the period stipulated by industry guidelines.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="testimonal" class="col-md-12 text-center mydiv">
+        <h3 class="myshadow smlCarousel" style="color:#ffffff">TESTIMONIALS</h3>
+        <hr />
+        <div id="myCarousel" class="col-md-12 carousel slide text-center smlCarousel" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div>
+                <div class="carousel-inner col-md-12" role="listbox" style="color:#ffffff">
+                    <div class="item active col-md-10 col-md-offset-1">
+                        <h4><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; Thank you for all the help you have given me with obtaining the mortgage. I will be sure to drop in and say hi when I'm over on holiday. If I purchase another property in future I will not hesitate to contact Lexus mortgages.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><br><span style="font-style:normal;">Martin Pendlebury</span></h4>
+                    </div>
+                    <div class="item col-md-10 col-md-offset-1">
+                        <h4><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; I wanted to take a moment of your time to thank you and your staff for the efficient and courteous way that you dealt with the business of obtaining our mortgage.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><br><span style="font-style:normal;">Tracey Howell</span></h4>
+                    </div>
+                    <div class="item col-md-10 col-md-offset-1">
+                        <h4><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; Please thank everyone for me. I will certainly recommend you to anyone I meet who needs help on this vein.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><br><span style="font-style:normal;">Tony Harding</span></h4>
+                    </div>
+                    <div class="item col-md-10 col-md-offset-1">
+                        <h4><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; Big pats on the back to you all……we will certainly use you again…excellent service.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><br><span style="font-style:normal;">T Bell</span></h4>
+                    </div>
+                    <div class="item col-md-10 col-md-offset-1">
+                        <h4><i class="fa fa-quote-left left fa-2x"></i>&nbsp;&nbsp; Can I say what an absolute pleasure it has been dealing with you. You've made what could have been a very complicated and stressful period quite straightforward. I can't recommend your services highly enough.&nbsp;&nbsp;<i class="fa fa-quote-right right fa-2x"></i><br><br><span style="font-style:normal;">Paul Johnson</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control mycarousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control mycarousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
     </div>

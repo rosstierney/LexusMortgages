@@ -200,11 +200,13 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\button-styles.css" />
     <Content Include="Content\flag-icon.css" />
     <Content Include="Content\flag-icon.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Images\20euro.png" />
+    <Content Include="Content\Images\about-team.jpg" />
     <Content Include="Content\Images\android-icon-144x144.png" />
     <Content Include="Content\Images\android-icon-192x192.png" />
     <Content Include="Content\Images\android-icon-36x36.png" />
@@ -229,6 +231,7 @@
     <Content Include="Content\Images\browserconfig.xml" />
     <Content Include="Content\Images\caixabank-logo.png" />
     <Content Include="Content\Images\cajamar-logo.jpg" />
+    <Content Include="Content\Images\cal-img.jpg" />
     <Content Include="Content\Images\calculator-background.jpg" />
     <Content Include="Content\Images\contact-us.png" />
     <Content Include="Content\Images\favicon-16x16.png" />
@@ -236,6 +239,7 @@
     <Content Include="Content\Images\favicon-96x96.png" />
     <Content Include="Content\Images\favicon.ico" />
     <Content Include="Content\Images\global-currency-logo.jpg" />
+    <Content Include="Content\Images\handshake.jpg" />
     <Content Include="Content\Images\house-logo.png" />
     <Content Include="Content\Images\intro_icon_btm.png" />
     <Content Include="Content\Images\intro_icon_top.jpg" />
