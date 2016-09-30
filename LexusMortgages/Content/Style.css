@@ -1,6 +1,6 @@
 body {
     font-family: 'Maven Pro', sans-serif;
-    background-color: #f8f8f8;
+     background-color: #f8f8f8; 
 }
 footer {
 }
@@ -207,10 +207,6 @@ element.style {
   outline: none;
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #777;
-}
 
 footer .footer-above {
   background-color: #2C3E50;
@@ -246,7 +242,7 @@ footer .footer-below {
 }
 
 .intro-header {
-    padding-top: 10%; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 15%; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 10%;
     text-align: center;
     color: #f8f8f8;
@@ -256,6 +252,7 @@ footer .footer-below {
 	-webkit-transition: opacity 0.6s;
 	-moz-transition: opacity 0.6s;
 	transition: opacity 0.6s;
+    bottom:50px;
 }
 
 .intro-message {
@@ -460,6 +457,7 @@ footer .footer-below {
     padding-bottom:3%;
     }
         .gallery-text{
+         bottom:50px;
 	  
         padding:11%;
         font-size:3em;
@@ -469,11 +467,14 @@ footer .footer-below {
 		padding: 0;
 		margin: 0;
 		text-align: center;
+         bottom:50px;
              /*width:100%;*/
 	}
 
 	.gallery-image{
 		position: relative;
+         bottom:50px;
+
    
 	}
     .gallery-image img{
@@ -492,6 +493,7 @@ footer .footer-below {
 	    transition: opacity 0.6s;
         padding:11%;
         font-size:5em;
+       
 	}
 
 }
@@ -511,11 +513,14 @@ p.copyright {
 		padding: 0;
 		margin: 0;
 		text-align: center;
+         bottom:50px;
              /*width:100%;*/
 	}
 
 	.gallery-image{
 		position: relative;
+         bottom:50px;
+
    
 	}
     .gallery-image img{
@@ -724,12 +729,14 @@ p.copyright {
 
 /* navbar */
 .navbar-default {
-    background-color: #2D6895;
+    /* background-color: #2D6895; */
+    background-color: rgba(44,104,149,0.0);
     border: 1px solid #f8f8f8;
+    color: #0a3f67;
 }
 /* title */
 .navbar-default .navbar-brand {
-    color: #000000;
+    /*color: #000000;*/
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -737,12 +744,16 @@ p.copyright {
 }
 /* link */
 .navbar-default .navbar-nav > li > a {
-    color: #fff;
+    color: #0a3f67;
+    font-weight:900;
     -webkit-transition: color .2s ease-in-out;
     -moz-transition: color .2s ease-in-out;
     -o-transition: color .2s ease-in-out;
     -ms-transition: color .2s ease-in-out;
     transition: color .2s ease-in-out;
+}
+.nav-color {
+     color: #fff;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -959,15 +970,18 @@ input[type="text"] {
     border-radius:.3em;
 }
 
+/*/Add the below transitions to allow a smooth color change similar to lyft*/
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
 
-.input-group.input-group-unstyled input.form-control {
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
+.navbar.scrolled {
+    background: rgba(44, 104, 149, 0.78); 
+    background: rgb(44, 104, 149); 
+    
 }
-.input-group-unstyled .input-group-addon {
-    border-radius: 4px;
-    border: 0px;
-    background-color: transparent;
-    max-height:34px;
-}
+

@@ -25,16 +25,38 @@
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Nunito:700|Patua+One|Varela+Round" rel="stylesheet">
     <script type="text/javascript">
-                                $('#tt').on({
-                                    "click": function () {
-                                        $(this).tooltip({ items: "#tt", content: "Displaying on click" });
-                                        $(this).tooltip("enable"); // this line added
-                                        $(this).tooltip("open");
-                                    },
-                                    "mouseout": function () {
-                                        $(this).tooltip("disable");
-                                    }
-                                });
+                $('#tt').on({
+                    "click": function () {
+                        $(this).tooltip({ items: "#tt", content: "Displaying on click" });
+                        $(this).tooltip("enable"); // this line added
+                        $(this).tooltip("open");
+                    },
+                    "mouseout": function () {
+                        $(this).tooltip("disable");
+                    }
+                });
+                /**
+                   * Listen to scroll to change header opacity class
+                   */
+                $(Document).ready(function()  {
+                    function checkScroll() {
+                        var startY = $('.navbar').height() + 10; //The point where the navbar changes in px
+
+                        if ($(window).scrollTop() > startY) {
+                            $('.navbar').addClass("scrolled");
+                            $(".nav a").css('color', 'white');
+                        } else {
+                            $('.navbar').removeClass("scrolled");
+                            $(".nav a").css('color', '#0a3f67');
+                        }
+                    }
+
+                    if ($('.navbar').length > 0) {
+                        $(window).on("scroll load resize", function () {
+                            checkScroll();
+                        });
+                    }
+                    });
     </script>
 
 </head>
@@ -42,11 +64,11 @@
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="row">
-                <div class="navbar-header col-md-3 col-lg-3">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                <div class="navbar-header col-md-3 col-lg-3" >
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" style="border-color:#0a3f67" data-target=".navbar-collapse">
+                        <span class="icon-bar" ></span>
+                        <span class="icon-bar" ></span>
+                        <span class="icon-bar" ></span>
                     </button>
                     <a class="navbar-left left" href='@Url.Action("Index", "Home")'>
                         <img id="main-logo" src="@Url.Content("~/Content/Images/LexusMortgageMainBanner.png")">
@@ -55,24 +77,26 @@
                 <div id="navbar-col" class="navbar-collapse collapse col-md-9">
                     <!-- menu items -->
                     <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("HOME", "Index", "Home")</li>
-                        <li>@Html.ActionLink("ABOUT", "About", "Home")</li>
-                        <li>@Html.ActionLink("MORTGAGE PROCESS", "Index", "MortgageProcess")</li>
-                        <li>@Html.ActionLink("APPLY ONLINE", "Index", "ApplyOnline")</li>
-                        <li>@Html.ActionLink("CONTACT", "Index", "Contact")</li>
-                        <li>
-                            <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
-                            <div style="width:80px" id="SkypeButton_Call_Lexus.mortgages_1">
-                                <script type="text/javascript">
-                                    Skype.ui({
-                                        "name": "dropdown",
-                                        "element": "SkypeButton_Call_Lexus.mortgages_1",
-                                        "participants": ["Lexus.mortgages"],
-                                    });
-                                </script>
-                            </div>
-                        </li>
-                    </ul>
+                        
+                            <li>@Html.ActionLink("HOME", "Index", "Home")</li>
+                            
+                                <li>@Html.ActionLink("ABOUT", "About", "Home")</li>
+                                <li>@Html.ActionLink("MORTGAGE PROCESS", "Index", "MortgageProcess")</li>
+                                <li>@Html.ActionLink("APPLY ONLINE", "Index", "ApplyOnline")</li>
+                                <li>@Html.ActionLink("CONTACT", "Index", "Contact")</li>
+                                <li>
+                                    <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+                                    <div style="width:80px" id="SkypeButton_Call_Lexus.mortgages_1">
+                                        <script type="text/javascript">
+                                            Skype.ui({
+                                                "name": "dropdown",
+                                                "element": "SkypeButton_Call_Lexus.mortgages_1",
+                                                "participants": ["Lexus.mortgages"],
+                                            });
+                                        </script>
+                                    </div>
+                                </li>
+                            </ul>
                     @*<div style="padding-top:14px">
                     <span class="flag-icon flag-icon-gb img-rounded">&nbsp;</span><span class="flag-icon flag-icon-ie img-rounded">&nbsp;</span><span class="flag-icon flag-icon-es img-rounded">&nbsp;</span>
                 </div>*@

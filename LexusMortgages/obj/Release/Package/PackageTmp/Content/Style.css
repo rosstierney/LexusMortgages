@@ -930,9 +930,6 @@ div.panel.show {
     padding-top:1%;
 }
 
-#myCarousel {
-    font-family:'Architects Daughter', cursive;
-}
 
 select:focus, select.focus, textarea.focus, textarea:focus, input[type=text]:focus, input[type=text].focus {
   /* background-color: #CCF2FF; */

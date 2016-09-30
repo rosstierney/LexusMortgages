@@ -114,9 +114,9 @@
         <script src="~/Scripts/owl.carousel.js"></script>
         <script>
             $(document).ready(function () {
-
+                animate();// will trigger when the document is ready
                 $("#owl-demo").owlCarousel({
-
+                   
                     navigation: false,
                     pagination: false,
                     autoPlay: 3500, //Set AutoPlay to 3.5 seconds
@@ -126,6 +126,10 @@
                     itemsDesktopSmall: [979, 3]
 
                 });
+                function animate() {
+                    $("#img-approve").fadeOut("slow", animate);
+                    $("#img-approve").fadeIn("slow", animate);
+                };
 
             });
         </script>
@@ -154,21 +158,30 @@
            </div>
        </div>
        </div>
+   @*<div class="col-md-12">
+    <div class="col-md-4 mypadding center-block">
+        <img class="overlayimage" src="@Url.Content("~/Content/Images/20euro.png")" style="position:relative;margin-left:3%;padding:5%;width:90%" alt="cash-house-img" />
+        <img id="img-approve" class="overlayimage" src="@Url.Content("~/Content/Images/approved.png")" style="position:absolute;padding:5%;margin-left:7%;width:80%" alt="cash-house-img" />
+    </div>
+</div>*@
 
- <div class="container-fluid" >
-     <div class="col-md-12"><hr /></div>
-        <div id="owl-demo" class="owl-carousel col-md-12">
-            
-            <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/bankia-logo.png")" width="290" alt="Owl Image"></div>
-            <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/caixabank-logo.png")" width="290" alt="Owl Image"></div>
-            <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/bankinter-logo.png")" width="290" alt="Owl Image"></div>
-            <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/cajamar-logo.png")" width="290" alt="Owl Image"></div>
-            <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/santander-logo.png")" width="290" alt="Owl Image"></div>
-            <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/popular-logo.png")" width="290" alt="Owl Image"></div>
-            <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/sabadell-logo.png")" width="290" alt="Owl Image"></div>
-            <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/bmn-logo.png")" width="290" alt="Owl Image"></div>
-            <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/global-currency-logo.png")" width="290" alt="Owl Image"></div>
-        </div>
+ <div class="container-fluid">
+     <div class="col-md-12" style="margin-top:1%">
+         <h1 class="text-center">Our Partners</h1>
+         <hr class="myhr" style="margin-bottom:0%" />
+         <div id="owl-demo" class="owl-carousel col-md-12">
+
+             <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/bankia-logo.png")" width="290" alt="Owl Image"></div>
+             <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/caixabank-logo.png")" width="290" alt="Owl Image"></div>
+             <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/bankinter-logo.png")" width="290" alt="Owl Image"></div>
+             <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/cajamar-logo.png")" width="290" alt="Owl Image"></div>
+             <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/santander-logo.png")" width="290" alt="Owl Image"></div>
+             <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/popular-logo.png")" width="290" alt="Owl Image"></div>
+             <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/sabadell-logo.png")" width="290" alt="Owl Image"></div>
+             <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/bmn-logo.png")" width="290" alt="Owl Image"></div>
+             <div class="item"><span class="helper"></span><img src="@Url.Content("~/Content/Images/global-currency-logo.png")" width="290" alt="Owl Image"></div>
+         </div>
+     </div>
     
 </div>
 <hr>
