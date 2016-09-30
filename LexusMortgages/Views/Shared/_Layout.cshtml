@@ -41,10 +41,14 @@
                 $(Document).ready(function()  {
                     function checkScroll() {
                         var startY = $('.navbar').height() + 10; //The point where the navbar changes in px
-
+                        var btnMenuMobileClick = $('.button.navbar-toggle');
+                        $('.button.navbar-toggle').on("click", function () {
+                            $(".navbar-default").css('color', '#0a3f67');
+                        });
                         if ($(window).scrollTop() > startY) {
                             $('.navbar').addClass("scrolled");
                             $(".nav a").css('color', 'white');
+
                         } else {
                             $('.navbar').removeClass("scrolled");
                             $(".nav a").css('color', '#0a3f67');

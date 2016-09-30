@@ -437,6 +437,84 @@ footer .footer-below {
     }
 
 @media only screen and (min-device-width: 768px)  and (max-width:1399px) {
+
+    /* navbar */
+.navbar-default {
+    /* background-color: #2D6895; */
+    background-color: rgba(44,104,149,0.0);
+    border: 1px solid #f8f8f8;
+    color: #0a3f67;
+}
+/* title */
+.navbar-default .navbar-brand {
+    /*color: #000000;*/
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #E5AC36;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #0a3f67;
+    font-weight:900;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+.nav-color {
+     color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #0a3f67;
+    background-color: #E5AC36;
+    border-radius: 15px;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E5AC36;
+
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #E5AC36;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #E5AC36;
+    border-bottom-color: #E5AC36;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/*/Add the below transitions to allow a smooth color change similar to lyft*/
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.navbar.scrolled {
+    background: rgba(44, 104, 149, 0.78); 
+    background: rgb(44, 104, 149); 
+    
+}
     ul.banner-social-buttons {
         float: left;
     }
@@ -459,7 +537,7 @@ footer .footer-below {
         .gallery-text{
          bottom:50px;
 	  
-        padding:11%;
+        padding:8%;
         font-size:3em;
 	}
         .gallery {
@@ -468,17 +546,24 @@ footer .footer-below {
 		margin: 0;
 		text-align: center;
          bottom:50px;
+         padding-bottom:0px;
+         padding-top:50px;
+
+         height:595px;
              /*width:100%;*/
 	}
 
 	.gallery-image{
 		position: relative;
          bottom:50px;
+         padding: 0;
+		margin: 0;
 
    
 	}
     .gallery-image img{
-		/*width: 100%;*/
+		width: 100%;
+        height: 545px;
    
 	}
 
@@ -493,6 +578,7 @@ footer .footer-below {
 	    transition: opacity 0.6s;
         padding:11%;
         font-size:5em;
+        bottom:50px;
        
 	}
 
@@ -505,6 +591,15 @@ p.copyright {
 }
 
 @media only screen and (min-device-width: 320px)  and (max-width:767px) {
+
+        /* navbar */
+    .navbar-default {
+     background-color: #2D6895; 
+    /*background-color: rgba(44,104,149, 0.0);*/
+    border: 1px solid #f8f8f8;
+    color: #0a3f67;
+}
+
     #button-cal {
         height:100px;
     }
@@ -513,13 +608,12 @@ p.copyright {
 		padding: 0;
 		margin: 0;
 		text-align: center;
-         bottom:50px;
-             /*width:100%;*/
+        width:100%;
 	}
 
 	.gallery-image{
 		position: relative;
-         bottom:50px;
+        margin:0px;
 
    
 	}
@@ -727,69 +821,7 @@ p.copyright {
     vertical-align: middle;
 }
 
-/* navbar */
-.navbar-default {
-    /* background-color: #2D6895; */
-    background-color: rgba(44,104,149,0.0);
-    border: 1px solid #f8f8f8;
-    color: #0a3f67;
-}
-/* title */
-.navbar-default .navbar-brand {
-    /*color: #000000;*/
-}
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: #E5AC36;
-}
-/* link */
-.navbar-default .navbar-nav > li > a {
-    color: #0a3f67;
-    font-weight:900;
-    -webkit-transition: color .2s ease-in-out;
-    -moz-transition: color .2s ease-in-out;
-    -o-transition: color .2s ease-in-out;
-    -ms-transition: color .2s ease-in-out;
-    transition: color .2s ease-in-out;
-}
-.nav-color {
-     color: #fff;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #0a3f67;
-    background-color: #E5AC36;
-    border-radius: 15px;
-}
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:hover, 
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #555;
-    background-color: #E5AC36;
 
-}
-.navbar-default .navbar-nav > .open > a, 
-.navbar-default .navbar-nav > .open > a:hover, 
-.navbar-default .navbar-nav > .open > a:focus {
-    color: #555;
-    background-color: #E5AC36;
-}
-/* caret */
-.navbar-default .navbar-nav > .dropdown > a .caret {
-    border-top-color: #E5AC36;
-    border-bottom-color: #E5AC36;
-}
-.navbar-default .navbar-nav > .dropdown > a:hover .caret,
-.navbar-default .navbar-nav > .dropdown > a:focus .caret {
-    border-top-color: #333;
-    border-bottom-color: #333;
-}
-.navbar-default .navbar-nav > .open > a .caret, 
-.navbar-default .navbar-nav > .open > a:hover .caret, 
-.navbar-default .navbar-nav > .open > a:focus .caret {
-    border-top-color: #555;
-    border-bottom-color: #555;
-}
 /* mobile version */
 .navbar-default .navbar-toggle {
     border-color: #DDD;
@@ -970,18 +1002,5 @@ input[type="text"] {
     border-radius:.3em;
 }
 
-/*/Add the below transitions to allow a smooth color change similar to lyft*/
-.navbar {
-    -webkit-transition: all 0.6s ease-out;
-    -moz-transition: all 0.6s ease-out;
-    -o-transition: all 0.6s ease-out;
-    -ms-transition: all 0.6s ease-out;
-    transition: all 0.6s ease-out;
-}
 
-.navbar.scrolled {
-    background: rgba(44, 104, 149, 0.78); 
-    background: rgb(44, 104, 149); 
-    
-}
 
