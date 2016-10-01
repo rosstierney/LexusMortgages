@@ -853,6 +853,9 @@ input,select,text,textarea  {
     padding:2%;
     margin:2%;
 }
+#btnapply {
+    border-radius: 5px;
+}
 #fname,#sname,#address,#telephone,#netMonthlyIncome,#otherIncome,#dob, #occupation, #employer, #martial {
     width:100%;
     padding:2%;
