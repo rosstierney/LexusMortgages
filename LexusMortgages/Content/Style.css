@@ -48,6 +48,8 @@ hr{
 }
 .box-header {
     background: rgba(10,63,103, 0.7);
+    padding-top:1%;
+    padding-bottom:2%;
    
 }
 
@@ -332,15 +334,7 @@ footer .footer-below {
           padding:10%;
           margin: 0.2%;
     }
-      .box {
-        margin-right: 8%;
-        margin-left:0%;
-        padding-bottom:2%;
-        width:85%;
-        background: rgba(229,172,52,0.7);
-        border-radius:15px 15px;
-        box-shadow: 10px 10px 5px #888888;
-    }
+    
       container-fluid {
     padding-left: 0px;
     padding-right: 0px;
@@ -678,14 +672,7 @@ p.copyright {
     .container-fluid {
         padding:0%;
     }
-    .box {
-        margin-right: 8%;
-        margin-left:0%;
-        padding-bottom:2%;
-        background: #438346;
-        box-shadow: 10px 10px 5px #888888   
-    }
-
+ 
      .myh3 {
         font-weight: 700;
         font-size: 24px;

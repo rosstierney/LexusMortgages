@@ -73,14 +73,17 @@
             </script>
 
 
-            <div class="col-md-4 col-md-offset-1">
+            <div class="col-md-4 col-md-offset-1" style="margin-bottom:2%;">
 
-                <h2 class="text-center"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Request Call Back</h2>
+                <div class="col-md-12 box-header"> 
+                    <h2 class="text-center" style="color:#fff"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Request Call Back</h2>
+                </div>
                 @using (Html.BeginForm())
                 {
 
                     @Html.AntiForgeryToken()
                     @model LexusMortgages.Models.Contact
+                    <div class="col-md-12 box">
                     <div class="col-md-12">
                         @Html.TextBoxFor(m => m.fullname, new { placeholder = Html.DisplayNameFor(n => n.fullname) })
                         @Html.ValidationMessageFor(m => m.fullname, "", new { @class = "text-danger bg-danger" })
@@ -107,6 +110,7 @@
 
                     <div class="col-md-12 form-group">
                         <button id="btnContact" class="grow btn btn-default mybutton center-block" type="submit"><span class="glyphicon glyphicon-send" style="padding-right:2%"></span>Send Message</button>
+                    </div>
                     </div>
                 }
                 @*<div class="col-md-12 text-center">
