@@ -43,8 +43,12 @@ hr{
 }
 
 .box {
-    background: rgb(10,63,103);
-    border-radius:15px 15px;
+    background: rgba(45,104,149, 0.7);
+    padding:2%;
+}
+.box-header {
+    background: rgba(10,63,103, 0.7);
+   
 }
 
 element.style {
@@ -554,7 +558,7 @@ footer .footer-below {
          bottom:50px;
          padding: 0;
 		margin: 0;
-
+        
    
 	}
     .gallery-image img{
@@ -678,16 +682,10 @@ p.copyright {
         margin-right: 8%;
         margin-left:0%;
         padding-bottom:2%;
-        background: rgba(229,172,52,0.7);
-        border-radius:15px 15px;
-        box-shadow: 10px 10px 5px #888888;
+        background: #438346;
+        box-shadow: 10px 10px 5px #888888   
     }
-    .box {
-        margin: 10%;
-        background: rgba(229,172,52,0.7);
-        border-radius:15px 15px;
-        box-shadow: 10px 10px 5px #888888;
-    }
+
      .myh3 {
         font-weight: 700;
         font-size: 24px;
