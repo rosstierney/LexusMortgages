@@ -17,4 +17,5 @@ namespace LexusMortgages.Models
         public double rate { get; set; }
         public double result { get; set; }
     }
+
 }

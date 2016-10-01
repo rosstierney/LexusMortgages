@@ -44,9 +44,10 @@ namespace LexusMortgages.Controllers
             {
                 double loan = model.amount;
                 double term = model.years;
-                double cost = model.rate;
+                double cost = model.rate / 1200;
                 int months = model.years * 12;
-                double calresult = ((((loan * cost) / 100) * term) + loan) / months;
+            //    double calresult = ((((loan * cost)) * term) + loan) / months;
+                double calresult = (cost * loan) / (1 - (Math.Pow((1 + cost),(-term * 12))));
                 // ViewBag.answer = ((((loan * cost) / 100)* term) + loan)/months;
              
                 mp.result = calresult;
