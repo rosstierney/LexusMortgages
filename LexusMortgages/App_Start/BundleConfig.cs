@@ -35,7 +35,7 @@ namespace LexusMortgages
                       "~/Scripts/demo.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
+            bundles.Add(new StyleBundle("~/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/bootstrap.min.css",
                       "~/Content/bootstrap-datepicker.css",
@@ -49,10 +49,8 @@ namespace LexusMortgages
                       "~/Content/Style.css",
                       "~/Content/font-awesome.css",
                       "~/Content/ipad.css",
-                      "~/Content/animate.css",
-                      "~/Content/animation.css",
-                      "~/Content/css/animate.min.css",
-                       "~/Content/demo.css",
+                      "~/Content/animate.min.css",
+                      "~/Content/demo.css",
                       "~/Content/button-styles.css",
                       "~/Content/site.css"));
         }
