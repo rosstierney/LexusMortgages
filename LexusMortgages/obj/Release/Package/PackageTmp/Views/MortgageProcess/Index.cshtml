@@ -87,17 +87,17 @@
                 </div>
                 
                 <div class="col-md-10 col-md-offset-1 box">
-                    <div class="col-md-10 col-md-offset-1">
+                    <div data-toggle="tooltip" data-placement="top" title="Enter Loan amount required in euros" class="col-md-10 col-md-offset-1">
                         @Html.TextBoxFor(m => m.amount, new { placeholder = Html.DisplayNameFor(n => n.amount) })
                         <br />
                         @Html.ValidationMessageFor(m => m.amount, "", new { @class = "text-danger" })
                     </div>
-                    <div class="col-md-10 col-md-offset-1">
+                    <div data-toggle="tooltip" data-placement="top" title="Enter amount of years for the loan" class="col-md-10 col-md-offset-1">
                         @Html.TextBoxFor(m => m.years, new { placeholder = Html.DisplayNameFor(n => n.years) })
                         <br />
                         @Html.ValidationMessageFor(m => m.years, "", new { @class = "text-danger" })
                     </div>
-                    <div class="col-md-10 col-md-offset-1">
+                    <div  data-toggle="tooltip" data-placement="top" title="Select interest rate" class="col-md-10 col-md-offset-1">
 
                         @Html.DropDownListFor(model => model.rate, new SelectList(
                        (List<Object>)ViewBag.rateOptions,
