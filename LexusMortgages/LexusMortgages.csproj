@@ -176,6 +176,7 @@
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MortgageProcessController.cs" />
+    <Compile Include="Controllers\MortgageProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -235,14 +236,19 @@
     <Content Include="Content\Images\cajamar-logo.jpg" />
     <Content Include="Content\Images\cal-img.jpg" />
     <Content Include="Content\Images\calculator-background.jpg" />
+    <Content Include="Content\Images\calculator-icon.png" />
+    <Content Include="Content\Images\commercial.png" />
     <Content Include="Content\Images\contact-us.png" />
     <Content Include="Content\Images\contract.jpg" />
+    <Content Include="Content\Images\european-flag.png" />
     <Content Include="Content\Images\favicon-16x16.png" />
     <Content Include="Content\Images\favicon-32x32.png" />
     <Content Include="Content\Images\favicon-96x96.png" />
     <Content Include="Content\Images\favicon.ico" />
     <Content Include="Content\Images\global-currency-logo.jpg" />
+    <Content Include="Content\Images\globe.png" />
     <Content Include="Content\Images\handshake.jpg" />
+    <Content Include="Content\Images\house-handshake-clipart.png" />
     <Content Include="Content\Images\house-logo.png" />
     <Content Include="Content\Images\intro_icon_btm.png" />
     <Content Include="Content\Images\intro_icon_top.jpg" />
@@ -253,6 +259,7 @@
     <Content Include="Content\Images\LexusMortgagesContactUs.jpg" />
     <Content Include="Content\Images\LexusMortgageStampLogo.png" />
     <Content Include="Content\Images\LexusMortgageStampLogoOpaque.png" />
+    <Content Include="Content\Images\lightbulb.png" />
     <Content Include="Content\Images\main-house.jpg" />
     <Content Include="Content\Images\main-house2.jpg" />
     <Content Include="Content\Images\messenger-logo.png" />
@@ -260,6 +267,7 @@
     <Content Include="Content\Images\mini.jpg" />
     <Content Include="Content\Images\money-house.jpg" />
     <Content Include="Content\Images\mortgage-key.jpg" />
+    <Content Include="Content\Images\mosaic-background.png" />
     <Content Include="Content\Images\ms-icon-144x144.png" />
     <Content Include="Content\Images\ms-icon-150x150.png" />
     <Content Include="Content\Images\ms-icon-310x310.png" />
@@ -270,6 +278,7 @@
     <Content Include="Content\Images\santander-logo.png" />
     <Content Include="Content\Images\sky.png" />
     <Content Include="Content\Images\skype-logo.png" />
+    <Content Include="Content\Images\tools.png" />
     <Content Include="Content\Images\viber-logo.png" />
     <Content Include="Content\Images\villa-img.jpg" />
     <Content Include="Content\Images\villa-img.png" />
@@ -688,6 +697,7 @@
     <Content Include="Views\Contact\Sent.cshtml" />
     <Content Include="Views\MortgageProcess\Index.cshtml" />
     <Content Include="Views\MortgageProcess\CalculatorView.cshtml" />
+    <Content Include="Views\MortgageProducts\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,6 +1,7 @@
 body {
     font-family: 'Maven Pro', sans-serif;
      background-color: #f8f8f8; 
+     color:#646464;
 }
 footer {
 }
@@ -152,7 +153,7 @@ element.style {
 }
 
 .myshadow {
-    text-shadow: 4px 4px 5px rgba(0,0,0,0.7);
+    box-shadow: 5px 5px 4px #c5c5c5;
 }
 
 .social {
@@ -285,11 +286,7 @@ footer .footer-below {
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
 }
-#testimonal {
-    min-height: 264px !important;    
-    margin-bottom:2%; 
-    padding-bottom:3%;
-    }
+ 
     
     #weather {
     float:right;
@@ -435,7 +432,17 @@ footer .footer-below {
     }
 
 @media only screen and (min-device-width: 768px)  and (max-width:1399px) {
-
+    .card {
+    background-color: #fff;
+    border-top: 5px solid rgba(44, 104, 149, 0.4); 
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    color: #afaf9c;
+    height:200px;
+    width:300px;
+    margin: .8%;
+}
     /* navbar */
 .navbar-default {
     /* background-color: #2D6895; */
@@ -585,7 +592,15 @@ p.copyright {
 
 @media only screen and (min-device-width: 320px) and (max-width:767px) {
 
-  
+  .card {
+    background-color: #fff;
+    border-top: 5px solid rgba(44, 104, 149, 0.4); 
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    color: #afaf9c;
+    height:200px;
+}
         /* navbar */
     .navbar-default {
      background-color: #2D6895; 
@@ -898,6 +913,10 @@ input,select,text,textarea  {
     background-size:cover;
     margin:0px;
 }
+.mycontflu {
+    background: url(../Content/Images/mosaic-background.png) no-repeat center center;
+    background-size:cover;
+}
 
 #main1 {
     background: url(../Content/Images/handshake.jpg) no-repeat center center;
@@ -1028,3 +1047,4 @@ input[type="text"] {
 .carousel-caption button {
   animation-delay: 3s;
 }
+
