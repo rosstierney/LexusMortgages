@@ -898,14 +898,20 @@ input,select,text,textarea  {
     margin:0px;
 }
 
-#calculator-bk {
-    background: url(../Content/Images/calculator-background.jpg) no-repeat center center;
+#main1 {
+    background: url(../Content/Images/handshake.jpg) no-repeat center center;
     background-size:cover;
     margin:0px;
 }
 
-#applyOnline {
-    background: url(../Content/Images/calculator-background.jpg) no-repeat center center;
+#main2 {
+    background: url(../Content/Images/main-house2.jpg) no-repeat center center;
+    background-size:cover;
+    margin:0px;
+}
+
+#main3 {
+    background: url(../Content/Images/contract.jpg) no-repeat center center;
     background-size:cover;
     margin:0px;
 }
@@ -1009,3 +1015,15 @@ input[type="text"] {
  .nav a .addwhite {
         color: #fff;
     }
+
+ .carousel-caption h3:first-child {
+  animation-delay: 1s;
+}
+
+.carousel-caption h3:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.carousel-caption button {
+  animation-delay: 3s;
+}

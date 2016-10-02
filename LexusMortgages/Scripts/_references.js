@@ -3,6 +3,7 @@
 /// <reference path="ai.1.0.0-build00159.js" />
 /// <reference path="bootstrap.min.js" />
 /// <reference path="bootstrap-datepicker.min.js" />
+/// <reference path="demo.js" />
 /// <reference path="jquery.fittext.js" />
 /// <reference path="jquery.lettering.js" />
 /// <reference path="jquery.textillate.js" />

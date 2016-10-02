@@ -201,6 +201,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\button-styles.css" />
+    <Content Include="Content\css\animate.min.css" />
+    <Content Include="Content\demo.css" />
     <Content Include="Content\flag-icon.css" />
     <Content Include="Content\flag-icon.min.css" />
     <Content Include="Content\font-awesome.css" />
@@ -234,6 +236,7 @@
     <Content Include="Content\Images\cal-img.jpg" />
     <Content Include="Content\Images\calculator-background.jpg" />
     <Content Include="Content\Images\contact-us.png" />
+    <Content Include="Content\Images\contract.jpg" />
     <Content Include="Content\Images\favicon-16x16.png" />
     <Content Include="Content\Images\favicon-32x32.png" />
     <Content Include="Content\Images\favicon-96x96.png" />
@@ -581,6 +584,7 @@
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\demo.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery.fittext.js" />
     <Content Include="Scripts\jquery.lettering.js" />

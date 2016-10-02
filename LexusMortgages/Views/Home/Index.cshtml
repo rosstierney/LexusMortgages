@@ -3,10 +3,86 @@
 }
 
    <div class="container-fluid">
-        <div class="col-md-12 intro-header">
+
+
+       <div id="carousel-example-generic" class="carousel slide" style="bottom:50px;" data-ride="carousel">
+
+           <!-- Indicators -->
+           <ol class="carousel-indicators">
+               <li data-target="#carousel-example-generic" data-slide-to="0" class="active">
+               </li>
+               <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+               <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+           </ol>
+
+           <!-- Wrapper for slides -->
+           <div class="carousel-inner" role="listbox">
+
+               <!-- First slide -->
+               <div id="main1" class="item active">
+                   <div class="carousel-caption">
+                       <h3 data-animation="animated bounceInLeft">
+                           Spanish Mortgage Specialists
+                       </h3>
+                       <h3 data-animation="animated bounceInRight">
+                           Over 20 years experience
+                       </h3>
+                       <button class="btn btn-primary btn-lg"
+                               data-animation="animated zoomInUp">
+                           Contact Us
+                       </button>
+                   </div>
+               </div><!-- /.item -->
+               <!-- Second slide -->
+               <div id="main2" class="item">
+                   <div class="carousel-caption">
+                       <h3 class="icon-container" data-animation="animated bounceInDown">
+                           <span class="glyphicon glyphicon-home"></span>
+                       </h3>
+                       <h3 data-animation="animated bounceInUp">
+                           Fixed rates from 2,99%
+                       </h3>
+                       <button class="btn btn-primary btn-lg"
+                               data-animation="animated zoomInRight">
+                           Our Products
+                       </button>
+                   </div>
+               </div><!-- /.item -->
+               <!-- Third slide -->
+               <div id="main3" class="item">
+                   <div class="carousel-caption">
+                       <h3 class="icon-container" data-animation="animated zoomInLeft">
+                           <span class="fa fa-pencil-square-o"></span>
+                       </h3>
+                       <h3 data-animation="animated flipInX">
+                           Decision in Principle
+                       </h3>
+                       <button class="btn btn-primary btn-lg"
+                               data-animation="animated lightSpeedIn">
+                           Apply Online
+                       </button>
+                   </div>
+               </div><!-- /.item -->
+
+           </div><!-- /.carousel-inner -->
+           <!-- Controls -->
+           <a class="left carousel-control" href="#carousel-example-generic"
+              role="button" data-slide="prev">
+               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+           </a>
+           <a class="right carousel-control" href="#carousel-example-generic"
+              role="button" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+           </a>
+
+       </div><!-- /.carousel -->
+
+
+        @*<div class="col-md-12 intro-header">
        
             <div class="intro-message">
-                @*<div class="fa fa-home myshadow" style="color:#E5AC36;font-size:5em;"></div>*@
                 <div id="maintext" class="col-md-12 myshadow text-center" style="color:#fff;font-size:5em;"><span class="fa fa-home"></span>&nbsp;Spanish Mortgage Specialists</div>
 
                     <ul id="main-subtext" class="texts col-md-12 tlt1 myshadow col-md-6 col-md-offset-5" data-in-effect="fadeInUp" data-out-effect="rollOut" style="color:#fff; font-size:4em">
@@ -15,23 +91,19 @@
                         <li id="subtext2">Decision in Principle</li>
                         
                     </ul>
-                    @*<div id="weather" class="col-sm-12 col-md-4 col-md-offset-8">
-
-                        <a href="http://www.accuweather.com/en/es/alicante/310681/weather-forecast/310681" class="aw-widget-legal">
-                            
-            By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
-            
-                        </a><div id="awcc1474117299875" class="aw-widget-current" data-locationkey="310681" data-unit="c" data-language="en-us" data-useip="false" data-uid="awcc1474117299875" data-targeturl="http://lexusmortgages.azurewebsites.net"></div>
-                        <script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
-                    </div>*@
-           
-                
+                   
             </div>
-            
-
-        </div>
+        </div>*@
     </div>
+@*<div id="weather" class="col-sm-12 col-md-4 col-md-offset-8">
 
+        <a href="http://www.accuweather.com/en/es/alicante/310681/weather-forecast/310681" class="aw-widget-legal">
+
+        By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+
+        </a><div id="awcc1474117299875" class="aw-widget-current" data-locationkey="310681" data-unit="c" data-language="en-us" data-useip="false" data-uid="awcc1474117299875" data-targeturl="http://lexusmortgages.azurewebsites.net"></div>
+        <script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+    </div>*@
     <script type="text/javascript">
         $(Document).ready(function () {
         
@@ -59,7 +131,6 @@
             });
         });
        
-
 
     </script>
     <!-- /.intro-header -->
