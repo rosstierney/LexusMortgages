@@ -430,18 +430,53 @@ footer .footer-below {
 	    -moz-transition: opacity 0.6s;
 	    transition: opacity 0.6s;
     }
+  
+  
 
 @media only screen and (min-device-width: 768px)  and (max-width:1399px) {
+      .img-wrapper {
+    overflow: hidden;
+    
+    /*border: 1px solid gray;*/
+}
+
+.img-wrapper img {
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    
+    vertical-align: middle;
+    max-width:270px;
+    max-height:195px;
+
+}
+
+.img-wrapper img:hover {
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -moz-transform:scale(1.5); /* Firefox */
+    -ms-transform:scale(1.5); /* IE 9 */
+    -o-transform:scale(1.5); /* Opera */
+    transform:scale(1.5);
+
+    opacity:0.4;
+}
+      .card-text {
+        background-color:#fff;
+        width:300px;
+        height:170px;
+        padding:5%;
+        border-bottom: 5px solid rgba(44, 104, 149, 0.4); 
+    }
     .card {
     background-color: #fff;
     border-top: 5px solid rgba(44, 104, 149, 0.4); 
     text-align: center;
-    margin-bottom: 20px;
     position: relative;
     color: #afaf9c;
     height:200px;
-    width:300px;
-    margin: .8%;
+    width:300px;   
 }
     /* navbar */
 .navbar-default {
@@ -591,12 +626,53 @@ p.copyright {
 }
 
 @media only screen and (min-device-width: 320px) and (max-width:767px) {
+      .img-wrapper {
+    overflow: hidden;
+    
+    /*border: 1px solid gray;*/
+}
+
+.img-wrapper img {
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    
+    vertical-align: middle;
+    max-width:200px;
+    max-height:170px;
+
+}
+
+.img-wrapper img:hover {
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -moz-transform:scale(1.5); /* Firefox */
+    -ms-transform:scale(1.5); /* IE 9 */
+    -o-transform:scale(1.5); /* Opera */
+    transform:scale(1.5);
+
+    opacity:0.4;
+}
+      .card-text {
+        background-color:#fff;
+        max-width:100%;
+        max-height:100%;
+        padding:5%;
+        border-bottom: 5px solid rgba(44, 104, 149, 0.4); 
+    }
+  
+      .card-text {
+        background-color:#fff;
+        padding:5%;
+        border-bottom: 5px solid rgba(44, 104, 149, 0.4); 
+        margin-bottom: 20px;
+    }
 
   .card {
     background-color: #fff;
     border-top: 5px solid rgba(44, 104, 149, 0.4); 
     text-align: center;
-    margin-bottom: 20px;
     position: relative;
     color: #afaf9c;
     height:200px;
@@ -902,8 +978,8 @@ input,select,text,textarea  {
     margin-top:2%;
     margin-bottom:2%;
 }*/
-#aboutus {
-    background: url(../Content/Images/calculator-background.jpg) no-repeat center center;
+#card1 {
+    background: url(../Content/Images/contract.jpg) no-repeat center center;
     background-size:cover;
     margin:0px;
 }
@@ -1048,3 +1124,8 @@ input[type="text"] {
   animation-delay: 3s;
 }
 
+
+
+a {
+    text-decoration: none !important;
+}

@@ -2,7 +2,7 @@
     ViewBag.Title = "Home Page";
 }
 
-   <div class="container-fluid mycontflu">
+   <div class="container-fluid">
 
 
        <div id="carousel-example-generic" class="carousel slide" style="bottom:50px;" data-ride="carousel">
@@ -27,7 +27,7 @@
                        <h3 data-animation="animated bounceInRight">
                            Over 20 years experience
                        </h3>
-                       <button class="btn btn-primary btn-lg"
+                       <button class="btn btn-primary btn-lg"  onclick="window.location.href = '@Url.Action("Index", "Contact")';" 
                                data-animation="animated zoomInUp">
                            Contact Us
                        </button>
@@ -42,7 +42,7 @@
                        <h3 data-animation="animated bounceInUp">
                            Fixed rates from 2,99%
                        </h3>
-                       <button class="btn btn-primary btn-lg"
+                       <button class="btn btn-primary btn-lg"  onclick="window.location.href = '@Url.Action("Index", "MortgageProducts")';" 
                                data-animation="animated zoomInRight">
                            Our Products
                        </button>
@@ -57,7 +57,7 @@
                        <h3 data-animation="animated flipInX">
                            Decision in Principle
                        </h3>
-                       <button class="btn btn-primary btn-lg"
+                       <button class="btn btn-primary btn-lg" onclick="window.location.href = '@Url.Action("Index", "ApplyOnline")';" 
                                data-animation="animated lightSpeedIn">
                            Apply Online
                        </button>
@@ -134,9 +134,9 @@
 
     </script>
     <!-- /.intro-header -->
-    <div class="container-fluid mycontflu">
+    <div class="container-fluid">
         <div class="col-md-12 ">
-            <div class="col-md-8 col-md-offset-2 text-justify myshadow" style="background-color:#f8f8f8">
+            <div class="col-md-8 col-md-offset-2 text-justify" style="background-color:#f8f8f8">
                 <div class="col-md-4 col-md-offset-4"><h1 class="text-center" style="margin-top:0px">Welcome</h1><hr class="myhr" /></div>
                 <div class="col-md-12">
                     <p>
@@ -203,8 +203,8 @@
         </script>
     }
 
-    <div class="col-md-12 mycontflu">
-        <div class="col-md-8 col-md-offset-2 text-center myshadow" style="background-color:#f8f8f8">
+    <div class="col-md-12">
+        <div class="col-md-8 col-md-offset-2 text-center" style="background-color:#f8f8f8">
             <h1 class="text-center">At Your Service</h1>
             <hr class="myhr" />
         </div>

@@ -1,6 +1,7 @@
 body {
     font-family: 'Maven Pro', sans-serif;
      background-color: #f8f8f8; 
+     color:#646464;
 }
 footer {
 }
@@ -285,11 +286,7 @@ footer .footer-below {
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
 }
-#testimonal {
-    min-height: 264px !important;    
-    margin-bottom:2%; 
-    padding-bottom:3%;
-    }
+ 
     
     #weather {
     float:right;

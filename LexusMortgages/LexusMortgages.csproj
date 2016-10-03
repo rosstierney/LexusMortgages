@@ -234,12 +234,11 @@
     <Content Include="Content\Images\browserconfig.xml" />
     <Content Include="Content\Images\caixabank-logo.png" />
     <Content Include="Content\Images\cajamar-logo.jpg" />
-    <Content Include="Content\Images\cal-img.jpg" />
-    <Content Include="Content\Images\calculator-background.jpg" />
     <Content Include="Content\Images\calculator-icon.png" />
+    <Content Include="Content\Images\check-phone.png" />
     <Content Include="Content\Images\commercial.png" />
-    <Content Include="Content\Images\contact-us.png" />
     <Content Include="Content\Images\contract.jpg" />
+    <Content Include="Content\Images\couple-mortgage.png" />
     <Content Include="Content\Images\european-flag.png" />
     <Content Include="Content\Images\favicon-16x16.png" />
     <Content Include="Content\Images\favicon-32x32.png" />
@@ -249,14 +248,7 @@
     <Content Include="Content\Images\globe.png" />
     <Content Include="Content\Images\handshake.jpg" />
     <Content Include="Content\Images\house-handshake-clipart.png" />
-    <Content Include="Content\Images\house-logo.png" />
-    <Content Include="Content\Images\intro_icon_btm.png" />
-    <Content Include="Content\Images\intro_icon_top.jpg" />
-    <Content Include="Content\Images\LexusMortgageApplyBanner.jpg" />
     <Content Include="Content\Images\LexusMortgageMainBanner.png" />
-    <Content Include="Content\Images\LexusMortgagesCalculator.jpg" />
-    <Content Include="Content\Images\LexusMortgagesCalculator.png" />
-    <Content Include="Content\Images\LexusMortgagesContactUs.jpg" />
     <Content Include="Content\Images\LexusMortgageStampLogo.png" />
     <Content Include="Content\Images\LexusMortgageStampLogoOpaque.png" />
     <Content Include="Content\Images\lightbulb.png" />
@@ -267,6 +259,7 @@
     <Content Include="Content\Images\mini.jpg" />
     <Content Include="Content\Images\money-house.jpg" />
     <Content Include="Content\Images\mortgage-key.jpg" />
+    <Content Include="Content\Images\mortgage-main.png" />
     <Content Include="Content\Images\mosaic-background.png" />
     <Content Include="Content\Images\ms-icon-144x144.png" />
     <Content Include="Content\Images\ms-icon-150x150.png" />
@@ -274,6 +267,7 @@
     <Content Include="Content\Images\ms-icon-70x70.png" />
     <Content Include="Content\Images\pool.jpg" />
     <Content Include="Content\Images\popular-logo.png" />
+    <Content Include="Content\Images\product-keys.png" />
     <Content Include="Content\Images\sabadell-logo.png" />
     <Content Include="Content\Images\santander-logo.png" />
     <Content Include="Content\Images\sky.png" />
