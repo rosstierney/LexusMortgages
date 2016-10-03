@@ -434,6 +434,14 @@ footer .footer-below {
   
 
 @media only screen and (min-device-width: 768px)  and (max-width:1399px) {
+
+    #cal-icon {
+         color:#fff;
+         background-color:rgba(45,104,149, 0.7);
+         margin-right:2%;
+         padding-bottom:5%;
+         border-bottom:5px solid rgba(44, 104, 149, 0.4);
+    }
       .img-wrapper {
     overflow: hidden;
     
@@ -448,8 +456,8 @@ footer .footer-below {
     transition: all .2s ease;
     
     vertical-align: middle;
-    max-width:270px;
-    max-height:195px;
+    max-width:100%;
+    max-height:100%;
 
 }
 
@@ -464,8 +472,8 @@ footer .footer-below {
 }
       .card-text {
         background-color:#fff;
-        width:300px;
-        height:170px;
+        width:100%;
+        height:100%;
         padding:5%;
         border-bottom: 5px solid rgba(44, 104, 149, 0.4); 
     }
@@ -475,8 +483,8 @@ footer .footer-below {
     text-align: center;
     position: relative;
     color: #afaf9c;
-    height:200px;
-    width:300px;   
+    height:240px;
+    width:100%;   
 }
     /* navbar */
 .navbar-default {
@@ -626,6 +634,15 @@ p.copyright {
 }
 
 @media only screen and (min-device-width: 320px) and (max-width:767px) {
+     #cal-icon {
+         color:#fff;
+         background-color:rgba(45,104,149, 0.7);
+         margin-right:2%;
+         padding-bottom:5%;
+         border-bottom:5px solid rgba(44, 104, 149, 0.4);
+         max-width:70%;
+         margin-left:15%;
+    }
       .img-wrapper {
     overflow: hidden;
     
@@ -640,8 +657,8 @@ p.copyright {
     transition: all .2s ease;
     
     vertical-align: middle;
-    max-width:200px;
-    max-height:170px;
+    max-width:100%;
+    max-height:100%;
 
 }
 
@@ -675,7 +692,6 @@ p.copyright {
     text-align: center;
     position: relative;
     color: #afaf9c;
-    height:200px;
 }
         /* navbar */
     .navbar-default {
@@ -738,6 +754,9 @@ p.copyright {
     #testimonal {
     min-height: 429px !important;    
     margin-top:3%;padding-bottom:3%;
+    }
+    .mycarousel-control {
+        margin-top:25%;
     }
     #typed-element {
     min-height: 62px !important;

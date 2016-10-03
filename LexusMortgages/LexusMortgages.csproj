@@ -234,6 +234,8 @@
     <Content Include="Content\Images\browserconfig.xml" />
     <Content Include="Content\Images\caixabank-logo.png" />
     <Content Include="Content\Images\cajamar-logo.jpg" />
+    <Content Include="Content\Images\calculator-clipart-blue.png" />
+    <Content Include="Content\Images\calculator-clipart.png" />
     <Content Include="Content\Images\calculator-icon.png" />
     <Content Include="Content\Images\check-phone.png" />
     <Content Include="Content\Images\commercial.png" />
