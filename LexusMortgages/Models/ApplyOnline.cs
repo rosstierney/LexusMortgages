@@ -13,7 +13,7 @@ namespace LexusMortgages.Models
         public string fname { get; set; }
         [Required, Display(Name = "Surname")]
         public string sname { get; set; }
-        [Required, Display(Name = "Location")]
+        [Required, Display(Name = "Enter Location")]
         public string address { get; set; }
         [Required, Display(Name = "Telephone")]
         public int telephone { get; set; }
@@ -44,5 +44,7 @@ namespace LexusMortgages.Models
         public int purchasePrice { get; set; }
         [Required, Display(Name = "Amount Required")]
         public int amountReq { get; set; }
+        [Required, Display(Name = "Have you already found a property?")]
+        public bool hasProperty { get; set; }
     }
 }

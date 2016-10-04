@@ -592,7 +592,7 @@ footer .footer-below {
         padding-top:4%;
     }
     #testimonal {
-    min-height: 260px !important;
+    height: 260px !important;
     padding-bottom:3%;
     }
         .gallery-text{
@@ -791,7 +791,7 @@ p.copyright {
 
 
     #testimonal {
-    min-height: 429px !important;    
+    min-height: 400px !important;    
     margin-top:3%;padding-bottom:3%;
     }
     .mycarousel-control {
@@ -997,6 +997,12 @@ p.copyright {
 input,select,text,textarea  {
     max-width:1000px !important;
     width:100% !important;
+}
+#rbActive {
+    width:70px!important;
+}
+#rbInactive {
+    width:70px!important;
 }
 #amountReq,#purchasePrice,#mortgageTerm,#mortgageType,#propertyType,#btnapply {
     width:100%;

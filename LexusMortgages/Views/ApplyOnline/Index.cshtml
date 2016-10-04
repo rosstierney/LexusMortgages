@@ -164,6 +164,19 @@
                                     @Html.ValidationMessageFor(m => m.amountReq, "", new { @class = "text-danger" })
                                 </div>
 
+                                <div class="col-md-12 text-center">
+                                    @Html.LabelFor(m => m.hasProperty, new { placeholder = Html.DisplayNameFor(n => n.hasProperty) })
+                                    <br />
+                                    @Html.Label("rbInactive", "No")
+                                    @Html.RadioButtonFor(model => model.hasProperty, "false", new { id = "rbInactive" })
+                                    <br />
+                                    @Html.Label("rbActive", "Yes")
+                                    @Html.RadioButtonFor(model => model.hasProperty, "true", new { id = "rbActive" })
+                                    <br />
+                                    @Html.ValidationMessageFor(m => m.hasProperty, "", new { @class = "text-danger" })
+                                </div>
+
+
                                 @*<div class="g-recaptcha form-group" style="padding-left:20%;width:20%" data-sitekey="6LdzQygTAAAAADPFa5eq9hq_JXgXRyMPfxDxeQj4">
                                 </div>*@
                                 <div class="col-md-10 col-md-offset-1">
