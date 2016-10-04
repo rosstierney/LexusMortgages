@@ -5,7 +5,7 @@
    <div class="container-fluid">
 
 
-       <div id="carousel-example-generic" class="carousel slide" style="bottom:50px;" data-ride="carousel">
+       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
            <!-- Indicators -->
            <ol class="carousel-indicators">
@@ -135,10 +135,10 @@
     </script>
     <!-- /.intro-header -->
     <div class="container-fluid">
-        <div class="col-md-12">
-            <div class="col-md-8 col-md-offset-2 text-justify" style="background-color:#f8f8f8">
-                <div class="col-md-4 col-md-offset-4"><h1 class="text-center" style="margin-top:0px">Welcome</h1><hr class="myhr" /></div>
-                <div class="col-md-12">
+        <div class="col-md-12" style="margin-top:2%">
+            
+            <div class="col-md-8 col-md-push-2 text-justify" style="background-color:#f8f8f8">
+                <h1 class="text-center">Welcome</h1><hr class="myhr" />
                     <p>
                         Lexus Mortgages is your first choice for mortgages in Spain.
                         At Lexus Mortgages we offer a comprehensive range of services to guide you through the process of obtaining a mortgage in Spain.
@@ -146,18 +146,25 @@
                     <p>
                         Our wealth of experience ensures that you receive the best possible rates and conditions for your Spanish Mortgage. We only recommend reputable lenders & negotiate on your behalf to obtain the best deal on a Spanish mortgage.
                     </p>
-                </div>
-
             </div>
-            <div class="col-md-2">
-                <div id="cal-icon" class="col-md-12 col-sm-4 card img-wrapper text-center">
+            <div class="col-sm-6 col-md-2 col-md-push-2">
+                <div id="cal-icon" class="card img-wrapper text-center">
                     <a href="@Url.Action("Index", "MortgageProcess")">
                         <h4 style="font-weight:900;color:#fff"><span class="fa fa-home"></span>Mortgage Calculator</h4>
 
                         <img class="img-wrapper" src="@Url.Content("~/Content/Images/calculator-clipart.png")" alt="mortgageCalculatorLogo" />
                     </a>
                 </div>
-                
+
+            </div>
+            <div class="col-sm-6 col-md-2 col-md-pull-10">
+                <div id="cal-icon" class="card img-wrapper text-center">
+                    <a href="@Url.Action("Index", "Contact")">
+                        <h4 style="font-weight:900;color:#fff"><span class="fa fa-mobile-phone"></span>&nbsp;Call us now for all enquiries</h4>
+
+                        <img class="img-wrapper" src="@Url.Content("~/Content/Images/phone-icon.png")" alt="mortgageCalculatorLogo" />
+                    </a>
+                </div>
             </div>
         </div>
         @*<div class="col-md-6" style="margin-top:6%">

@@ -295,9 +295,7 @@ footer .footer-below {
     max-width:70px!important;
     max-height:70px!important;
     }
-    #main-logo {
-        max-width:220px; margin-top: 9px;
-    }
+   
      #navbar-col {
         margin-left:2%;
         margin-top:5px;
@@ -320,10 +318,6 @@ footer .footer-below {
      }
 @media only screen and (max-width:769px) {
 
-
-    #contact {
-        padding-bottom:15%;
-    }
 
     #cal-span {
         width:100%;
@@ -434,7 +428,29 @@ footer .footer-below {
   
 
 @media only screen and (min-device-width: 768px)  and (max-width:1399px) {
-
+    .mobile-top {
+        top:50px;
+    }
+    .mobile-top-contact {
+        top:80px;
+    }
+     #typed-element {
+    min-height: 70px !important;
+    }
+    #top-info-bar{
+         background-color:#646464;
+         height:50px;
+         color:#dcdbe6;
+         padding:1%;
+         padding-left:2%;
+    }
+     #main-logo {
+        max-width:70%; margin-top: 9px;
+        padding-left: 13%;
+    }
+     .navbar-nav nav {
+         max-width:60%;
+     }
     #cal-icon {
          color:#fff;
          background-color:rgba(45,104,149, 0.7);
@@ -444,7 +460,7 @@ footer .footer-below {
     }
       .img-wrapper {
     overflow: hidden;
-    
+    max-width:100%;
     /*border: 1px solid gray;*/
 }
 
@@ -483,7 +499,8 @@ footer .footer-below {
     text-align: center;
     position: relative;
     color: #afaf9c;
-    height:240px;
+    padding-bottom:5%;
+    max-height:100%;
     width:100%;   
 }
     /* navbar */
@@ -579,7 +596,6 @@ footer .footer-below {
     padding-bottom:3%;
     }
         .gallery-text{
-         bottom:50px;
 	  
         padding:8%;
         font-size:3em;
@@ -589,17 +605,13 @@ footer .footer-below {
 		padding: 0;
 		margin: 0;
 		text-align: center;
-         bottom:50px;
          padding-bottom:0px;
-         padding-top:50px;
          
-        bottom:50px;
              /*width:100%;*/
 	}
 
 	.gallery-image{
 		position: relative;
-         bottom:50px;
          padding: 0;
 		margin: 0;
         
@@ -621,12 +633,16 @@ footer .footer-below {
 	    transition: opacity 0.6s;
         padding:11%;
         font-size:5em;
-        bottom:50px;
        
 	}
 
 }
 
+.myheight {
+    height:30px!important;
+    width:30px!important;
+    color:#dcdbe6!important;
+}
 
 
 p.copyright {
@@ -634,6 +650,25 @@ p.copyright {
 }
 
 @media only screen and (min-device-width: 320px) and (max-width:767px) {
+    #contact-padd {
+        margin-top:5%;
+        margin-bottom:5%;
+    }
+    .mobile-top {
+        top:0px;
+    }
+     .mobile-top-contact {
+        top:0px;
+    }
+
+    #top-info-bar {
+        display:none;
+    }
+
+       #main-logo {
+        max-width:180px; margin-top: 7px;
+        margin-left: 7px;
+    }
      #cal-icon {
          color:#fff;
          background-color:rgba(45,104,149, 0.7);
@@ -642,9 +677,12 @@ p.copyright {
          border-bottom:5px solid rgba(44, 104, 149, 0.4);
          max-width:70%;
          margin-left:15%;
+         margin-bottom:2%;
+         margin-top:2%;
     }
       .img-wrapper {
     overflow: hidden;
+    max-width:100%;
     
     /*border: 1px solid gray;*/
 }
@@ -691,17 +729,19 @@ p.copyright {
     border-top: 5px solid rgba(44, 104, 149, 0.4); 
     text-align: center;
     position: relative;
+    padding-bottom:5%;
+    margin-bottom:2%;
     color: #afaf9c;
 }
         /* navbar */
     .navbar-default {
-     background-color: #2D6895; 
+     background-color: #dcdbe6; 
     /*background-color: rgba(44,104,149, 0.0);*/
     border: 1px solid #f8f8f8;
-    color: #fff;
+    color: #0a3f67;
 }
     .nav a {
-        color: #fff;
+        color: #0a3f67;
     }
     .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -732,7 +772,6 @@ p.copyright {
 	}
     .gallery-image img{
 		/*width: 100%;*/
-        bottom:50px;
    
 	}
 
@@ -759,7 +798,7 @@ p.copyright {
         margin-top:25%;
     }
     #typed-element {
-    min-height: 62px !important;
+    min-height: 70px !important;
     }
     #weather {
     float:right;
@@ -977,10 +1016,10 @@ input,select,text,textarea  {
     padding:2%;
     margin:2%;
 }
-/*#contact {
-    background: url(../Content/Images/beach.jpg) no-repeat center center;
+#contact {
+    background: url(../Content/Images/contact-bk.jpg) no-repeat center center;
     background-size:cover;
-}*/
+}
 
 .container, .container-fluid {
     margin:0px;
@@ -1122,9 +1161,9 @@ input[type="text"] {
 
 
 .navbar.scrolled {
-    background: rgba(44, 104, 149, 0.78); 
-    background: rgb(44, 104, 149); 
-    color:#fff;   
+    background: #dcdbe6;
+    /*background: rgb(44, 104, 149);*/ 
+  
     
 }
  .nav a .addwhite {

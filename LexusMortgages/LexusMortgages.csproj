@@ -239,6 +239,7 @@
     <Content Include="Content\Images\calculator-icon.png" />
     <Content Include="Content\Images\check-phone.png" />
     <Content Include="Content\Images\commercial.png" />
+    <Content Include="Content\Images\contact-bk.jpg" />
     <Content Include="Content\Images\contract.jpg" />
     <Content Include="Content\Images\couple-mortgage.png" />
     <Content Include="Content\Images\european-flag.png" />
@@ -267,6 +268,10 @@
     <Content Include="Content\Images\ms-icon-150x150.png" />
     <Content Include="Content\Images\ms-icon-310x310.png" />
     <Content Include="Content\Images\ms-icon-70x70.png" />
+    <Content Include="Content\Images\new-lexus-logo-black.png" />
+    <Content Include="Content\Images\new-lexus-logo-yellow.png" />
+    <Content Include="Content\Images\new-lexus-logo.png" />
+    <Content Include="Content\Images\phone-icon.png" />
     <Content Include="Content\Images\pool.jpg" />
     <Content Include="Content\Images\popular-logo.png" />
     <Content Include="Content\Images\product-keys.png" />
