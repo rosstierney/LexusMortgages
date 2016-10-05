@@ -424,10 +424,44 @@ footer .footer-below {
 	    -moz-transition: opacity 0.6s;
 	    transition: opacity 0.6s;
     }
-  
+
   
 
 @media only screen and (min-device-width: 768px)  and (max-width:1399px) {
+    
+#main1 {
+    background: url(../Content/Images/handshake.jpg) no-repeat center center;
+    background-size:cover;
+    height:450px;
+
+}
+.carousel-caption {
+     padding-top:20%; 
+     padding-bottom:5%;
+     width:30%;
+     margin-left:15%;
+}
+
+
+#main2 {
+    background: url(../Content/Images/main-house2.jpg) no-repeat center center;
+    background-size:cover;
+    height:450px;
+}
+
+#main3 {
+    background: url(../Content/Images/contract.jpg) no-repeat center center;
+    background-size:cover;
+    height:450px;   
+}
+  .layer {
+    background-color: rgba(0, 0, 0, 0.3); 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
     .mobile-top {
         top:50px;
     }
@@ -650,6 +684,26 @@ p.copyright {
 }
 
 @media only screen and (min-device-width: 320px) and (max-width:767px) {
+
+    .carousel-caption {
+     padding-bottom:10%;
+}
+    
+#main1 {
+    background: url(../Content/Images/handshake.jpg) no-repeat center center;
+    background-size:cover;
+}
+
+#main2 {
+    background: url(../Content/Images/main-house2.jpg) no-repeat center center;
+    background-size:cover;
+}
+
+#main3 {
+    background: url(../Content/Images/contract.jpg) no-repeat center center;
+    background-size:cover;
+}
+
     #contact-padd {
         margin-top:5%;
         margin-bottom:5%;
@@ -663,7 +717,17 @@ p.copyright {
 
     #top-info-bar {
         display:none;
+        
     }
+    #lm-mail {
+        display:none;
+        
+    }
+    .hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
        #main-logo {
         max-width:180px; margin-top: 7px;
@@ -1058,24 +1122,6 @@ input,select,text,textarea  {
     background-size:cover;
 }
 
-#main1 {
-    background: url(../Content/Images/handshake.jpg) no-repeat center center;
-    background-size:cover;
-    margin:0px;
-}
-
-#main2 {
-    background: url(../Content/Images/main-house2.jpg) no-repeat center center;
-    background-size:cover;
-    margin:0px;
-}
-
-#main3 {
-    background: url(../Content/Images/contract.jpg) no-repeat center center;
-    background-size:cover;
-    margin:0px;
-}
-
 .wide {
     width:100% !important;
 }
@@ -1188,8 +1234,7 @@ input[type="text"] {
   animation-delay: 3s;
 }
 
-
-
 a {
     text-decoration: none !important;
 }
+
