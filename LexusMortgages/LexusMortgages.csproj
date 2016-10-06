@@ -228,12 +228,14 @@
     <Content Include="Content\Images\apple-icon-precomposed.png" />
     <Content Include="Content\Images\apple-icon.png" />
     <Content Include="Content\Images\approved.png" />
+    <Content Include="Content\Images\bankia-logo.png" />
     <Content Include="Content\Images\bankinter-logo.png" />
     <Content Include="Content\Images\beach.jpg" />
     <Content Include="Content\Images\bmn-logo.png" />
     <Content Include="Content\Images\browserconfig.xml" />
     <Content Include="Content\Images\caixabank-logo.png" />
     <Content Include="Content\Images\cajamar-logo.jpg" />
+    <Content Include="Content\Images\cajamar-logo.png" />
     <Content Include="Content\Images\calculator-clipart-blue.png" />
     <Content Include="Content\Images\calculator-clipart.png" />
     <Content Include="Content\Images\calculator-icon.png" />
@@ -248,6 +250,7 @@
     <Content Include="Content\Images\favicon-96x96.png" />
     <Content Include="Content\Images\favicon.ico" />
     <Content Include="Content\Images\global-currency-logo.jpg" />
+    <Content Include="Content\Images\global-currency-logo.png" />
     <Content Include="Content\Images\globe.png" />
     <Content Include="Content\Images\handshake.jpg" />
     <Content Include="Content\Images\house-handshake-clipart.png" />

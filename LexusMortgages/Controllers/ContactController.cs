@@ -53,14 +53,17 @@ namespace LexusMortgages.Controllers
                 message1.Subject = "Confirmation Email";
                 message1.Body = string.Format(body1, model.fullname);
                 message1.IsBodyHtml = true;
+               
 
                 using (var smtp = new SmtpClient())
                 {
+                    smtp.UseDefaultCredentials = false;
                     var credential = new NetworkCredential
                     {
-                        UserName = "rosstierney@hotmail.com",  // replace with valid value
-                        Password = "Corolla2016"  // replace with valid value
+                        UserName = "info@lexusmortgages.co.uk",  // replace with valid value
+                        Password = "JesusChrist15"  // replace with valid value
                     };
+                   
                     smtp.Credentials = credential;
                     smtp.Host = "smtp-mail.outlook.com";
                     smtp.Port = 587;
