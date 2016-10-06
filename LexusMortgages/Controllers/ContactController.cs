@@ -61,11 +61,11 @@ namespace LexusMortgages.Controllers
                     var credential = new NetworkCredential
                     {
                         UserName = "info@lexusmortgages.co.uk",  // replace with valid value
-                        Password = "JesusChrist15"  // replace with valid value
+                        Password = "Jesuschrist15"  // replace with valid value
                     };
                    
                     smtp.Credentials = credential;
-                    smtp.Host = "smtp-mail.outlook.com";
+                    smtp.Host = "smtp.live.com";
                     smtp.Port = 587;
                     smtp.EnableSsl = true;
                     await smtp.SendMailAsync(message);
