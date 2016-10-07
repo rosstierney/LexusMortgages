@@ -66,7 +66,7 @@ namespace LexusMortgages.Controllers
                    
                     smtp.Credentials = credential;
                     smtp.Host = "smtpout.europe.secureserver.net";
-                    smtp.Port = 3535;
+                    smtp.Port = 25;
                     smtp.EnableSsl = true;
                     await smtp.SendMailAsync(message);
                     await smtp.SendMailAsync(message1);
