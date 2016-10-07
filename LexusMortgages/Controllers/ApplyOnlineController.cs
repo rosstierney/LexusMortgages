@@ -80,7 +80,7 @@ namespace LexusMortgages.Controllers
                         Password = "Jesuschrist15"  // replace with valid value
                     };
                     smtp.Credentials = credential;
-                    smtp.Host = "smtpout.europe.secureserver.net";
+                    smtp.Host = "smtpout.secureserver.net";
                     smtp.Port = 465;
                     smtp.EnableSsl = true;
                     await smtp.SendMailAsync(message);
