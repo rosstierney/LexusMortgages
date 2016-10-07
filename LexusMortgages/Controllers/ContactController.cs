@@ -19,7 +19,7 @@ namespace LexusMortgages.Controllers
         }
 
         // POST: ApplyOnline
-        [HttpPost]
+        [HttpPost]  
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Index(Contact model)
         {
