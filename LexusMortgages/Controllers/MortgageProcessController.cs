@@ -19,11 +19,6 @@ namespace LexusMortgages.Controllers
         }
         
         [HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Index(MortgageProcess model)
-        //{
-           
-        //}
         private void initDdl()
         {
             ViewBag.rateOptions = new List<Object>{
