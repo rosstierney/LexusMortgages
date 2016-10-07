@@ -71,20 +71,11 @@ namespace LexusMortgages.Controllers
                 message.Subject = "Mortgage Enquiry From website";
                 message.Body = string.Format(body, model.fname, model.sname, model.email, model.address, model.telephone, model.martial, model.mortgageTerm, model.mortgageType, model.occupation, model.netMonthlyIncome, model.otherIncome, model.propertyType, model.purchasePrice, model.dob, model.amountReq, model.employer, model.hasProperty);
                 message.IsBodyHtml = true;
-                using (var smtp = new SmtpClient())
+                using (SmtpClient smtp = new SmtpClient())
                 {
-                    smtp.UseDefaultCredentials = false;
-                    var credential = new NetworkCredential
-                    {
-                        UserName = "info@lexusmortgages.co.uk",  // replace with valid value
-                        Password = "Jesuschrist15"  // replace with valid value
-                    };
-                    smtp.Credentials = credential;
-                    smtp.Host = "smtpout.secureserver.net";
-                    smtp.Port = 465;
-                    smtp.EnableSsl = true;
+                    smtp.ServicePoint.MaxIdleTime = 1;
+                    smtp.Timeout = 10000;
                     await smtp.SendMailAsync(message);
-                    return RedirectToAction("Sent");
                 }
             }
                 return View(model);
