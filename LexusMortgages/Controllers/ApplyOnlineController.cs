@@ -80,8 +80,8 @@ namespace LexusMortgages.Controllers
                         Password = "Jesuschrist15"  // replace with valid value
                     };
                     smtp.Credentials = credential;
-                    smtp.Host = "relay-hosting.secureserver.net";
-                    smtp.Port = 587;
+                    smtp.Host = "smtpout.europe.secureserver.net";
+                    smtp.Port = 3535;
                     smtp.EnableSsl = true;
                     await smtp.SendMailAsync(message);
                     return RedirectToAction("Sent");

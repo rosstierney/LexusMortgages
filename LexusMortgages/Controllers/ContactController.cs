@@ -65,8 +65,8 @@ namespace LexusMortgages.Controllers
                     };
                    
                     smtp.Credentials = credential;
-                    smtp.Host = "relay-hosting.secureserver.net";
-                    smtp.Port = 587;
+                    smtp.Host = "smtpout.europe.secureserver.net";
+                    smtp.Port = 3535;
                     smtp.EnableSsl = true;
                     await smtp.SendMailAsync(message);
                     await smtp.SendMailAsync(message1);
