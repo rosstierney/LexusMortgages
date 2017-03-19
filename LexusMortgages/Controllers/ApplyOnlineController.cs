@@ -71,14 +71,36 @@ namespace LexusMortgages.Controllers
                 message.Subject = "Mortgage Enquiry From website";
                 message.Body = string.Format(body, model.fname, model.sname, model.email, model.address, model.telephone, model.martial, model.mortgageTerm, model.mortgageType, model.occupation, model.netMonthlyIncome, model.otherIncome, model.propertyType, model.purchasePrice, model.dob, model.amountReq, model.employer, model.hasProperty);
                 message.IsBodyHtml = true;
+
                 using (SmtpClient smtp = new SmtpClient())
                 {
                     smtp.ServicePoint.MaxIdleTime = 1;
                     smtp.Timeout = 10000;
                     await smtp.SendMailAsync(message);
+                    return RedirectToAction("Sent");
                 }
             }
-                return View(model);
+            ViewBag.MartialOptions = new List<Object>{
+                       new { value = "Single" , text = "Single"  },
+                       new { value = "Married" , text = "Married"  },
+                       new { value = "Divorced", text = "Divorced" },
+                       new { value = "Separated" , text = "Separated"},
+                       new { value = "Widow(er)", text = "Widow(er)"}};
+            ViewBag.MortgageTyOptions = new List<Object>{
+                       new { value = "Home Purchase" , text = "Home Purchase"  },
+                       new { value = "Remortgage" , text = "Remortgage"  },
+                       new { value = "Equity Release", text = "Equity Release" }};
+            ViewBag.MortgageTmOptions = new List<Object>{
+                       new { value = "5 years" , text = "5 years"  },
+                       new { value = "10 years" , text = "10 years"  },
+                       new { value = "15 years", text = "15 years" },
+                       new { value = "20 years" , text = "20 years"},
+                       new { value = "30 years", text = "30 years"}};
+            ViewBag.PropertyOptions = new List<Object>{
+                       new { value = "Appartment" , text = "Appartment"  },
+                       new { value = "House" , text = "House"  },
+                       new { value = "Detached Villa", text = "Detached Villa" }};
+            return View(model);
         }
         public ActionResult Sent(ApplyOnline model)
         {
@@ -86,6 +108,7 @@ namespace LexusMortgages.Controllers
             ViewBag.mail = model.email;
             return View(model);
         }
+        
      
     }
 

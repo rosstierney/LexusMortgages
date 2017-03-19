@@ -16,7 +16,8 @@ namespace LexusMortgages.Models
         [Required, Display(Name = "Enter Location")]
         public string address { get; set; }
         [Required, Display(Name = "Telephone")]
-        public int telephone { get; set; }
+        [RegularExpression(@"^[+]{0,2}\(?([0-9]{2,3})\)?[-. ]?\(?([0-9]+)?\)?[-. ]?([0-9]+)[-. ]?([0-9]+)$", ErrorMessage = "Please enter a correct telephone format")]
+        public string telephone { get; set; }
         [Required, Display(Name = "Email")]
         [EmailAddress(ErrorMessage = "Invalid Email Address")]
         public string email { get; set; }        
